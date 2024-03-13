@@ -2,7 +2,7 @@ name: Rust
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, test ]
   pull_request:
     branches: [ master ]
 
@@ -65,22 +65,23 @@ jobs:
           ~/.cache/creusot
           target
         key: ${{ runner.os }}-cargo-creusot-${{ hashFiles('**/Cargo.lock', 'creusot-setup/src/tools_versions_urls.rs') }}
-    - uses: dawidd6/action-download-artifact@v2
+    - uses: actions/cache@v2
+      id: cache-opam
       with:
-        workflow: why3.yml
-        name: why3
-        path: /home/runner/work/creusot/why3
-    - name: setup paths for why3 and alt-ergo
+        path: |
+          /home/runner/work/creusot/creusot/_opam
+        key: ${{ runner.os }}-opam-${{ hashFiles('creusot-deps.opam') }}
+    - uses: ocaml/setup-ocaml@v2
+      if: steps.cache-opam.outputs.cache-hit != 'true'
+      with:
+        ocaml-compiler: 4.14.1
+    - name: install opam dependencies
+      if: steps.cache-opam.outputs.cache-hit != 'true'
       run: |
-        chmod -R +x ~/work/creusot/why3/bin
-        chmod -R +x ~/work/creusot/why3/lib/why3/why3server
-        echo ~/work/creusot/why3/bin >> $GITHUB_PATH
-
-        mv ~/work/creusot/why3/alt-ergo /usr/local/bin/alt-ergo
-        chmod +x /usr/local/bin/alt-ergo
-        echo $(/usr/local/bin/alt-ergo --version)
+        opam install .
     - name: run cargo creusot setup install
       run: |
+        eval $(opam env)
         cargo run --bin cargo-creusot creusot setup install
         echo -e "\n>> ~/.config/creusot/Config.toml:\n"
         cat ~/.config/creusot/Config.toml
