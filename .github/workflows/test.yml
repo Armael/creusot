@@ -1,0 +1,26 @@
+name: Test
+
+on:
+  push:
+    branches: [ test ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      OCAML_COMPILER: 4.14.1
+
+    steps:
+    - name: Use OCaml ${{ env.OCAML_COMPILER }}
+      uses: ocaml/setup-ocaml@v2
+      with:
+        ocaml-compiler: ${{ env.OCAML_COMPILER }}
+    - name: opam switch
+      run: |
+        eval $(opam env) && opam switch
+    - name: opam pin list
+      run: |
+        eval $(opam env) && opam pin list
+    - name: opam list -i
+      run: |
+        eval $(opam env) && opam list -i
