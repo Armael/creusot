@@ -24,7 +24,7 @@ use crate::{
 /// let value: i32 = *b; // compile error !
 /// ```
 #[cfg_attr(creusot, rustc_diagnostic_item = "ghost_box")]
-pub struct GhostBox<T>(#[cfg(creusot)] Box<T>, #[cfg(not(creusot))] std::marker::PhantomData<T>)
+pub struct GhostBox<T>(#[cfg(creusot)] Box<T>, #[cfg(not(creusot))] pub std::marker::PhantomData<T>)
 where
     T: ?Sized;
 
@@ -110,7 +110,7 @@ impl<T: ?Sized> GhostBox<T> {
         }
         #[cfg(not(creusot))]
         {
-            panic!()
+            GhostBox(std::marker::PhantomData)
         }
     }
 
@@ -124,7 +124,7 @@ impl<T: ?Sized> GhostBox<T> {
         }
         #[cfg(not(creusot))]
         {
-            panic!()
+            GhostBox(std::marker::PhantomData)
         }
     }
 
@@ -158,6 +158,8 @@ impl<T> GhostBox<T> {
     /// Returns the inner value of the `GhostBox`.
     ///
     /// This function can only be called in `ghost!` context.
+    #[pure]
+    #[open] // ?
     #[ensures(result == *self.0)]
     #[rustc_diagnostic_item = "ghost_box_into_inner"]
     pub fn into_inner(self) -> T {
@@ -175,7 +177,7 @@ impl<T> GhostBox<T> {
     ///
     /// You should prefer the dereference operator `*` instead.
     #[logic]
-    #[open(self)]
+    #[open]
     #[ensures(result == *self.0)]
     #[rustc_diagnostic_item = "ghost_box_inner_logic"]
     pub fn inner_logic(self) -> T {

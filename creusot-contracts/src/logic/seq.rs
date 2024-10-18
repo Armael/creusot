@@ -98,6 +98,15 @@ impl<T: ?Sized> Seq<T> {
         absurd
     }
 
+    // FIXME: order of arguments
+    #[trusted]
+    #[logic]
+    #[open(self)]
+    #[creusot::builtins = "seq.Seq.cons"]
+    pub fn push_front(_: T, _: Self) -> Self {
+        absurd
+    }
+
     #[trusted]
     #[logic]
     #[open(self)]
@@ -163,6 +172,194 @@ impl<T: ?Sized> Seq<T> {
         T: OrdLogic + Sized, // TODO : don't require this (problem: uses index)
     {
         self.sorted_range(0, self.len())
+    }
+}
+
+/// Ghost definitions
+impl<T> Seq<T> {
+    /// Constructs a new, empty `Seq<T>`.
+    ///
+    /// This is allocated on the ghost heap, and as such is wrapped in [`GhostBox`].
+    ///
+    /// # Example
+    ///
+    /// ```rust,creusot
+    /// use creusot_contracts::{proof_assert, Seq};
+    /// let ghost_seq = Seq::<i32>::new_ghost();
+    /// proof_assert!(seq == Seq::new());
+    /// ```
+    #[trusted]
+    #[pure]
+    #[ensures(*result == Self::EMPTY)]
+    pub fn new_ghost() -> GhostBox<Self> {
+        #[cfg(creusot)]
+        {
+            loop {}
+        }
+        #[cfg(not(creusot))]
+        {
+            GhostBox(::std::marker::PhantomData)
+        }
+    }
+
+    /// Returns the number of elements in the vector, also referred to as its 'length'.
+    ///
+    /// # Example
+    /// ```rust,creusot
+    /// use creusot_contracts::{ghost, proof_assert, Seq};
+    ///
+    /// let mut vec = Seq::new_ghost();
+    /// let length = ghost! {
+    ///     vec.push(1);
+    ///     vec.push(2);
+    ///     vec.push(3);
+    ///     vec.len()
+    /// };
+    /// proof_assert!(length.inner() == 3);
+    /// ```
+    #[trusted]
+    #[pure]
+    #[ensures(result == self.len())]
+    pub fn len_ghost(&self) -> Int {
+        loop {}
+    }
+
+    /// Appends an element to the back of a collection.
+    ///
+    /// # Example
+    /// ```rust,creusot
+    /// use creusot_contracts::{ghost, proof_assert, Seq};
+    ///
+    /// let mut s = Seq::new_ghost();
+    /// ghost! {
+    ///     s.push(1);
+    ///     s.push(2);
+    ///     s.push(3);
+    /// };
+    /// proof_assert!(s[0] == 1i32 && s[1] == 2i32 && s[2] == 3i32);
+    /// ```
+    #[trusted]
+    #[pure]
+    #[ensures(^self == self.push(x))]
+    pub fn push_ghost(&mut self, x: T) {
+        let _ = x;
+        loop {}
+    }
+
+    #[trusted]
+    #[pure]
+    #[ensures(^self == Seq::push_front(x, *self))]
+    pub fn push_front_ghost(&mut self, x: T) {
+        let _ = x;
+        loop {}
+    }
+
+    /// Returns a reference to an element at `index` or `None` if `index` is out of bounds.
+    ///
+    /// # Example
+    /// ```rust,creusot
+    /// use creusot_contracts::{ghost, Int, proof_assert, Seq};
+    ///
+    /// let mut s = Seq::new_ghost();
+    /// let gets = ghost! {
+    ///     s.push(10);
+    ///     s.push(40);
+    ///     s.push(30);
+    ///     let get1 = s.get(*Int::new(1));
+    ///     let get2 = s.get(*Int::new(3));
+    ///     (get1, get2)
+    /// };
+    /// proof_assert!(gets.inner().0 == Some(&40i32));
+    /// proof_assert!(gets.inner().1 == None);
+    /// ```
+    #[trusted]
+    #[pure]
+    #[ensures(match self.get(index) {
+        None => result == None,
+        Some(v) => result == Some(&v),
+    })]
+    pub fn get_ghost(&self, index: Int) -> Option<&T> {
+        let _ = index;
+        loop {}
+    }
+
+    /// Returns a mutable reference to an element at `index` or `None` if `index` is out of bounds.
+    ///
+    /// # Example
+    /// ```rust,creusot
+    /// use creusot_contracts::{ghost, Int, proof_assert, Seq};
+    ///
+    /// let mut s = Seq::new_ghost();
+    ///
+    /// ghost! {
+    ///     s.push(0);
+    ///     s.push(1);
+    ///     s.push(2);
+    ///     if let Some(elem) = s.get_mut(*Int::new(1)) {
+    ///         *elem = 42;
+    ///     }
+    /// };
+    /// proof_assert!(s[0] == 0i32 && s[1] == 42i32 && s[2] == 2i32);
+    /// ```
+    #[trusted]
+    #[pure]
+    #[ensures(if self.get(index) == None {
+        result == None && *self == ^self
+    } else {
+        match result {
+            None => false,
+            Some(r) => *r == (*self)[index] && ^r == (^self)[index]
+        }
+    })]
+    #[ensures(forall<i: Int> i != index ==> (*self).get(index) == (^self).get(index))]
+    #[ensures((*self).len() == (^self).len())]
+    pub fn get_mut_ghost(&mut self, index: Int) -> Option<&mut T> {
+        let _ = index;
+        loop {}
+    }
+
+    /// Removes the last element from a vector and returns it, or `None` if it is empty.
+    ///
+    /// # Example
+    /// ```rust,creusot
+    /// use creusot_contracts::{ghost, proof_assert, Seq};
+    ///
+    /// let mut s = Seq::new_ghost();
+    /// let popped = ghost! {
+    ///     s.push(1);
+    ///     s.push(2);
+    ///     s.push(3);
+    ///     s.pop()
+    /// };
+    /// proof_assert!(popped == Some(3i32));
+    /// proof_assert!(s[0] == 1i32 && s[1] == 2i32);
+    /// ```
+    #[trusted]
+    #[pure]
+    #[ensures(if self.len() == 0 {
+        *self == ^self && result == None
+    } else {
+        match result {
+            None => false,
+            Some(r) => *self == (^self).push(r)
+        }
+    })]
+    pub fn pop_ghost(&mut self) -> Option<T> {
+        loop {}
+    }
+
+    #[trusted]
+    #[pure]
+    #[ensures(if self.len() == 0 {
+        *self == ^self && result == None
+    } else {
+        match result {
+            None => false,
+            Some(r) => *self == Seq::singleton(r).concat(^self)
+        }
+    })]
+    pub fn pop_front_ghost(&mut self) -> Option<T> {
+        loop {}
     }
 }
 
