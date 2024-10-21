@@ -1,0 +1,25 @@
+name: Nightly
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: alpine-latest
+    steps:
+    - name: Build Z3
+      run: |
+        pkg add python3 tar gcc g++
+        wget https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.4.tar.gz
+        tar xvzf z3-4.12.4.tar.gz
+        cd z3-z3-4.12.4
+        python scripts/mk_make.pk --staticbin
+        cd build
+        make
+        cd ../..
+        tar cvzf z3.tar.gz z3-z3-4.12.4
+    - name: store archive
+      uses: actions/upload-artifact@v4
+      with:
+        name: z3.tar.gz
+        path: z3.tar.gz
