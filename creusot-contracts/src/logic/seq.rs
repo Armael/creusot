@@ -164,6 +164,10 @@ impl<T: ?Sized> Seq<T> {
     {
         self.sorted_range(0, self.len())
     }
+
+    #[allow(unused_variables)]
+    #[ensures(a.concat(b.concat(c)) == a.concat(b).concat(c))]
+    pub fn concat_assoc(a: Seq<T>, b: Seq<T>, c: Seq<T>) {}
 }
 
 impl<T: ?Sized> Seq<&T> {
