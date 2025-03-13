@@ -189,8 +189,8 @@ module M_linked_list__qyi10858349784728989480__push_back [#"linked_list.rs" 66 4
   let%span sseq24 = "../../creusot-contracts/src/logic/seq.rs" 547 14 550 5
   let%span sseq25 = "../../creusot-contracts/src/logic/seq.rs" 551 14 551 76
   let%span sseq26 = "../../creusot-contracts/src/logic/seq.rs" 552 14 552 44
-  let%span soption27 = "../../creusot-contracts/src/std/option.rs" 89 27 89 39
-  let%span soption28 = "../../creusot-contracts/src/std/option.rs" 90 26 90 46
+  let%span soption27 = "../../creusot-contracts/src/std/option.rs" 90 27 90 39
+  let%span soption28 = "../../creusot-contracts/src/std/option.rs" 91 26 91 46
   let%span sghost29 = "../../creusot-contracts/src/ghost.rs" 185 15 185 16
   let%span sghost30 = "../../creusot-contracts/src/ghost.rs" 185 4 185 28
   let%span sghost31 = "../../creusot-contracts/src/ghost.rs" 183 14 183 28

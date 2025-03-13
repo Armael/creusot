@@ -88,8 +88,8 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi275122163379056
   let%span shash_map2 = "../../creusot-contracts/src/std/collections/hash_map.rs" 56 12 66 29
   let%span sfmap3 = "../../creusot-contracts/src/logic/fmap.rs" 49 14 49 25
   let%span sseq4 = "../../creusot-contracts/src/logic/seq.rs" 351 20 351 77
-  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 93 8 96 9
-  let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 104 8 104 26
+  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
+  let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
   let%span sfmap7 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
   
   use creusot.int.UInt16
@@ -242,12 +242,12 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi275122163379056
   axiom view'1_spec : forall self : t_FMap'0 . [%#sfmap7] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
    -> view'1 m1 <> view'1 m2
   
-  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 103 4 103 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
   
    =
     [%#sfmap6] Map.get (view'1 self) k
   
-  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 89 4 91 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
   
    =
     [%#sfmap5] match get_unsized'0 self k with
@@ -291,8 +291,8 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi275122163379056
   let%span shash_map5 = "../../creusot-contracts/src/std/collections/hash_map.rs" 56 12 66 29
   let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 49 14 49 25
   let%span sseq7 = "../../creusot-contracts/src/logic/seq.rs" 351 20 351 77
-  let%span sfmap8 = "../../creusot-contracts/src/logic/fmap.rs" 93 8 96 9
-  let%span sfmap9 = "../../creusot-contracts/src/logic/fmap.rs" 104 8 104 26
+  let%span sfmap8 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
+  let%span sfmap9 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
   let%span sfmap10 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
   
   use creusot.int.UInt16
@@ -445,12 +445,12 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi275122163379056
   axiom view'1_spec : forall self : t_FMap'0 . [%#sfmap10] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
    -> view'1 m1 <> view'1 m2
   
-  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 103 4 103 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
   
    =
     [%#sfmap9] Map.get (view'1 self) k
   
-  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 89 4 91 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
   
    =
     [%#sfmap8] match get_unsized'0 self k with
@@ -503,9 +503,9 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi172295150354336
   let%span shash_map2 = "../../creusot-contracts/src/std/collections/hash_map.rs" 108 12 118 29
   let%span sfmap3 = "../../creusot-contracts/src/logic/fmap.rs" 49 14 49 25
   let%span sseq4 = "../../creusot-contracts/src/logic/seq.rs" 351 20 351 77
-  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 93 8 96 9
+  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
   let%span smodel6 = "../../creusot-contracts/src/model.rs" 45 8 45 28
-  let%span sfmap7 = "../../creusot-contracts/src/logic/fmap.rs" 104 8 104 26
+  let%span sfmap7 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
   let%span sfmap8 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
   
   use creusot.int.UInt16
@@ -575,12 +575,12 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi172295150354336
   axiom view'1_spec : forall self : t_FMap'0 . [%#sfmap8] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
    -> view'1 m1 <> view'1 m2
   
-  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 103 4 103 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
   
    =
     [%#sfmap7] Map.get (view'1 self) k
   
-  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 89 4 91 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
   
    =
     [%#sfmap5] match get_unsized'0 self k with
@@ -627,9 +627,9 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi172295150354336
   let%span shash_map5 = "../../creusot-contracts/src/std/collections/hash_map.rs" 108 12 118 29
   let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 49 14 49 25
   let%span sseq7 = "../../creusot-contracts/src/logic/seq.rs" 351 20 351 77
-  let%span sfmap8 = "../../creusot-contracts/src/logic/fmap.rs" 93 8 96 9
+  let%span sfmap8 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
   let%span smodel9 = "../../creusot-contracts/src/model.rs" 45 8 45 28
-  let%span sfmap10 = "../../creusot-contracts/src/logic/fmap.rs" 104 8 104 26
+  let%span sfmap10 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
   let%span sfmap11 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
   
   use creusot.int.UInt16
@@ -699,12 +699,12 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi172295150354336
   axiom view'1_spec : forall self : t_FMap'0 . [%#sfmap11] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
    -> view'1 m1 <> view'1 m2
   
-  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 103 4 103 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
   
    =
     [%#sfmap10] Map.get (view'1 self) k
   
-  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 89 4 91 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
   
    =
     [%#sfmap8] match get_unsized'0 self k with
@@ -760,9 +760,9 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi720014830389118
   let%span shash_map2 = "../../creusot-contracts/src/std/collections/hash_map.rs" 160 12 170 29
   let%span sfmap3 = "../../creusot-contracts/src/logic/fmap.rs" 49 14 49 25
   let%span sseq4 = "../../creusot-contracts/src/logic/seq.rs" 351 20 351 77
-  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 93 8 96 9
+  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
   let%span smodel6 = "../../creusot-contracts/src/model.rs" 45 8 45 28
-  let%span sfmap7 = "../../creusot-contracts/src/logic/fmap.rs" 104 8 104 26
+  let%span sfmap7 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
   let%span sfmap8 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
   
   use creusot.int.UInt16
@@ -834,12 +834,12 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi720014830389118
   axiom view'1_spec : forall self : t_FMap'0 . [%#sfmap8] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
    -> view'1 m1 <> view'1 m2
   
-  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 103 4 103 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
   
    =
     [%#sfmap7] Map.get (view'1 self) k
   
-  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 89 4 91 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
   
    =
     [%#sfmap5] match get_unsized'0 self k with
@@ -886,9 +886,9 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi720014830389118
   let%span shash_map5 = "../../creusot-contracts/src/std/collections/hash_map.rs" 160 12 170 29
   let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 49 14 49 25
   let%span sseq7 = "../../creusot-contracts/src/logic/seq.rs" 351 20 351 77
-  let%span sfmap8 = "../../creusot-contracts/src/logic/fmap.rs" 93 8 96 9
+  let%span sfmap8 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
   let%span smodel9 = "../../creusot-contracts/src/model.rs" 45 8 45 28
-  let%span sfmap10 = "../../creusot-contracts/src/logic/fmap.rs" 104 8 104 26
+  let%span sfmap10 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
   let%span sfmap11 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
   
   use creusot.int.UInt16
@@ -960,12 +960,12 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi720014830389118
   axiom view'1_spec : forall self : t_FMap'0 . [%#sfmap11] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
    -> view'1 m1 <> view'1 m2
   
-  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 103 4 103 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
   
    =
     [%#sfmap10] Map.get (view'1 self) k
   
-  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 89 4 91 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
   
    =
     [%#sfmap8] match get_unsized'0 self k with
@@ -8937,12 +8937,12 @@ module M_creusot_contracts__stdqy35z1__mem__extern_spec_std_mem_forget_body [#".
       (! return' {result}) ]
 
 end
-module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_unwrap_or_else_body [#"../../creusot-contracts/src/std/option.rs" 103 16 105 36]
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 98 16 98 17
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 103 43 103 44
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 98 27 98 62
-  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 103 52 103 53
-  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 99 26 102 17
+module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_unwrap_or_else_body [#"../../creusot-contracts/src/std/option.rs" 104 16 106 36]
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 99 16 99 17
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 104 43 104 44
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 99 27 99 62
+  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 104 52 104 53
+  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 100 26 103 17
   let%span sops5 = "../../creusot-contracts/src/std/ops.rs" 163 27 163 49
   let%span sops6 = "../../creusot-contracts/src/std/ops.rs" 164 26 164 62
   
@@ -8993,7 +8993,7 @@ module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T
   
   meta "compute_max_steps" 1000000
   
-  let rec extern_spec_std_option_T_Option_T_unwrap_or_else_body'0[#"../../creusot-contracts/src/std/option.rs" 103 16 105 36] (self_:t_Option'0) (f:t_F'0) (return'  (ret:t_T'0))= {[@expl:extern_spec_std_option_T_Option_T_unwrap_or_else_body 'self_' type invariant] [%#soption0] inv'1 self_}
+  let rec extern_spec_std_option_T_Option_T_unwrap_or_else_body'0[#"../../creusot-contracts/src/std/option.rs" 104 16 106 36] (self_:t_Option'0) (f:t_F'0) (return'  (ret:t_T'0))= {[@expl:extern_spec_std_option_T_Option_T_unwrap_or_else_body 'self_' type invariant] [%#soption0] inv'1 self_}
     {[@expl:extern_spec_std_option_T_Option_T_unwrap_or_else_body 'f' type invariant] [%#soption1] inv'0 f}
     {[@expl:extern_spec_std_option_T_Option_T_unwrap_or_else_body requires] [%#soption2] self_ = C_None'0
      -> precondition'0 f ()}
@@ -9030,12 +9030,12 @@ module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T
       (! return' {result}) ]
 
 end
-module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_map_body [#"../../creusot-contracts/src/std/option.rs" 131 16 133 37]
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 123 16 123 17
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 131 35 131 36
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 123 27 126 17
-  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 131 44 131 53
-  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 127 26 130 17
+module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_map_body [#"../../creusot-contracts/src/std/option.rs" 132 16 134 37]
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 124 16 124 17
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 132 35 132 36
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 124 27 127 17
+  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 132 44 132 53
+  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 128 26 131 17
   let%span sops5 = "../../creusot-contracts/src/std/ops.rs" 163 27 163 49
   let%span sops6 = "../../creusot-contracts/src/std/ops.rs" 164 26 164 62
   
@@ -9102,7 +9102,7 @@ module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T
   
   meta "compute_max_steps" 1000000
   
-  let rec extern_spec_std_option_T_Option_T_map_body'0[#"../../creusot-contracts/src/std/option.rs" 131 16 133 37] (self_:t_Option'1) (f:t_F'0) (return'  (ret:t_Option'0))= {[@expl:extern_spec_std_option_T_Option_T_map_body 'self_' type invariant] [%#soption0] inv'1 self_}
+  let rec extern_spec_std_option_T_Option_T_map_body'0[#"../../creusot-contracts/src/std/option.rs" 132 16 134 37] (self_:t_Option'1) (f:t_F'0) (return'  (ret:t_Option'0))= {[@expl:extern_spec_std_option_T_Option_T_map_body 'self_' type invariant] [%#soption0] inv'1 self_}
     {[@expl:extern_spec_std_option_T_Option_T_map_body 'f' type invariant] [%#soption1] inv'0 f}
     {[@expl:extern_spec_std_option_T_Option_T_map_body requires] [%#soption2] match self_ with
       | C_None'0 -> true
@@ -9143,13 +9143,13 @@ module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T
       (! return' {result}) ]
 
 end
-module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_inspect_body [#"../../creusot-contracts/src/std/option.rs" 149 16 151 33]
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 140 16 140 17
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 149 36 149 37
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 140 27 143 17
-  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 149 45 149 54
-  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 144 26 144 40
-  let%span soption5 = "../../creusot-contracts/src/std/option.rs" 145 26 148 17
+module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_inspect_body [#"../../creusot-contracts/src/std/option.rs" 150 16 152 33]
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 141 16 141 17
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 150 36 150 37
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 141 27 144 17
+  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 150 45 150 54
+  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 145 26 145 40
+  let%span soption5 = "../../creusot-contracts/src/std/option.rs" 146 26 149 17
   let%span sops6 = "../../creusot-contracts/src/std/ops.rs" 163 27 163 49
   let%span sops7 = "../../creusot-contracts/src/std/ops.rs" 164 26 164 62
   let%span sinvariant8 = "../../creusot-contracts/src/invariant.rs" 25 8 25 18
@@ -9210,7 +9210,7 @@ module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T
   
   meta "compute_max_steps" 1000000
   
-  let rec extern_spec_std_option_T_Option_T_inspect_body'0[#"../../creusot-contracts/src/std/option.rs" 149 16 151 33] (self_:t_Option'0) (f:t_F'0) (return'  (ret:t_Option'0))= {[@expl:extern_spec_std_option_T_Option_T_inspect_body 'self_' type invariant] [%#soption0] inv'1 self_}
+  let rec extern_spec_std_option_T_Option_T_inspect_body'0[#"../../creusot-contracts/src/std/option.rs" 150 16 152 33] (self_:t_Option'0) (f:t_F'0) (return'  (ret:t_Option'0))= {[@expl:extern_spec_std_option_T_Option_T_inspect_body 'self_' type invariant] [%#soption0] inv'1 self_}
     {[@expl:extern_spec_std_option_T_Option_T_inspect_body 'f' type invariant] [%#soption1] inv'0 f}
     {[@expl:extern_spec_std_option_T_Option_T_inspect_body requires] [%#soption2] match self_ with
       | C_None'0 -> true
@@ -9254,13 +9254,13 @@ module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T
       (! return' {result}) ]
 
 end
-module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_map_or_body [#"../../creusot-contracts/src/std/option.rs" 166 16 168 37]
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 158 16 158 17
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 166 38 166 45
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 166 50 166 51
-  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 158 27 161 17
-  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 166 59 166 60
-  let%span soption5 = "../../creusot-contracts/src/std/option.rs" 162 26 165 17
+module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_map_or_body [#"../../creusot-contracts/src/std/option.rs" 167 16 169 37]
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 159 16 159 17
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 167 38 167 45
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 167 50 167 51
+  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 159 27 162 17
+  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 167 59 167 60
+  let%span soption5 = "../../creusot-contracts/src/std/option.rs" 163 26 166 17
   let%span sops6 = "../../creusot-contracts/src/std/ops.rs" 163 27 163 49
   let%span sops7 = "../../creusot-contracts/src/std/ops.rs" 164 26 164 62
   
@@ -9317,7 +9317,7 @@ module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T
   
   meta "compute_max_steps" 1000000
   
-  let rec extern_spec_std_option_T_Option_T_map_or_body'0[#"../../creusot-contracts/src/std/option.rs" 166 16 168 37] (self_:t_Option'0) (default:t_U'0) (f:t_F'0) (return'  (ret:t_U'0))= {[@expl:extern_spec_std_option_T_Option_T_map_or_body 'self_' type invariant] [%#soption0] inv'2 self_}
+  let rec extern_spec_std_option_T_Option_T_map_or_body'0[#"../../creusot-contracts/src/std/option.rs" 167 16 169 37] (self_:t_Option'0) (default:t_U'0) (f:t_F'0) (return'  (ret:t_U'0))= {[@expl:extern_spec_std_option_T_Option_T_map_or_body 'self_' type invariant] [%#soption0] inv'2 self_}
     {[@expl:extern_spec_std_option_T_Option_T_map_or_body 'default' type invariant] [%#soption1] inv'0 default}
     {[@expl:extern_spec_std_option_T_Option_T_map_or_body 'f' type invariant] [%#soption2] inv'1 f}
     {[@expl:extern_spec_std_option_T_Option_T_map_or_body requires] [%#soption3] match self_ with
@@ -9361,13 +9361,13 @@ module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T
       (! return' {result}) ]
 
 end
-module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_map_or_else_body [#"../../creusot-contracts/src/std/option.rs" 183 16 186 37]
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 175 16 175 17
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 183 46 183 53
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 183 58 183 59
-  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 175 27 178 17
-  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 183 67 183 68
-  let%span soption5 = "../../creusot-contracts/src/std/option.rs" 179 26 182 17
+module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_map_or_else_body [#"../../creusot-contracts/src/std/option.rs" 184 16 187 37]
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 176 16 176 17
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 184 46 184 53
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 184 58 184 59
+  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 176 27 179 17
+  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 184 67 184 68
+  let%span soption5 = "../../creusot-contracts/src/std/option.rs" 180 26 183 17
   let%span sops6 = "../../creusot-contracts/src/std/ops.rs" 163 27 163 49
   let%span sops7 = "../../creusot-contracts/src/std/ops.rs" 164 26 164 62
   
@@ -9444,7 +9444,7 @@ module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T
   
   meta "compute_max_steps" 1000000
   
-  let rec extern_spec_std_option_T_Option_T_map_or_else_body'0[#"../../creusot-contracts/src/std/option.rs" 183 16 186 37] (self_:t_Option'0) (default:t_D'0) (f:t_F'0) (return'  (ret:t_U'0))= {[@expl:extern_spec_std_option_T_Option_T_map_or_else_body 'self_' type invariant] [%#soption0] inv'2 self_}
+  let rec extern_spec_std_option_T_Option_T_map_or_else_body'0[#"../../creusot-contracts/src/std/option.rs" 184 16 187 37] (self_:t_Option'0) (default:t_D'0) (f:t_F'0) (return'  (ret:t_U'0))= {[@expl:extern_spec_std_option_T_Option_T_map_or_else_body 'self_' type invariant] [%#soption0] inv'2 self_}
     {[@expl:extern_spec_std_option_T_Option_T_map_or_else_body 'default' type invariant] [%#soption1] inv'0 default}
     {[@expl:extern_spec_std_option_T_Option_T_map_or_else_body 'f' type invariant] [%#soption2] inv'1 f}
     {[@expl:extern_spec_std_option_T_Option_T_map_or_else_body requires] [%#soption3] match self_ with
@@ -9490,12 +9490,12 @@ module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T
       (! return' {result}) ]
 
 end
-module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_ok_or_else_body [#"../../creusot-contracts/src/std/option.rs" 204 16 206 36]
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 199 16 199 17
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 204 42 204 45
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 199 27 199 64
-  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 204 53 204 65
-  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 200 26 203 17
+module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_ok_or_else_body [#"../../creusot-contracts/src/std/option.rs" 205 16 207 36]
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 200 16 200 17
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 205 42 205 45
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 200 27 200 64
+  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 205 53 205 65
+  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 201 26 204 17
   let%span sops5 = "../../creusot-contracts/src/std/ops.rs" 163 27 163 49
   let%span sops6 = "../../creusot-contracts/src/std/ops.rs" 164 26 164 62
   
@@ -9562,7 +9562,7 @@ module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T
   
   meta "compute_max_steps" 1000000
   
-  let rec extern_spec_std_option_T_Option_T_ok_or_else_body'0[#"../../creusot-contracts/src/std/option.rs" 204 16 206 36] (self_:t_Option'0) (err:t_F'0) (return'  (ret:t_Result'0))= {[@expl:extern_spec_std_option_T_Option_T_ok_or_else_body 'self_' type invariant] [%#soption0] inv'1 self_}
+  let rec extern_spec_std_option_T_Option_T_ok_or_else_body'0[#"../../creusot-contracts/src/std/option.rs" 205 16 207 36] (self_:t_Option'0) (err:t_F'0) (return'  (ret:t_Result'0))= {[@expl:extern_spec_std_option_T_Option_T_ok_or_else_body 'self_' type invariant] [%#soption0] inv'1 self_}
     {[@expl:extern_spec_std_option_T_Option_T_ok_or_else_body 'err' type invariant] [%#soption1] inv'0 err}
     {[@expl:extern_spec_std_option_T_Option_T_ok_or_else_body requires] [%#soption2] self_ = C_None'0
      -> precondition'0 err ()}
@@ -9602,12 +9602,12 @@ module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T
       (! return' {result}) ]
 
 end
-module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_and_then_body [#"../../creusot-contracts/src/std/option.rs" 234 16 236 45]
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 226 16 226 17
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 234 40 234 41
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 226 27 229 17
-  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 234 49 234 58
-  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 230 26 233 17
+module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_and_then_body [#"../../creusot-contracts/src/std/option.rs" 235 16 237 45]
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 227 16 227 17
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 235 40 235 41
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 227 27 230 17
+  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 235 49 235 58
+  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 231 26 234 17
   let%span sops5 = "../../creusot-contracts/src/std/ops.rs" 163 27 163 49
   let%span sops6 = "../../creusot-contracts/src/std/ops.rs" 164 26 164 62
   
@@ -9676,7 +9676,7 @@ module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T
   
   meta "compute_max_steps" 1000000
   
-  let rec extern_spec_std_option_T_Option_T_and_then_body'0[#"../../creusot-contracts/src/std/option.rs" 234 16 236 45] (self_:t_Option'1) (f:t_F'0) (return'  (ret:t_Option'0))= {[@expl:extern_spec_std_option_T_Option_T_and_then_body 'self_' type invariant] [%#soption0] inv'1 self_}
+  let rec extern_spec_std_option_T_Option_T_and_then_body'0[#"../../creusot-contracts/src/std/option.rs" 235 16 237 45] (self_:t_Option'1) (f:t_F'0) (return'  (ret:t_Option'0))= {[@expl:extern_spec_std_option_T_Option_T_and_then_body 'self_' type invariant] [%#soption0] inv'1 self_}
     {[@expl:extern_spec_std_option_T_Option_T_and_then_body 'f' type invariant] [%#soption1] inv'0 f}
     {[@expl:extern_spec_std_option_T_Option_T_and_then_body requires] [%#soption2] match self_ with
       | C_None'0 -> true
@@ -9715,12 +9715,12 @@ module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T
       (! return' {result}) ]
 
 end
-module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_filter_body [#"../../creusot-contracts/src/std/option.rs" 254 16 256 41]
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 243 16 243 17
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 254 35 254 44
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 243 27 246 17
-  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 254 52 254 61
-  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 247 26 253 17
+module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_filter_body [#"../../creusot-contracts/src/std/option.rs" 255 16 257 41]
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 244 16 244 17
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 255 35 255 44
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 244 27 247 17
+  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 255 52 255 61
+  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 248 26 254 17
   let%span sops5 = "../../creusot-contracts/src/std/ops.rs" 163 27 163 49
   let%span sops6 = "../../creusot-contracts/src/std/ops.rs" 164 26 164 62
   let%span sinvariant7 = "../../creusot-contracts/src/invariant.rs" 25 8 25 18
@@ -9785,7 +9785,7 @@ module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T
   
   meta "compute_max_steps" 1000000
   
-  let rec extern_spec_std_option_T_Option_T_filter_body'0[#"../../creusot-contracts/src/std/option.rs" 254 16 256 41] (self_:t_Option'0) (predicate':t_P'0) (return'  (ret:t_Option'0))= {[@expl:extern_spec_std_option_T_Option_T_filter_body 'self_' type invariant] [%#soption0] inv'2 self_}
+  let rec extern_spec_std_option_T_Option_T_filter_body'0[#"../../creusot-contracts/src/std/option.rs" 255 16 257 41] (self_:t_Option'0) (predicate':t_P'0) (return'  (ret:t_Option'0))= {[@expl:extern_spec_std_option_T_Option_T_filter_body 'self_' type invariant] [%#soption0] inv'2 self_}
     {[@expl:extern_spec_std_option_T_Option_T_filter_body 'predicate' type invariant] [%#soption1] inv'1 predicate'}
     {[@expl:extern_spec_std_option_T_Option_T_filter_body requires] [%#soption2] match self_ with
       | C_None'0 -> true
@@ -9834,12 +9834,12 @@ module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T
       (! return' {result}) ]
 
 end
-module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_or_else_body [#"../../creusot-contracts/src/std/option.rs" 273 16 275 44]
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 268 16 268 17
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 273 36 273 37
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 268 27 268 62
-  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 273 45 273 54
-  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 269 26 272 17
+module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_or_else_body [#"../../creusot-contracts/src/std/option.rs" 274 16 276 44]
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 269 16 269 17
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 274 36 274 37
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 269 27 269 62
+  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 274 45 274 54
+  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 270 26 273 17
   let%span sops5 = "../../creusot-contracts/src/std/ops.rs" 163 27 163 49
   let%span sops6 = "../../creusot-contracts/src/std/ops.rs" 164 26 164 62
   
@@ -9892,7 +9892,7 @@ module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T
   
   meta "compute_max_steps" 1000000
   
-  let rec extern_spec_std_option_T_Option_T_or_else_body'0[#"../../creusot-contracts/src/std/option.rs" 273 16 275 44] (self_:t_Option'0) (f:t_F'0) (return'  (ret:t_Option'0))= {[@expl:extern_spec_std_option_T_Option_T_or_else_body 'self_' type invariant] [%#soption0] inv'1 self_}
+  let rec extern_spec_std_option_T_Option_T_or_else_body'0[#"../../creusot-contracts/src/std/option.rs" 274 16 276 44] (self_:t_Option'0) (f:t_F'0) (return'  (ret:t_Option'0))= {[@expl:extern_spec_std_option_T_Option_T_or_else_body 'self_' type invariant] [%#soption0] inv'1 self_}
     {[@expl:extern_spec_std_option_T_Option_T_or_else_body 'f' type invariant] [%#soption1] inv'0 f}
     {[@expl:extern_spec_std_option_T_Option_T_or_else_body requires] [%#soption2] self_ = C_None'0
      -> precondition'0 f ()}
@@ -9930,18 +9930,18 @@ module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T
       (! return' {result}) ]
 
 end
-module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_get_or_insert_with_body [#"../../creusot-contracts/src/std/option.rs" 311 16 313 36]
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 306 16 306 17
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 311 52 311 53
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 306 27 306 63
-  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 311 61 311 67
-  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 307 26 310 17
+module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_get_or_insert_with_body [#"../../creusot-contracts/src/std/option.rs" 312 16 314 36]
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 307 16 307 17
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 312 52 312 53
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 307 27 307 63
+  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 312 61 312 67
+  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 308 26 311 17
   let%span sops5 = "../../creusot-contracts/src/std/ops.rs" 163 27 163 49
   let%span sops6 = "../../creusot-contracts/src/std/ops.rs" 164 26 164 62
-  let%span soption7 = "../../creusot-contracts/src/std/option.rs" 62 26 62 75
-  let%span soption8 = "../../creusot-contracts/src/std/option.rs" 64 20 65 100
-  let%span soption9 = "../../creusot-contracts/src/std/option.rs" 89 27 89 39
-  let%span soption10 = "../../creusot-contracts/src/std/option.rs" 90 26 90 46
+  let%span soption7 = "../../creusot-contracts/src/std/option.rs" 63 26 63 75
+  let%span soption8 = "../../creusot-contracts/src/std/option.rs" 65 20 66 100
+  let%span soption9 = "../../creusot-contracts/src/std/option.rs" 90 27 90 39
+  let%span soption10 = "../../creusot-contracts/src/std/option.rs" 91 26 91 46
   let%span sresolve11 = "../../creusot-contracts/src/resolve.rs" 54 20 54 34
   let%span sresolve12 = "../../creusot-contracts/src/resolve.rs" 82 8 85 9
   let%span sinvariant13 = "../../creusot-contracts/src/invariant.rs" 35 20 35 44
@@ -10059,7 +10059,7 @@ module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T
   
   meta "compute_max_steps" 1000000
   
-  let rec extern_spec_std_option_T_Option_T_get_or_insert_with_body'0[#"../../creusot-contracts/src/std/option.rs" 311 16 313 36] (self_:MutBorrow.t t_Option'0) (f:t_F'0) (return'  (ret:MutBorrow.t t_T'0))= {[@expl:extern_spec_std_option_T_Option_T_get_or_insert_with_body 'self_' type invariant] [%#soption0] inv'4 self_}
+  let rec extern_spec_std_option_T_Option_T_get_or_insert_with_body'0[#"../../creusot-contracts/src/std/option.rs" 312 16 314 36] (self_:MutBorrow.t t_Option'0) (f:t_F'0) (return'  (ret:MutBorrow.t t_T'0))= {[@expl:extern_spec_std_option_T_Option_T_get_or_insert_with_body 'self_' type invariant] [%#soption0] inv'4 self_}
     {[@expl:extern_spec_std_option_T_Option_T_get_or_insert_with_body 'f' type invariant] [%#soption1] inv'0 f}
     {[@expl:extern_spec_std_option_T_Option_T_get_or_insert_with_body requires] [%#soption2] self_.current = C_None'0
      -> precondition'0 f ()}
@@ -10186,15 +10186,15 @@ module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T
       (! return' {result}) ]
 
 end
-module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_take_if_body [#"../../creusot-contracts/src/std/option.rs" 338 16 340 45]
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 324 16 324 17
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 338 41 338 50
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 324 27 327 17
-  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 338 58 338 67
-  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 328 26 337 17
+module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T_take_if_body [#"../../creusot-contracts/src/std/option.rs" 339 16 341 45]
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 325 16 325 17
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 339 41 339 50
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 325 27 328 17
+  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 339 58 339 67
+  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 329 26 338 17
   let%span sops5 = "../../creusot-contracts/src/std/ops.rs" 163 27 163 49
   let%span sops6 = "../../creusot-contracts/src/std/ops.rs" 164 26 164 62
-  let%span soption7 = "../../creusot-contracts/src/std/option.rs" 321 26 321 58
+  let%span soption7 = "../../creusot-contracts/src/std/option.rs" 322 26 322 58
   let%span sresolve8 = "../../creusot-contracts/src/resolve.rs" 54 20 54 34
   let%span sinvariant9 = "../../creusot-contracts/src/invariant.rs" 35 20 35 44
   
@@ -10284,7 +10284,7 @@ module M_creusot_contracts__stdqy35z1__option__extern_spec_std_option_T_Option_T
   
   meta "compute_max_steps" 1000000
   
-  let rec extern_spec_std_option_T_Option_T_take_if_body'0[#"../../creusot-contracts/src/std/option.rs" 338 16 340 45] (self_:MutBorrow.t t_Option'0) (predicate':t_P'0) (return'  (ret:t_Option'0))= {[@expl:extern_spec_std_option_T_Option_T_take_if_body 'self_' type invariant] [%#soption0] inv'3 self_}
+  let rec extern_spec_std_option_T_Option_T_take_if_body'0[#"../../creusot-contracts/src/std/option.rs" 339 16 341 45] (self_:MutBorrow.t t_Option'0) (predicate':t_P'0) (return'  (ret:t_Option'0))= {[@expl:extern_spec_std_option_T_Option_T_take_if_body 'self_' type invariant] [%#soption0] inv'3 self_}
     {[@expl:extern_spec_std_option_T_Option_T_take_if_body 'predicate' type invariant] [%#soption1] inv'4 predicate'}
     {[@expl:extern_spec_std_option_T_Option_T_take_if_body requires] [%#soption2] match self_.current with
       | C_None'0 -> true
@@ -10374,7 +10374,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__cmp_le_l
   let%span sord0 = "../../creusot-contracts/src/logic/ord.rs" 129 39 129 89
   let%span sord1 = "../../creusot-contracts/src/logic/ord.rs" 130 40 130 42
   let%span sord2 = "../../creusot-contracts/src/logic/ord.rs" 25 20 25 56
-  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 437 8 442 9
+  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 438 8 443 9
   let%span sord4 = "../../creusot-contracts/src/logic/ord.rs" 29 14 29 64
   let%span sord5 = "../../creusot-contracts/src/logic/ord.rs" 40 14 40 61
   let%span sord6 = "../../creusot-contracts/src/logic/ord.rs" 51 14 51 61
@@ -10451,7 +10451,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__cmp_le_l
   
   axiom cmp_le_log'1_spec : forall x : t_T'0, y : t_T'0 . [%#sord4] le_log'1 x y = (cmp_log'1 x y <> C_Greater'0)
   
-  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 436 4 436 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
+  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 437 4 437 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
   
    =
     [%#soption3] match (self, o) with
@@ -10477,7 +10477,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__cmp_lt_l
   let%span sord0 = "../../creusot-contracts/src/logic/ord.rs" 134 39 134 86
   let%span sord1 = "../../creusot-contracts/src/logic/ord.rs" 135 40 135 42
   let%span sord2 = "../../creusot-contracts/src/logic/ord.rs" 36 20 36 53
-  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 437 8 442 9
+  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 438 8 443 9
   let%span sord4 = "../../creusot-contracts/src/logic/ord.rs" 29 14 29 64
   let%span sord5 = "../../creusot-contracts/src/logic/ord.rs" 40 14 40 61
   let%span sord6 = "../../creusot-contracts/src/logic/ord.rs" 51 14 51 61
@@ -10554,7 +10554,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__cmp_lt_l
   
   axiom cmp_le_log'0_spec : forall x : t_T'0, y : t_T'0 . [%#sord4] le_log'0 x y = (cmp_log'1 x y <> C_Greater'0)
   
-  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 436 4 436 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
+  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 437 4 437 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
   
    =
     [%#soption3] match (self, o) with
@@ -10580,7 +10580,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__cmp_ge_l
   let%span sord0 = "../../creusot-contracts/src/logic/ord.rs" 139 39 139 86
   let%span sord1 = "../../creusot-contracts/src/logic/ord.rs" 140 40 140 42
   let%span sord2 = "../../creusot-contracts/src/logic/ord.rs" 47 20 47 53
-  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 437 8 442 9
+  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 438 8 443 9
   let%span sord4 = "../../creusot-contracts/src/logic/ord.rs" 29 14 29 64
   let%span sord5 = "../../creusot-contracts/src/logic/ord.rs" 40 14 40 61
   let%span sord6 = "../../creusot-contracts/src/logic/ord.rs" 51 14 51 61
@@ -10657,7 +10657,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__cmp_ge_l
   
   axiom cmp_le_log'0_spec : forall x : t_T'0, y : t_T'0 . [%#sord4] le_log'0 x y = (cmp_log'1 x y <> C_Greater'0)
   
-  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 436 4 436 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
+  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 437 4 437 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
   
    =
     [%#soption3] match (self, o) with
@@ -10683,7 +10683,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__cmp_gt_l
   let%span sord0 = "../../creusot-contracts/src/logic/ord.rs" 144 39 144 89
   let%span sord1 = "../../creusot-contracts/src/logic/ord.rs" 145 40 145 42
   let%span sord2 = "../../creusot-contracts/src/logic/ord.rs" 58 20 58 56
-  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 437 8 442 9
+  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 438 8 443 9
   let%span sord4 = "../../creusot-contracts/src/logic/ord.rs" 29 14 29 64
   let%span sord5 = "../../creusot-contracts/src/logic/ord.rs" 40 14 40 61
   let%span sord6 = "../../creusot-contracts/src/logic/ord.rs" 51 14 51 61
@@ -10760,7 +10760,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__cmp_gt_l
   
   axiom cmp_le_log'0_spec : forall x : t_T'0, y : t_T'0 . [%#sord4] le_log'0 x y = (cmp_log'1 x y <> C_Greater'0)
   
-  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 436 4 436 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
+  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 437 4 437 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
   
    =
     [%#soption3] match (self, o) with
@@ -10785,7 +10785,7 @@ end
 module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__refl [#"../../creusot-contracts/src/logic/ord.rs" 150 8 150 24] (* <std::option::Option<T> as logic::ord::OrdLogic> *)
   let%span sord0 = "../../creusot-contracts/src/logic/ord.rs" 149 39 149 70
   let%span sord1 = "../../creusot-contracts/src/logic/ord.rs" 150 25 150 27
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 437 8 442 9
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 438 8 443 9
   let%span sord3 = "../../creusot-contracts/src/logic/ord.rs" 29 14 29 64
   let%span sord4 = "../../creusot-contracts/src/logic/ord.rs" 40 14 40 61
   let%span sord5 = "../../creusot-contracts/src/logic/ord.rs" 51 14 51 61
@@ -10862,7 +10862,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__refl [#"
   
   axiom cmp_le_log'0_spec : forall x : t_T'0, y : t_T'0 . [%#sord3] le_log'0 x y = (cmp_log'1 x y <> C_Greater'0)
   
-  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 436 4 436 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
+  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 437 4 437 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
   
    =
     [%#soption2] match (self, o) with
@@ -10883,7 +10883,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__trans [#
   let%span sord1 = "../../creusot-contracts/src/logic/ord.rs" 155 40 155 57
   let%span sord2 = "../../creusot-contracts/src/logic/ord.rs" 156 39 156 56
   let%span sord3 = "../../creusot-contracts/src/logic/ord.rs" 157 57 157 59
-  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 437 8 442 9
+  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 438 8 443 9
   let%span sord5 = "../../creusot-contracts/src/logic/ord.rs" 29 14 29 64
   let%span sord6 = "../../creusot-contracts/src/logic/ord.rs" 40 14 40 61
   let%span sord7 = "../../creusot-contracts/src/logic/ord.rs" 51 14 51 61
@@ -10960,7 +10960,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__trans [#
   
   axiom cmp_le_log'0_spec : forall x : t_T'0, y : t_T'0 . [%#sord5] le_log'0 x y = (cmp_log'1 x y <> C_Greater'0)
   
-  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 436 4 436 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
+  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 437 4 437 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
   
    =
     [%#soption4] match (self, o) with
@@ -10987,7 +10987,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__antisym1
   let%span sord0 = "../../creusot-contracts/src/logic/ord.rs" 161 40 161 70
   let%span sord1 = "../../creusot-contracts/src/logic/ord.rs" 162 39 162 72
   let%span sord2 = "../../creusot-contracts/src/logic/ord.rs" 163 38 163 40
-  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 437 8 442 9
+  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 438 8 443 9
   let%span sord4 = "../../creusot-contracts/src/logic/ord.rs" 29 14 29 64
   let%span sord5 = "../../creusot-contracts/src/logic/ord.rs" 40 14 40 61
   let%span sord6 = "../../creusot-contracts/src/logic/ord.rs" 51 14 51 61
@@ -11064,7 +11064,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__antisym1
   
   axiom cmp_le_log'0_spec : forall x : t_T'0, y : t_T'0 . [%#sord4] le_log'0 x y = (cmp_log'1 x y <> C_Greater'0)
   
-  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 436 4 436 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
+  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 437 4 437 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
   
    =
     [%#soption3] match (self, o) with
@@ -11086,7 +11086,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__antisym2
   let%span sord0 = "../../creusot-contracts/src/logic/ord.rs" 167 40 167 73
   let%span sord1 = "../../creusot-contracts/src/logic/ord.rs" 168 39 168 69
   let%span sord2 = "../../creusot-contracts/src/logic/ord.rs" 169 38 169 40
-  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 437 8 442 9
+  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 438 8 443 9
   let%span sord4 = "../../creusot-contracts/src/logic/ord.rs" 29 14 29 64
   let%span sord5 = "../../creusot-contracts/src/logic/ord.rs" 40 14 40 61
   let%span sord6 = "../../creusot-contracts/src/logic/ord.rs" 51 14 51 61
@@ -11163,7 +11163,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__antisym2
   
   axiom cmp_le_log'0_spec : forall x : t_T'0, y : t_T'0 . [%#sord4] le_log'0 x y = (cmp_log'1 x y <> C_Greater'0)
   
-  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 436 4 436 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
+  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 437 4 437 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
   
    =
     [%#soption3] match (self, o) with
@@ -11184,7 +11184,7 @@ end
 module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__eq_cmp [#"../../creusot-contracts/src/logic/ord.rs" 174 8 174 35] (* <std::option::Option<T> as logic::ord::OrdLogic> *)
   let%span sord0 = "../../creusot-contracts/src/logic/ord.rs" 173 39 173 84
   let%span sord1 = "../../creusot-contracts/src/logic/ord.rs" 174 36 174 38
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 437 8 442 9
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 438 8 443 9
   let%span sord3 = "../../creusot-contracts/src/logic/ord.rs" 29 14 29 64
   let%span sord4 = "../../creusot-contracts/src/logic/ord.rs" 40 14 40 61
   let%span sord5 = "../../creusot-contracts/src/logic/ord.rs" 51 14 51 61
@@ -11261,7 +11261,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__eq_cmp [
   
   axiom cmp_le_log'0_spec : forall x : t_T'0, y : t_T'0 . [%#sord3] le_log'0 x y = (cmp_log'1 x y <> C_Greater'0)
   
-  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 436 4 436 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
+  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 437 4 437 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
   
    =
     [%#soption2] match (self, o) with
@@ -11279,10 +11279,10 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__eq_cmp [
   
   goal vc_eq_cmp'0 : [%#sord0] (x = y) = (cmp_log'0 x y = C_Equal'0)
 end
-module M_creusot_contracts__stdqy35z1__option__qyi16875853811649438191__produces_refl [#"../../creusot-contracts/src/std/option.rs" 477 4 477 26] (* <std::option::IntoIter<T> as std::iter::Iterator> *)
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 476 14 476 45
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 477 27 477 29
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 469 12 470 96
+module M_creusot_contracts__stdqy35z1__option__qyi16875853811649438191__produces_refl [#"../../creusot-contracts/src/std/option.rs" 478 4 478 26] (* <std::option::IntoIter<T> as std::iter::Iterator> *)
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 477 14 477 45
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 478 27 478 29
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 470 12 471 96
   
   use seq.Seq
   
@@ -11298,9 +11298,9 @@ module M_creusot_contracts__stdqy35z1__option__qyi16875853811649438191__produces
   type t_IntoIter'0  =
     { t_IntoIter__inner'0: t_Item'0 }
   
-  function view'0 [#"../../creusot-contracts/src/std/option.rs" 453 4 453 30] (self : t_IntoIter'0) : t_Option'0
+  function view'0 [#"../../creusot-contracts/src/std/option.rs" 454 4 454 30] (self : t_IntoIter'0) : t_Option'0
   
-  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 467 4 467 64] (self : t_IntoIter'0) (visited : Seq.seq t_T'0) (o : t_IntoIter'0)
+  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 468 4 468 64] (self : t_IntoIter'0) (visited : Seq.seq t_T'0) (o : t_IntoIter'0)
   
    =
     [%#soption2] visited = (Seq.empty : Seq.seq t_T'0) /\ self = o
@@ -11308,16 +11308,16 @@ module M_creusot_contracts__stdqy35z1__option__qyi16875853811649438191__produces
   
   constant self  : t_IntoIter'0
   
-  function produces_refl'0 [#"../../creusot-contracts/src/std/option.rs" 477 4 477 26] (self : t_IntoIter'0) : ()
+  function produces_refl'0 [#"../../creusot-contracts/src/std/option.rs" 478 4 478 26] (self : t_IntoIter'0) : ()
   
   goal vc_produces_refl'0 : [%#soption0] produces'0 self (Seq.empty : Seq.seq t_T'0) self
 end
-module M_creusot_contracts__stdqy35z1__option__qyi16875853811649438191__produces_trans [#"../../creusot-contracts/src/std/option.rs" 484 4 484 90] (* <std::option::IntoIter<T> as std::iter::Iterator> *)
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 481 15 481 32
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 482 15 482 32
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 483 14 483 42
-  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 484 91 484 93
-  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 469 12 470 96
+module M_creusot_contracts__stdqy35z1__option__qyi16875853811649438191__produces_trans [#"../../creusot-contracts/src/std/option.rs" 485 4 485 90] (* <std::option::IntoIter<T> as std::iter::Iterator> *)
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 482 15 482 32
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 483 15 483 32
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 484 14 484 42
+  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 485 91 485 93
+  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 470 12 471 96
   
   use seq.Seq
   
@@ -11333,9 +11333,9 @@ module M_creusot_contracts__stdqy35z1__option__qyi16875853811649438191__produces
   type t_IntoIter'0  =
     { t_IntoIter__inner'0: t_Item'0 }
   
-  function view'0 [#"../../creusot-contracts/src/std/option.rs" 453 4 453 30] (self : t_IntoIter'0) : t_Option'0
+  function view'0 [#"../../creusot-contracts/src/std/option.rs" 454 4 454 30] (self : t_IntoIter'0) : t_Option'0
   
-  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 467 4 467 64] (self : t_IntoIter'0) (visited : Seq.seq t_T'0) (o : t_IntoIter'0)
+  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 468 4 468 64] (self : t_IntoIter'0) (visited : Seq.seq t_T'0) (o : t_IntoIter'0)
   
    =
     [%#soption4] visited = (Seq.empty : Seq.seq t_T'0) /\ self = o
@@ -11351,16 +11351,16 @@ module M_creusot_contracts__stdqy35z1__option__qyi16875853811649438191__produces
   
   constant c  : t_IntoIter'0
   
-  function produces_trans'0 [#"../../creusot-contracts/src/std/option.rs" 484 4 484 90] (a : t_IntoIter'0) (ab : Seq.seq t_T'0) (b : t_IntoIter'0) (bc : Seq.seq t_T'0) (c : t_IntoIter'0) : ()
+  function produces_trans'0 [#"../../creusot-contracts/src/std/option.rs" 485 4 485 90] (a : t_IntoIter'0) (ab : Seq.seq t_T'0) (b : t_IntoIter'0) (bc : Seq.seq t_T'0) (c : t_IntoIter'0) : ()
   
   
   goal vc_produces_trans'0 : ([%#soption0] produces'0 a ab b)
    -> ([%#soption1] produces'0 b bc c)  -> ([%#soption2] produces'0 a (Seq.(++) ab bc) c)
 end
-module M_creusot_contracts__stdqy35z1__option__qyi11122593048316696412__produces_refl [#"../../creusot-contracts/src/std/option.rs" 530 4 530 26] (* <std::option::Iter<'a, T> as std::iter::Iterator> *)
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 529 14 529 45
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 530 27 530 29
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 522 12 523 96
+module M_creusot_contracts__stdqy35z1__option__qyi11122593048316696412__produces_refl [#"../../creusot-contracts/src/std/option.rs" 531 4 531 26] (* <std::option::Iter<'a, T> as std::iter::Iterator> *)
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 530 14 530 45
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 531 27 531 29
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 523 12 524 96
   
   use seq.Seq
   
@@ -11376,9 +11376,9 @@ module M_creusot_contracts__stdqy35z1__option__qyi11122593048316696412__produces
   type t_Iter'0  =
     { t_Iter__inner'0: t_Item'0 }
   
-  function view'0 [#"../../creusot-contracts/src/std/option.rs" 506 4 506 34] (self : t_Iter'0) : t_Option'0
+  function view'0 [#"../../creusot-contracts/src/std/option.rs" 507 4 507 34] (self : t_Iter'0) : t_Option'0
   
-  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 520 4 520 64] (self : t_Iter'0) (visited : Seq.seq t_T'0) (o : t_Iter'0)
+  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 521 4 521 64] (self : t_Iter'0) (visited : Seq.seq t_T'0) (o : t_Iter'0)
   
    =
     [%#soption2] visited = (Seq.empty : Seq.seq t_T'0) /\ self = o
@@ -11386,16 +11386,16 @@ module M_creusot_contracts__stdqy35z1__option__qyi11122593048316696412__produces
   
   constant self  : t_Iter'0
   
-  function produces_refl'0 [#"../../creusot-contracts/src/std/option.rs" 530 4 530 26] (self : t_Iter'0) : ()
+  function produces_refl'0 [#"../../creusot-contracts/src/std/option.rs" 531 4 531 26] (self : t_Iter'0) : ()
   
   goal vc_produces_refl'0 : [%#soption0] produces'0 self (Seq.empty : Seq.seq t_T'0) self
 end
-module M_creusot_contracts__stdqy35z1__option__qyi11122593048316696412__produces_trans [#"../../creusot-contracts/src/std/option.rs" 537 4 537 90] (* <std::option::Iter<'a, T> as std::iter::Iterator> *)
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 534 15 534 32
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 535 15 535 32
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 536 14 536 42
-  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 537 91 537 93
-  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 522 12 523 96
+module M_creusot_contracts__stdqy35z1__option__qyi11122593048316696412__produces_trans [#"../../creusot-contracts/src/std/option.rs" 538 4 538 90] (* <std::option::Iter<'a, T> as std::iter::Iterator> *)
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 535 15 535 32
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 536 15 536 32
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 537 14 537 42
+  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 538 91 538 93
+  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 523 12 524 96
   
   use seq.Seq
   
@@ -11411,9 +11411,9 @@ module M_creusot_contracts__stdqy35z1__option__qyi11122593048316696412__produces
   type t_Iter'0  =
     { t_Iter__inner'0: t_Item'0 }
   
-  function view'0 [#"../../creusot-contracts/src/std/option.rs" 506 4 506 34] (self : t_Iter'0) : t_Option'0
+  function view'0 [#"../../creusot-contracts/src/std/option.rs" 507 4 507 34] (self : t_Iter'0) : t_Option'0
   
-  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 520 4 520 64] (self : t_Iter'0) (visited : Seq.seq t_T'0) (o : t_Iter'0)
+  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 521 4 521 64] (self : t_Iter'0) (visited : Seq.seq t_T'0) (o : t_Iter'0)
   
    =
     [%#soption4] visited = (Seq.empty : Seq.seq t_T'0) /\ self = o
@@ -11429,16 +11429,16 @@ module M_creusot_contracts__stdqy35z1__option__qyi11122593048316696412__produces
   
   constant c  : t_Iter'0
   
-  function produces_trans'0 [#"../../creusot-contracts/src/std/option.rs" 537 4 537 90] (a : t_Iter'0) (ab : Seq.seq t_T'0) (b : t_Iter'0) (bc : Seq.seq t_T'0) (c : t_Iter'0) : ()
+  function produces_trans'0 [#"../../creusot-contracts/src/std/option.rs" 538 4 538 90] (a : t_Iter'0) (ab : Seq.seq t_T'0) (b : t_Iter'0) (bc : Seq.seq t_T'0) (c : t_Iter'0) : ()
   
   
   goal vc_produces_trans'0 : ([%#soption0] produces'0 a ab b)
    -> ([%#soption1] produces'0 b bc c)  -> ([%#soption2] produces'0 a (Seq.(++) ab bc) c)
 end
-module M_creusot_contracts__stdqy35z1__option__qyi13775167061943888590__produces_refl [#"../../creusot-contracts/src/std/option.rs" 586 4 586 26] (* <std::option::IterMut<'a, T> as std::iter::Iterator> *)
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 585 14 585 45
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 586 27 586 29
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 578 12 579 96
+module M_creusot_contracts__stdqy35z1__option__qyi13775167061943888590__produces_refl [#"../../creusot-contracts/src/std/option.rs" 587 4 587 26] (* <std::option::IterMut<'a, T> as std::iter::Iterator> *)
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 586 14 586 45
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 587 27 587 29
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 579 12 580 96
   
   use creusot.prelude.MutBorrow
   use seq.Seq
@@ -11455,9 +11455,9 @@ module M_creusot_contracts__stdqy35z1__option__qyi13775167061943888590__produces
   type t_IterMut'0  =
     { t_IterMut__inner'0: t_Item'0 }
   
-  function view'0 [#"../../creusot-contracts/src/std/option.rs" 562 4 562 38] (self : t_IterMut'0) : t_Option'0
+  function view'0 [#"../../creusot-contracts/src/std/option.rs" 563 4 563 38] (self : t_IterMut'0) : t_Option'0
   
-  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 576 4 576 64] (self : t_IterMut'0) (visited : Seq.seq (MutBorrow.t t_T'0)) (o : t_IterMut'0)
+  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 577 4 577 64] (self : t_IterMut'0) (visited : Seq.seq (MutBorrow.t t_T'0)) (o : t_IterMut'0)
   
    =
     [%#soption2] visited = (Seq.empty : Seq.seq (MutBorrow.t t_T'0)) /\ self = o
@@ -11465,16 +11465,16 @@ module M_creusot_contracts__stdqy35z1__option__qyi13775167061943888590__produces
   
   constant self  : t_IterMut'0
   
-  function produces_refl'0 [#"../../creusot-contracts/src/std/option.rs" 586 4 586 26] (self : t_IterMut'0) : ()
+  function produces_refl'0 [#"../../creusot-contracts/src/std/option.rs" 587 4 587 26] (self : t_IterMut'0) : ()
   
   goal vc_produces_refl'0 : [%#soption0] produces'0 self (Seq.empty : Seq.seq (MutBorrow.t t_T'0)) self
 end
-module M_creusot_contracts__stdqy35z1__option__qyi13775167061943888590__produces_trans [#"../../creusot-contracts/src/std/option.rs" 593 4 593 90] (* <std::option::IterMut<'a, T> as std::iter::Iterator> *)
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 590 15 590 32
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 591 15 591 32
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 592 14 592 42
-  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 593 91 593 93
-  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 578 12 579 96
+module M_creusot_contracts__stdqy35z1__option__qyi13775167061943888590__produces_trans [#"../../creusot-contracts/src/std/option.rs" 594 4 594 90] (* <std::option::IterMut<'a, T> as std::iter::Iterator> *)
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 591 15 591 32
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 592 15 592 32
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 593 14 593 42
+  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 594 91 594 93
+  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 579 12 580 96
   
   use creusot.prelude.MutBorrow
   use seq.Seq
@@ -11491,9 +11491,9 @@ module M_creusot_contracts__stdqy35z1__option__qyi13775167061943888590__produces
   type t_IterMut'0  =
     { t_IterMut__inner'0: t_Item'0 }
   
-  function view'0 [#"../../creusot-contracts/src/std/option.rs" 562 4 562 38] (self : t_IterMut'0) : t_Option'0
+  function view'0 [#"../../creusot-contracts/src/std/option.rs" 563 4 563 38] (self : t_IterMut'0) : t_Option'0
   
-  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 576 4 576 64] (self : t_IterMut'0) (visited : Seq.seq (MutBorrow.t t_T'0)) (o : t_IterMut'0)
+  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 577 4 577 64] (self : t_IterMut'0) (visited : Seq.seq (MutBorrow.t t_T'0)) (o : t_IterMut'0)
   
    =
     [%#soption4] visited = (Seq.empty : Seq.seq (MutBorrow.t t_T'0)) /\ self = o
@@ -11509,7 +11509,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi13775167061943888590__produces
   
   constant c  : t_IterMut'0
   
-  function produces_trans'0 [#"../../creusot-contracts/src/std/option.rs" 593 4 593 90] (a : t_IterMut'0) (ab : Seq.seq (MutBorrow.t t_T'0)) (b : t_IterMut'0) (bc : Seq.seq (MutBorrow.t t_T'0)) (c : t_IterMut'0) : ()
+  function produces_trans'0 [#"../../creusot-contracts/src/std/option.rs" 594 4 594 90] (a : t_IterMut'0) (ab : Seq.seq (MutBorrow.t t_T'0)) (b : t_IterMut'0) (bc : Seq.seq (MutBorrow.t t_T'0)) (c : t_IterMut'0) : ()
   
   
   goal vc_produces_trans'0 : ([%#soption0] produces'0 a ab b)
@@ -12784,23 +12784,23 @@ module M_creusot_contracts__ghost__qyi15728210394389215748__into_inner [#"../../
       (! return' {result}) ]
 
 end
-module M_creusot_contracts__logic__fmap__qyi17941324210461407630__subtract [#"../../creusot-contracts/src/logic/fmap.rs" 204 4 204 46] (* logic::fmap::FMap<K, V> *)
-  let%span sfmap0 = "../../creusot-contracts/src/logic/fmap.rs" 196 15 196 33
-  let%span sfmap1 = "../../creusot-contracts/src/logic/fmap.rs" 197 14 197 36
-  let%span sfmap2 = "../../creusot-contracts/src/logic/fmap.rs" 198 14 198 46
-  let%span sfmap3 = "../../creusot-contracts/src/logic/fmap.rs" 199 14 203 5
-  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 181 14 185 5
-  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 205 8 205 33
-  let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 155 12 155 89
-  let%span sfmap7 = "../../creusot-contracts/src/logic/fmap.rs" 147 19 147 71
-  let%span sfmap8 = "../../creusot-contracts/src/logic/fmap.rs" 215 14 215 38
-  let%span sfmap9 = "../../creusot-contracts/src/logic/fmap.rs" 216 14 216 83
-  let%span sfmap10 = "../../creusot-contracts/src/logic/fmap.rs" 218 8 218 35
-  let%span sfmap11 = "../../creusot-contracts/src/logic/fmap.rs" 164 15 164 35
-  let%span sfmap12 = "../../creusot-contracts/src/logic/fmap.rs" 165 14 171 5
-  let%span sfmap13 = "../../creusot-contracts/src/logic/fmap.rs" 172 14 172 54
-  let%span sfmap14 = "../../creusot-contracts/src/logic/fmap.rs" 104 8 104 26
-  let%span sfmap15 = "../../creusot-contracts/src/logic/fmap.rs" 133 8 133 35
+module M_creusot_contracts__logic__fmap__qyi17941324210461407630__subtract [#"../../creusot-contracts/src/logic/fmap.rs" 237 4 237 46] (* logic::fmap::FMap<K, V> *)
+  let%span sfmap0 = "../../creusot-contracts/src/logic/fmap.rs" 229 15 229 33
+  let%span sfmap1 = "../../creusot-contracts/src/logic/fmap.rs" 230 14 230 36
+  let%span sfmap2 = "../../creusot-contracts/src/logic/fmap.rs" 231 14 231 46
+  let%span sfmap3 = "../../creusot-contracts/src/logic/fmap.rs" 232 14 236 5
+  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 214 14 218 5
+  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 238 8 238 33
+  let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 188 12 188 89
+  let%span sfmap7 = "../../creusot-contracts/src/logic/fmap.rs" 180 19 180 71
+  let%span sfmap8 = "../../creusot-contracts/src/logic/fmap.rs" 248 14 248 38
+  let%span sfmap9 = "../../creusot-contracts/src/logic/fmap.rs" 249 14 249 83
+  let%span sfmap10 = "../../creusot-contracts/src/logic/fmap.rs" 251 8 251 35
+  let%span sfmap11 = "../../creusot-contracts/src/logic/fmap.rs" 197 15 197 35
+  let%span sfmap12 = "../../creusot-contracts/src/logic/fmap.rs" 198 14 204 5
+  let%span sfmap13 = "../../creusot-contracts/src/logic/fmap.rs" 205 14 205 54
+  let%span sfmap14 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
+  let%span sfmap15 = "../../creusot-contracts/src/logic/fmap.rs" 166 8 166 35
   let%span sfmap16 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
   let%span sfmap17 = "../../creusot-contracts/src/logic/fmap.rs" 49 14 49 25
   
@@ -12822,27 +12822,27 @@ module M_creusot_contracts__logic__fmap__qyi17941324210461407630__subtract [#"..
   axiom view'0_spec : forall self : t_FMap'0 . [%#sfmap16] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
    -> view'0 m1 <> view'0 m2
   
-  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 103 4 103 55] (self : t_FMap'0) (k : t_K'0) : t_Option'0
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_K'0) : t_Option'0
   
    =
     [%#sfmap14] Map.get (view'0 self) k
   
-  function contains'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 132 4 132 39] (self : t_FMap'0) (k : t_K'0) : bool
+  function contains'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 165 4 165 39] (self : t_FMap'0) (k : t_K'0) : bool
   
    =
     [%#sfmap15] get_unsized'0 self k <> C_None'0
   
-  function subset'0 [#"../../creusot-contracts/src/logic/fmap.rs" 153 4 153 44] (self : t_FMap'0) (other : t_FMap'0) : bool
+  function subset'0 [#"../../creusot-contracts/src/logic/fmap.rs" 186 4 186 44] (self : t_FMap'0) (other : t_FMap'0) : bool
   
    =
     [%#sfmap6] forall k : t_K'0 . contains'0 self k  -> get_unsized'0 other k = get_unsized'0 self k
   
-  function disjoint'0 [#"../../creusot-contracts/src/logic/fmap.rs" 146 4 146 46] (self : t_FMap'0) (other : t_FMap'0) : bool
+  function disjoint'0 [#"../../creusot-contracts/src/logic/fmap.rs" 179 4 179 46] (self : t_FMap'0) (other : t_FMap'0) : bool
   
    =
     [%#sfmap7] forall k : t_K'0 . not contains'0 self k \/ not contains'0 other k
   
-  function ext_eq'0 [#"../../creusot-contracts/src/logic/fmap.rs" 217 4 217 44] (self : t_FMap'0) (other : t_FMap'0) : bool
+  function ext_eq'0 [#"../../creusot-contracts/src/logic/fmap.rs" 250 4 250 44] (self : t_FMap'0) (other : t_FMap'0) : bool
   
    =
     [%#sfmap10] view'0 self = view'0 other
@@ -12854,7 +12854,7 @@ module M_creusot_contracts__logic__fmap__qyi17941324210461407630__subtract [#"..
   
   axiom len'0_spec : forall self : t_FMap'0 . [%#sfmap17] len'0 self >= 0
   
-  function union'0 [#"../../creusot-contracts/src/logic/fmap.rs" 173 4 173 43] (self : t_FMap'0) (other : t_FMap'0) : t_FMap'0
+  function union'0 [#"../../creusot-contracts/src/logic/fmap.rs" 206 4 206 43] (self : t_FMap'0) (other : t_FMap'0) : t_FMap'0
   
   
   axiom union'0_spec : forall self : t_FMap'0, other : t_FMap'0 . ([%#sfmap11] disjoint'0 self other)
@@ -12866,7 +12866,7 @@ module M_creusot_contracts__logic__fmap__qyi17941324210461407630__subtract [#"..
   ))
   && ([%#sfmap13] len'0 (union'0 self other) = len'0 self + len'0 other)
   
-  function subtract_keys'0 [#"../../creusot-contracts/src/logic/fmap.rs" 186 4 186 51] (self : t_FMap'0) (other : t_FMap'0) : t_FMap'0
+  function subtract_keys'0 [#"../../creusot-contracts/src/logic/fmap.rs" 219 4 219 51] (self : t_FMap'0) (other : t_FMap'0) : t_FMap'0
   
   
   axiom subtract_keys'0_spec : forall self : t_FMap'0, other : t_FMap'0 . [%#sfmap4] forall k : t_K'0 . get_unsized'0 (subtract_keys'0 self other) k
@@ -12876,7 +12876,7 @@ module M_creusot_contracts__logic__fmap__qyi17941324210461407630__subtract [#"..
   
   constant other  : t_FMap'0
   
-  function subtract'0 [#"../../creusot-contracts/src/logic/fmap.rs" 204 4 204 46] (self : t_FMap'0) (other : t_FMap'0) : t_FMap'0
+  function subtract'0 [#"../../creusot-contracts/src/logic/fmap.rs" 237 4 237 46] (self : t_FMap'0) (other : t_FMap'0) : t_FMap'0
   
   
   goal vc_subtract'0 : ([%#sfmap0] subset'0 other self)
@@ -12887,12 +12887,12 @@ module M_creusot_contracts__logic__fmap__qyi17941324210461407630__subtract [#"..
   && ([%#sfmap3] forall k : t_K'0 . get_unsized'0 result k
   = (if contains'0 other k then C_None'0 else get_unsized'0 self k)))
 end
-module M_creusot_contracts__logic__fmap__qyi17941324210461407630__ext_eq [#"../../creusot-contracts/src/logic/fmap.rs" 217 4 217 44] (* logic::fmap::FMap<K, V> *)
-  let%span sfmap0 = "../../creusot-contracts/src/logic/fmap.rs" 215 14 215 38
-  let%span sfmap1 = "../../creusot-contracts/src/logic/fmap.rs" 216 14 216 83
+module M_creusot_contracts__logic__fmap__qyi17941324210461407630__ext_eq [#"../../creusot-contracts/src/logic/fmap.rs" 250 4 250 44] (* logic::fmap::FMap<K, V> *)
+  let%span sfmap0 = "../../creusot-contracts/src/logic/fmap.rs" 248 14 248 38
+  let%span sfmap1 = "../../creusot-contracts/src/logic/fmap.rs" 249 14 249 83
   let%span sfmap2 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
-  let%span sfmap3 = "../../creusot-contracts/src/logic/fmap.rs" 218 8 218 35
-  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 104 8 104 26
+  let%span sfmap3 = "../../creusot-contracts/src/logic/fmap.rs" 251 8 251 35
+  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
   
   use map.Map
   
@@ -12911,7 +12911,7 @@ module M_creusot_contracts__logic__fmap__qyi17941324210461407630__ext_eq [#"../.
   axiom view'0_spec : forall self : t_FMap'0 . [%#sfmap2] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
    -> view'0 m1 <> view'0 m2
   
-  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 103 4 103 55] (self : t_FMap'0) (k : t_K'0) : t_Option'0
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_K'0) : t_Option'0
   
    =
     [%#sfmap4] Map.get (view'0 self) k
@@ -12920,7 +12920,7 @@ module M_creusot_contracts__logic__fmap__qyi17941324210461407630__ext_eq [#"../.
   
   constant other  : t_FMap'0
   
-  function ext_eq'0 [#"../../creusot-contracts/src/logic/fmap.rs" 217 4 217 44] (self : t_FMap'0) (other : t_FMap'0) : bool
+  function ext_eq'0 [#"../../creusot-contracts/src/logic/fmap.rs" 250 4 250 44] (self : t_FMap'0) (other : t_FMap'0) : bool
   
   
   goal vc_ext_eq'0 : ([%#sfmap2] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2  -> view'0 m1 <> view'0 m2)
@@ -12928,23 +12928,23 @@ module M_creusot_contracts__logic__fmap__qyi17941324210461407630__ext_eq [#"../.
    -> (let result = view'0 self = view'0 other in ([%#sfmap0] result  -> self = other)
   && ([%#sfmap1] (forall k : t_K'0 . get_unsized'0 self k = get_unsized'0 other k)  -> result))
 end
-module M_creusot_contracts__logic__fmap__qyi17941324210461407630__contains_ghost [#"../../creusot-contracts/src/logic/fmap.rs" 286 4 286 49] (* logic::fmap::FMap<K, V> *)
-  let%span sfmap0 = "../../creusot-contracts/src/logic/fmap.rs" 286 27 286 31
-  let%span sfmap1 = "../../creusot-contracts/src/logic/fmap.rs" 286 33 286 36
-  let%span sfmap2 = "../../creusot-contracts/src/logic/fmap.rs" 285 14 285 43
-  let%span sfmap3 = "../../creusot-contracts/src/logic/fmap.rs" 315 22 315 26
-  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 315 28 315 31
-  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 315 40 315 50
-  let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 307 14 314 9
-  let%span soption7 = "../../creusot-contracts/src/std/option.rs" 36 26 36 51
-  let%span sfmap8 = "../../creusot-contracts/src/logic/fmap.rs" 133 8 133 35
-  let%span sfmap9 = "../../creusot-contracts/src/logic/fmap.rs" 125 8 125 35
-  let%span sfmap10 = "../../creusot-contracts/src/logic/fmap.rs" 104 8 104 26
+module M_creusot_contracts__logic__fmap__qyi17941324210461407630__contains_ghost [#"../../creusot-contracts/src/logic/fmap.rs" 319 4 319 49] (* logic::fmap::FMap<K, V> *)
+  let%span sfmap0 = "../../creusot-contracts/src/logic/fmap.rs" 319 27 319 31
+  let%span sfmap1 = "../../creusot-contracts/src/logic/fmap.rs" 319 33 319 36
+  let%span sfmap2 = "../../creusot-contracts/src/logic/fmap.rs" 318 14 318 43
+  let%span sfmap3 = "../../creusot-contracts/src/logic/fmap.rs" 348 22 348 26
+  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 348 28 348 31
+  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 348 40 348 50
+  let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 340 14 347 9
+  let%span soption7 = "../../creusot-contracts/src/std/option.rs" 37 26 37 51
+  let%span sfmap8 = "../../creusot-contracts/src/logic/fmap.rs" 166 8 166 35
+  let%span sfmap9 = "../../creusot-contracts/src/logic/fmap.rs" 158 8 158 35
+  let%span sfmap10 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
   let%span sutil11 = "../../creusot-contracts/src/util.rs" 55 11 55 21
   let%span sutil12 = "../../creusot-contracts/src/util.rs" 56 10 56 28
   let%span sinvariant13 = "../../creusot-contracts/src/invariant.rs" 25 8 25 18
   let%span sfmap14 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
-  let%span sfmap15 = "../../creusot-contracts/src/logic/fmap.rs" 490 20 490 91
+  let%span sfmap15 = "../../creusot-contracts/src/logic/fmap.rs" 523 20 523 91
   let%span sboxed16 = "../../creusot-contracts/src/std/boxed.rs" 33 8 33 18
   
   use map.Map
@@ -12969,12 +12969,12 @@ module M_creusot_contracts__logic__fmap__qyi17941324210461407630__contains_ghost
   axiom view'0_spec : forall self : t_FMap'0 . [%#sfmap14] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
    -> view'0 m1 <> view'0 m2
   
-  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 103 4 103 55] (self : t_FMap'0) (k : t_K'0) : t_Option'1
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_K'0) : t_Option'1
   
    =
     [%#sfmap10] Map.get (view'0 self) k
   
-  function contains'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 132 4 132 39] (self : t_FMap'0) (k : t_K'0) : bool
+  function contains'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 165 4 165 39] (self : t_FMap'0) (k : t_K'0) : bool
   
    =
     [%#sfmap8] get_unsized'0 self k <> C_None'1
@@ -12995,12 +12995,12 @@ module M_creusot_contracts__logic__fmap__qyi17941324210461407630__contains_ghost
   axiom unwrap'0_spec : forall op : t_Option'1 . ([%#sutil11] op <> C_None'1)
    -> ([%#sutil12] C_Some'1 (unwrap'0 op) = op)
   
-  function lookup_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 124 4 124 50] (self : t_FMap'0) (k : t_K'0) : t_V'0
+  function lookup_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 157 4 157 50] (self : t_FMap'0) (k : t_K'0) : t_V'0
   
    =
     [%#sfmap9] unwrap'0 (get_unsized'0 self k)
   
-  predicate invariant'4 [#"../../creusot-contracts/src/logic/fmap.rs" 489 4 489 30] (self : t_FMap'0) =
+  predicate invariant'4 [#"../../creusot-contracts/src/logic/fmap.rs" 522 4 522 30] (self : t_FMap'0) =
     [%#sfmap15] forall k : t_K'0 . contains'0 self k  -> inv'6 k /\ inv'8 (lookup_unsized'0 self k)
   
   predicate inv'5 [#"../../creusot-contracts/src/invariant.rs" 42 0 42 35] (_1 : t_FMap'0)
@@ -13063,7 +13063,7 @@ module M_creusot_contracts__logic__fmap__qyi17941324210461407630__contains_ghost
   
   meta "compute_max_steps" 1000000
   
-  let rec contains_ghost'0[#"../../creusot-contracts/src/logic/fmap.rs" 286 4 286 49] (self:t_FMap'0) (key:t_K'0) (return'  (ret:bool))= {[@expl:contains_ghost 'self' type invariant] [%#sfmap0] inv'0 self}
+  let rec contains_ghost'0[#"../../creusot-contracts/src/logic/fmap.rs" 319 4 319 49] (self:t_FMap'0) (key:t_K'0) (return'  (ret:bool))= {[@expl:contains_ghost 'self' type invariant] [%#sfmap0] inv'0 self}
     {[@expl:contains_ghost 'key' type invariant] [%#sfmap1] inv'1 key}
     (! bb0
     [ bb0 = s0 [ s0 = get_ghost'0 {self} {key} (fun (_ret':t_Option'0) ->  [ &_5 <- _ret' ] s1) | s1 = bb1 ] 
@@ -19097,6 +19097,1047 @@ module M_creusot_contracts__ptr_own__qyi13445900742793785996__drop [#"../../creu
     [ & _0 : () = Any.any_l () | & ptr : Opaque.ptr = ptr | & own : t_GhostBox'0 = own | & _4 : t_T'0 = Any.any_l () ]
      [ return' (result:())-> (! return' {result}) ] 
 end
+module M_creusot_contracts__ra__qyi6033307714425369397__le [#"../../creusot-contracts/src/ra.rs" 72 4 72 36] (* <ra::Excl<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 71 14 71 84
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 73 8 73 21
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 66 8 66 12
+  
+  type t_T'0
+  
+  type t_Excl'0  =
+    { t_Excl__0'0: t_T'0 }
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_Excl'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 65 4 65 45] (self : t_Excl'0) (_other : t_Excl'0) : t_Option'0 =
+    [%#sra2] C_None'0
+  
+  constant self  : t_Excl'0
+  
+  constant other  : t_Excl'0
+  
+  function le'0 [#"../../creusot-contracts/src/ra.rs" 72 4 72 36] (self : t_Excl'0) (other : t_Excl'0) : bool
+  
+  goal vc_le'0 : [%#sra0] (self = other) = (self = other \/ (exists c : t_Excl'0 . op'0 self c = C_Some'0 other))
+end
+module M_creusot_contracts__ra__qyi6033307714425369397__idemp [#"../../creusot-contracts/src/ra.rs" 79 4 79 26] (* <ra::Excl<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 78 14 78 53
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 80 8 80 13
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 66 8 66 12
+  
+  type t_T'0
+  
+  type t_Excl'0  =
+    { t_Excl__0'0: t_T'0 }
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_Excl'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 65 4 65 45] (self : t_Excl'0) (_other : t_Excl'0) : t_Option'0 =
+    [%#sra2] C_None'0
+  
+  constant self  : t_Excl'0
+  
+  function idemp'0 [#"../../creusot-contracts/src/ra.rs" 79 4 79 26] (self : t_Excl'0) : bool
+  
+  goal vc_idemp'0 : [%#sra0] false = (op'0 self self = C_Some'0 self)
+end
+module M_creusot_contracts__ra__qyi6033307714425369397__commutative [#"../../creusot-contracts/src/ra.rs" 86 4 86 36] (* <ra::Excl<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 85 14 85 32
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 86 37 86 40
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 66 8 66 12
+  
+  type t_T'0
+  
+  type t_Excl'0  =
+    { t_Excl__0'0: t_T'0 }
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_Excl'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 65 4 65 45] (self : t_Excl'0) (_other : t_Excl'0) : t_Option'0 =
+    [%#sra2] C_None'0
+  
+  constant a  : t_Excl'0
+  
+  constant b  : t_Excl'0
+  
+  function commutative'0 [#"../../creusot-contracts/src/ra.rs" 86 4 86 36] (a : t_Excl'0) (b : t_Excl'0) : ()
+  
+  goal vc_commutative'0 : [%#sra0] op'0 a b = op'0 b a
+end
+module M_creusot_contracts__ra__qyi6033307714425369397__associative [#"../../creusot-contracts/src/ra.rs" 94 4 94 45] (* <ra::Excl<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 91 8 92 48
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 94 46 94 49
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 623 8 626 9
+  let%span sra3 = "../../creusot-contracts/src/ra.rs" 66 8 66 12
+  
+  use map.Map
+  
+  type t_T'0
+  
+  type t_Excl'0  =
+    { t_Excl__0'0: t_T'0 }
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_Excl'0
+  
+  function and_then_logic'0 [#"../../creusot-contracts/src/std/option.rs" 622 4 622 69] (self : t_Option'0) (f : Map.map t_Excl'0 t_Option'0) : t_Option'0
+  
+   =
+    [%#soption2] match self with
+      | C_None'0 -> C_None'0
+      | C_Some'0 x -> Map.get f x
+      end
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 65 4 65 45] (self : t_Excl'0) (_other : t_Excl'0) : t_Option'0 =
+    [%#sra3] C_None'0
+  
+  constant a  : t_Excl'0
+  
+  constant b  : t_Excl'0
+  
+  constant c  : t_Excl'0
+  
+  function associative'0 [#"../../creusot-contracts/src/ra.rs" 94 4 94 45] (a : t_Excl'0) (b : t_Excl'0) (c : t_Excl'0) : ()
+  
+  
+  goal vc_associative'0 : [%#sra0] and_then_logic'0 (op'0 a b) (fun (x : t_Excl'0) -> op'0 x c)
+  = and_then_logic'0 (op'0 b c) (fun (x : t_Excl'0) -> op'0 a x)
+end
+module M_creusot_contracts__ra__qyi6033307714425369397__maximal_idemp [#"../../creusot-contracts/src/ra.rs" 103 4 103 29] (* <ra::Excl<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 99 8 101 60
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 103 30 103 33
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 71 14 71 84
+  let%span sra3 = "../../creusot-contracts/src/ra.rs" 73 8 73 21
+  let%span sra4 = "../../creusot-contracts/src/ra.rs" 78 14 78 53
+  let%span sra5 = "../../creusot-contracts/src/ra.rs" 80 8 80 13
+  let%span sra6 = "../../creusot-contracts/src/ra.rs" 66 8 66 12
+  
+  type t_T'0
+  
+  type t_Excl'0  =
+    { t_Excl__0'0: t_T'0 }
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_Excl'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 65 4 65 45] (self : t_Excl'0) (_other : t_Excl'0) : t_Option'0 =
+    [%#sra6] C_None'0
+  
+  function le'0 [#"../../creusot-contracts/src/ra.rs" 72 4 72 36] (self : t_Excl'0) (other : t_Excl'0) : bool =
+    [%#sra3] self = other
+  
+  axiom le'0_spec : forall self : t_Excl'0, other : t_Excl'0 . [%#sra2] le'0 self other
+  = (self = other \/ (exists c : t_Excl'0 . op'0 self c = C_Some'0 other))
+  
+  function idemp'0 [#"../../creusot-contracts/src/ra.rs" 79 4 79 26] (self : t_Excl'0) : bool =
+    [%#sra5] false
+  
+  axiom idemp'0_spec : forall self : t_Excl'0 . [%#sra4] idemp'0 self = (op'0 self self = C_Some'0 self)
+  
+  constant a  : t_Excl'0
+  
+  function maximal_idemp'0 [#"../../creusot-contracts/src/ra.rs" 103 4 103 29] (a : t_Excl'0) : ()
+  
+  goal vc_maximal_idemp'0 : [%#sra0] (forall b : t_Excl'0 . not (le'0 b a /\ idemp'0 b))
+  \/ (exists b : t_Excl'0 . le'0 b a /\ idemp'0 b /\ (forall c : t_Excl'0 . le'0 c a /\ idemp'0 c  -> le'0 c b))
+end
+module M_creusot_contracts__ra__qyi7163116006894473125__idemp [#"../../creusot-contracts/src/ra.rs" 124 4 124 26] (* <ra::Ag<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 123 14 123 53
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 125 8 125 12
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 114 8 118 9
+  
+  type t_T'0
+  
+  type t_Ag'0  =
+    { t_Ag__0'0: t_T'0 }
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_Ag'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 113 4 113 44] (self : t_Ag'0) (other : t_Ag'0) : t_Option'0 =
+    [%#sra2] if self = other then C_Some'0 self else C_None'0
+  
+  constant self  : t_Ag'0
+  
+  function idemp'0 [#"../../creusot-contracts/src/ra.rs" 124 4 124 26] (self : t_Ag'0) : bool
+  
+  goal vc_idemp'0 : [%#sra0] true = (op'0 self self = C_Some'0 self)
+end
+module M_creusot_contracts__ra__qyi7163116006894473125__le [#"../../creusot-contracts/src/ra.rs" 131 4 131 36] (* <ra::Ag<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 130 14 130 84
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 132 8 132 21
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 114 8 118 9
+  
+  type t_T'0
+  
+  type t_Ag'0  =
+    { t_Ag__0'0: t_T'0 }
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_Ag'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 113 4 113 44] (self : t_Ag'0) (other : t_Ag'0) : t_Option'0 =
+    [%#sra2] if self = other then C_Some'0 self else C_None'0
+  
+  constant self  : t_Ag'0
+  
+  constant other  : t_Ag'0
+  
+  function le'0 [#"../../creusot-contracts/src/ra.rs" 131 4 131 36] (self : t_Ag'0) (other : t_Ag'0) : bool
+  
+  goal vc_le'0 : [%#sra0] (self = other) = (self = other \/ (exists c : t_Ag'0 . op'0 self c = C_Some'0 other))
+end
+module M_creusot_contracts__ra__qyi7163116006894473125__commutative [#"../../creusot-contracts/src/ra.rs" 138 4 138 36] (* <ra::Ag<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 137 14 137 32
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 138 37 138 40
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 114 8 118 9
+  
+  type t_T'0
+  
+  type t_Ag'0  =
+    { t_Ag__0'0: t_T'0 }
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_Ag'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 113 4 113 44] (self : t_Ag'0) (other : t_Ag'0) : t_Option'0 =
+    [%#sra2] if self = other then C_Some'0 self else C_None'0
+  
+  constant a  : t_Ag'0
+  
+  constant b  : t_Ag'0
+  
+  function commutative'0 [#"../../creusot-contracts/src/ra.rs" 138 4 138 36] (a : t_Ag'0) (b : t_Ag'0) : ()
+  
+  goal vc_commutative'0 : [%#sra0] op'0 a b = op'0 b a
+end
+module M_creusot_contracts__ra__qyi7163116006894473125__associative [#"../../creusot-contracts/src/ra.rs" 146 4 146 45] (* <ra::Ag<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 143 8 144 48
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 146 46 146 49
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 623 8 626 9
+  let%span sra3 = "../../creusot-contracts/src/ra.rs" 114 8 118 9
+  
+  use map.Map
+  
+  type t_T'0
+  
+  type t_Ag'0  =
+    { t_Ag__0'0: t_T'0 }
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_Ag'0
+  
+  function and_then_logic'0 [#"../../creusot-contracts/src/std/option.rs" 622 4 622 69] (self : t_Option'0) (f : Map.map t_Ag'0 t_Option'0) : t_Option'0
+  
+   =
+    [%#soption2] match self with
+      | C_None'0 -> C_None'0
+      | C_Some'0 x -> Map.get f x
+      end
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 113 4 113 44] (self : t_Ag'0) (other : t_Ag'0) : t_Option'0 =
+    [%#sra3] if self = other then C_Some'0 self else C_None'0
+  
+  constant a  : t_Ag'0
+  
+  constant b  : t_Ag'0
+  
+  constant c  : t_Ag'0
+  
+  function associative'0 [#"../../creusot-contracts/src/ra.rs" 146 4 146 45] (a : t_Ag'0) (b : t_Ag'0) (c : t_Ag'0) : ()
+  
+  goal vc_associative'0 : [%#sra0] and_then_logic'0 (op'0 a b) (fun (x : t_Ag'0) -> op'0 x c)
+  = and_then_logic'0 (op'0 b c) (fun (x : t_Ag'0) -> op'0 a x)
+end
+module M_creusot_contracts__ra__qyi7163116006894473125__maximal_idemp [#"../../creusot-contracts/src/ra.rs" 155 4 155 29] (* <ra::Ag<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 151 8 153 60
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 155 30 155 33
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 130 14 130 84
+  let%span sra3 = "../../creusot-contracts/src/ra.rs" 132 8 132 21
+  let%span sra4 = "../../creusot-contracts/src/ra.rs" 123 14 123 53
+  let%span sra5 = "../../creusot-contracts/src/ra.rs" 125 8 125 12
+  let%span sra6 = "../../creusot-contracts/src/ra.rs" 114 8 118 9
+  
+  type t_T'0
+  
+  type t_Ag'0  =
+    { t_Ag__0'0: t_T'0 }
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_Ag'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 113 4 113 44] (self : t_Ag'0) (other : t_Ag'0) : t_Option'0 =
+    [%#sra6] if self = other then C_Some'0 self else C_None'0
+  
+  function le'0 [#"../../creusot-contracts/src/ra.rs" 131 4 131 36] (self : t_Ag'0) (other : t_Ag'0) : bool =
+    [%#sra3] self = other
+  
+  axiom le'0_spec : forall self : t_Ag'0, other : t_Ag'0 . [%#sra2] le'0 self other
+  = (self = other \/ (exists c : t_Ag'0 . op'0 self c = C_Some'0 other))
+  
+  function idemp'0 [#"../../creusot-contracts/src/ra.rs" 124 4 124 26] (self : t_Ag'0) : bool =
+    [%#sra5] true
+  
+  axiom idemp'0_spec : forall self : t_Ag'0 . [%#sra4] idemp'0 self = (op'0 self self = C_Some'0 self)
+  
+  constant a  : t_Ag'0
+  
+  function maximal_idemp'0 [#"../../creusot-contracts/src/ra.rs" 155 4 155 29] (a : t_Ag'0) : ()
+  
+  goal vc_maximal_idemp'0 : [%#sra0] (forall b : t_Ag'0 . not (le'0 b a /\ idemp'0 b))
+  \/ (exists b : t_Ag'0 . le'0 b a /\ idemp'0 b /\ (forall c : t_Ag'0 . le'0 c a /\ idemp'0 c  -> le'0 c b))
+end
+module M_creusot_contracts__ra__qyi8501750256077767607__le [#"../../creusot-contracts/src/ra.rs" 212 4 212 36] (* <std::option::Option<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 211 14 211 84
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 35 14 35 84
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 213 8 219 9
+  let%span sra3 = "../../creusot-contracts/src/ra.rs" 202 8 206 9
+  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 623 8 626 9
+  
+  use map.Map
+  
+  type t_T'0
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'1 t_T'0
+  
+  type t_Option'1  =
+    | C_None'1
+    | C_Some'0 t_Option'0
+  
+  function and_then_logic'0 [#"../../creusot-contracts/src/std/option.rs" 622 4 622 69] (self : t_Option'0) (f : Map.map t_T'0 t_Option'1) : t_Option'1
+  
+   =
+    [%#soption4] match self with
+      | C_None'0 -> C_None'1
+      | C_Some'1 x -> Map.get f x
+      end
+  
+  function op'1 [#"../../creusot-contracts/src/ra.rs" 8 4 8 45] (self : t_T'0) (other : t_T'0) : t_Option'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 201 4 201 44] (self : t_Option'0) (other : t_Option'0) : t_Option'1
+  
+   =
+    [%#sra3] match (self, other) with
+      | (C_None'0, _) -> C_Some'0 other
+      | (_, C_None'0) -> C_Some'0 self
+      | (C_Some'1 x, C_Some'1 y) -> and_then_logic'0 (op'1 x y) (fun (x : t_T'0) -> C_Some'0 (C_Some'1 x))
+      end
+  
+  function le'1 [#"../../creusot-contracts/src/ra.rs" 36 4 36 37] (self : t_T'0) (other : t_T'0) : bool
+  
+  axiom le'1_spec : forall self : t_T'0, other : t_T'0 . [%#sra1] le'1 self other
+  = (self = other \/ (exists c : t_T'0 . op'1 self c = C_Some'1 other))
+  
+  constant self  : t_Option'0
+  
+  constant other  : t_Option'0
+  
+  function le'0 [#"../../creusot-contracts/src/ra.rs" 212 4 212 36] (self : t_Option'0) (other : t_Option'0) : bool
+  
+  goal vc_le'0 : match (self, other) with
+    | (C_None'0, _) -> [%#sra0] true = (self = other \/ (exists c : t_Option'0 . op'0 self c = C_Some'0 other))
+    | (_, C_None'0) -> [%#sra0] false = (self = other \/ (exists c : t_Option'0 . op'0 self c = C_Some'0 other))
+    | (C_Some'1 x, C_Some'1 y) -> ([%#sra1] le'1 x y = (x = y \/ (exists c : t_T'0 . op'1 x c = C_Some'1 y)))
+     -> ([%#sra0] le'1 x y = (self = other \/ (exists c : t_Option'0 . op'0 self c = C_Some'0 other)))
+    end
+end
+module M_creusot_contracts__ra__qyi8501750256077767607__idemp [#"../../creusot-contracts/src/ra.rs" 225 4 225 26] (* <std::option::Option<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 224 14 224 53
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 39 14 39 53
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 226 8 229 9
+  let%span sra3 = "../../creusot-contracts/src/ra.rs" 202 8 206 9
+  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 623 8 626 9
+  
+  use map.Map
+  
+  type t_T'0
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'1 t_T'0
+  
+  type t_Option'1  =
+    | C_None'1
+    | C_Some'0 t_Option'0
+  
+  function and_then_logic'0 [#"../../creusot-contracts/src/std/option.rs" 622 4 622 69] (self : t_Option'0) (f : Map.map t_T'0 t_Option'1) : t_Option'1
+  
+   =
+    [%#soption4] match self with
+      | C_None'0 -> C_None'1
+      | C_Some'1 x -> Map.get f x
+      end
+  
+  function op'1 [#"../../creusot-contracts/src/ra.rs" 8 4 8 45] (self : t_T'0) (other : t_T'0) : t_Option'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 201 4 201 44] (self : t_Option'0) (other : t_Option'0) : t_Option'1
+  
+   =
+    [%#sra3] match (self, other) with
+      | (C_None'0, _) -> C_Some'0 other
+      | (_, C_None'0) -> C_Some'0 self
+      | (C_Some'1 x, C_Some'1 y) -> and_then_logic'0 (op'1 x y) (fun (x : t_T'0) -> C_Some'0 (C_Some'1 x))
+      end
+  
+  function idemp'1 [#"../../creusot-contracts/src/ra.rs" 40 4 40 27] (self : t_T'0) : bool
+  
+  axiom idemp'1_spec : forall self : t_T'0 . [%#sra1] idemp'1 self = (op'1 self self = C_Some'1 self)
+  
+  constant self  : t_Option'0
+  
+  function idemp'0 [#"../../creusot-contracts/src/ra.rs" 225 4 225 26] (self : t_Option'0) : bool
+  
+  goal vc_idemp'0 : match self with
+    | C_None'0 -> [%#sra0] true = (op'0 self self = C_Some'0 self)
+    | C_Some'1 x -> ([%#sra1] idemp'1 x = (op'1 x x = C_Some'1 x))
+     -> ([%#sra0] idemp'1 x = (op'0 self self = C_Some'0 self))
+    end
+end
+module M_creusot_contracts__ra__qyi8501750256077767607__commutative [#"../../creusot-contracts/src/ra.rs" 235 4 235 36] (* <std::option::Option<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 234 14 234 32
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 237 8 237 39
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 202 8 206 9
+  let%span sra3 = "../../creusot-contracts/src/ra.rs" 11 14 11 32
+  let%span soption4 = "../../creusot-contracts/src/std/option.rs" 623 8 626 9
+  
+  use map.Map
+  
+  type t_T'0
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_T'0
+  
+  type t_Option'1  =
+    | C_None'1
+    | C_Some'1 t_Option'0
+  
+  function and_then_logic'0 [#"../../creusot-contracts/src/std/option.rs" 622 4 622 69] (self : t_Option'0) (f : Map.map t_T'0 t_Option'1) : t_Option'1
+  
+   =
+    [%#soption4] match self with
+      | C_None'0 -> C_None'1
+      | C_Some'0 x -> Map.get f x
+      end
+  
+  function op'1 [#"../../creusot-contracts/src/ra.rs" 8 4 8 45] (self : t_T'0) (other : t_T'0) : t_Option'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 201 4 201 44] (self : t_Option'0) (other : t_Option'0) : t_Option'1
+  
+   =
+    [%#sra2] match (self, other) with
+      | (C_None'0, _) -> C_Some'1 other
+      | (_, C_None'0) -> C_Some'1 self
+      | (C_Some'0 x, C_Some'0 y) -> and_then_logic'0 (op'1 x y) (fun (x : t_T'0) -> C_Some'1 (C_Some'0 x))
+      end
+  
+  function commutative'1 [#"../../creusot-contracts/src/ra.rs" 12 4 12 37] (a : t_T'0) (b : t_T'0) : ()
+  
+  axiom commutative'1_spec : forall a : t_T'0, b : t_T'0 . [%#sra3] op'1 a b = op'1 b a
+  
+  constant a  : t_Option'0
+  
+  constant b  : t_Option'0
+  
+  function commutative'0 [#"../../creusot-contracts/src/ra.rs" 235 4 235 36] (a : t_Option'0) (b : t_Option'0) : ()
+  
+  goal vc_commutative'0 : let _ = commutative'1 in [%#sra0] op'0 a b = op'0 b a
+end
+module M_creusot_contracts__ra__qyi8501750256077767607__associative [#"../../creusot-contracts/src/ra.rs" 246 4 246 45] (* <std::option::Option<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 243 8 244 48
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 16 8 17 48
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 247 8 254 9
+  let%span soption3 = "../../creusot-contracts/src/std/option.rs" 623 8 626 9
+  let%span sra4 = "../../creusot-contracts/src/ra.rs" 202 8 206 9
+  
+  use map.Map
+  
+  type t_T'0
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_T'0
+  
+  type t_Option'1  =
+    | C_None'1
+    | C_Some'1 t_Option'0
+  
+  function and_then_logic'0 [#"../../creusot-contracts/src/std/option.rs" 622 4 622 69] (self : t_Option'1) (f : Map.map t_Option'0 t_Option'1) : t_Option'1
+  
+   =
+    [%#soption3] match self with
+      | C_None'1 -> C_None'1
+      | C_Some'1 x -> Map.get f x
+      end
+  
+  function and_then_logic'2 [#"../../creusot-contracts/src/std/option.rs" 622 4 622 69] (self : t_Option'0) (f : Map.map t_T'0 t_Option'1) : t_Option'1
+  
+   =
+    [%#soption3] match self with
+      | C_None'0 -> C_None'1
+      | C_Some'0 x -> Map.get f x
+      end
+  
+  function op'1 [#"../../creusot-contracts/src/ra.rs" 8 4 8 45] (self : t_T'0) (other : t_T'0) : t_Option'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 201 4 201 44] (self : t_Option'0) (other : t_Option'0) : t_Option'1
+  
+   =
+    [%#sra4] match (self, other) with
+      | (C_None'0, _) -> C_Some'1 other
+      | (_, C_None'0) -> C_Some'1 self
+      | (C_Some'0 x, C_Some'0 y) -> and_then_logic'2 (op'1 x y) (fun (x : t_T'0) -> C_Some'1 (C_Some'0 x))
+      end
+  
+  function and_then_logic'1 [#"../../creusot-contracts/src/std/option.rs" 622 4 622 69] (self : t_Option'0) (f : Map.map t_T'0 t_Option'0) : t_Option'0
+  
+   =
+    [%#soption3] match self with
+      | C_None'0 -> C_None'0
+      | C_Some'0 x -> Map.get f x
+      end
+  
+  function associative'1 [#"../../creusot-contracts/src/ra.rs" 19 4 19 46] (a : t_T'0) (b : t_T'0) (c : t_T'0) : ()
+  
+  axiom associative'1_spec : forall a : t_T'0, b : t_T'0, c : t_T'0 . [%#sra1] and_then_logic'1 (op'1 a b) (fun (x : t_T'0) -> op'1 x c)
+  = and_then_logic'1 (op'1 b c) (fun (x : t_T'0) -> op'1 a x)
+  
+  constant a  : t_Option'0
+  
+  constant b  : t_Option'0
+  
+  constant c  : t_Option'0
+  
+  function associative'0 [#"../../creusot-contracts/src/ra.rs" 246 4 246 45] (a : t_Option'0) (b : t_Option'0) (c : t_Option'0) : ()
+  
+  
+  goal vc_associative'0 : match (a, b, c) with
+    | (C_None'0, _, _) -> [%#sra0] and_then_logic'0 (op'0 a b) (fun (x : t_Option'0) -> op'0 x c)
+    = and_then_logic'0 (op'0 b c) (fun (x : t_Option'0) -> op'0 a x)
+    | (_, C_None'0, _) -> [%#sra0] and_then_logic'0 (op'0 a b) (fun (x : t_Option'0) -> op'0 x c)
+    = and_then_logic'0 (op'0 b c) (fun (x : t_Option'0) -> op'0 a x)
+    | (_, _, C_None'0) -> [%#sra0] and_then_logic'0 (op'0 a b) (fun (x : t_Option'0) -> op'0 x c)
+    = and_then_logic'0 (op'0 b c) (fun (x : t_Option'0) -> op'0 a x)
+    | (C_Some'0 aa, C_Some'0 bb, C_Some'0 cc) -> ([%#sra1] and_then_logic'1 (op'1 aa bb) (fun (x : t_T'0) -> op'1 x cc)
+    = and_then_logic'1 (op'1 bb cc) (fun (x : t_T'0) -> op'1 aa x))
+     -> ([%#sra0] and_then_logic'0 (op'0 a b) (fun (x : t_Option'0) -> op'0 x c)
+    = and_then_logic'0 (op'0 b c) (fun (x : t_Option'0) -> op'0 a x))
+    end
+end
+module M_creusot_contracts__ra__qyi8501750256077767607__maximal_idemp [#"../../creusot-contracts/src/ra.rs" 264 4 264 29] (* <std::option::Option<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 260 8 262 60
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 265 8 265 41
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 211 14 211 84
+  let%span sra3 = "../../creusot-contracts/src/ra.rs" 213 8 219 9
+  let%span sra4 = "../../creusot-contracts/src/ra.rs" 224 14 224 53
+  let%span sra5 = "../../creusot-contracts/src/ra.rs" 226 8 229 9
+  let%span sra6 = "../../creusot-contracts/src/ra.rs" 23 8 25 60
+  let%span sra7 = "../../creusot-contracts/src/ra.rs" 202 8 206 9
+  let%span sra8 = "../../creusot-contracts/src/ra.rs" 35 14 35 84
+  let%span sra9 = "../../creusot-contracts/src/ra.rs" 39 14 39 53
+  let%span soption10 = "../../creusot-contracts/src/std/option.rs" 623 8 626 9
+  
+  use map.Map
+  
+  type t_T'0
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_T'0
+  
+  type t_Option'1  =
+    | C_None'1
+    | C_Some'1 t_Option'0
+  
+  function and_then_logic'0 [#"../../creusot-contracts/src/std/option.rs" 622 4 622 69] (self : t_Option'0) (f : Map.map t_T'0 t_Option'1) : t_Option'1
+  
+   =
+    [%#soption10] match self with
+      | C_None'0 -> C_None'1
+      | C_Some'0 x -> Map.get f x
+      end
+  
+  function op'1 [#"../../creusot-contracts/src/ra.rs" 8 4 8 45] (self : t_T'0) (other : t_T'0) : t_Option'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 201 4 201 44] (self : t_Option'0) (other : t_Option'0) : t_Option'1
+  
+   =
+    [%#sra7] match (self, other) with
+      | (C_None'0, _) -> C_Some'1 other
+      | (_, C_None'0) -> C_Some'1 self
+      | (C_Some'0 x, C_Some'0 y) -> and_then_logic'0 (op'1 x y) (fun (x : t_T'0) -> C_Some'1 (C_Some'0 x))
+      end
+  
+  function le'1 [#"../../creusot-contracts/src/ra.rs" 36 4 36 37] (self : t_T'0) (other : t_T'0) : bool
+  
+  axiom le'1_spec : forall self : t_T'0, other : t_T'0 . [%#sra8] le'1 self other
+  = (self = other \/ (exists c : t_T'0 . op'1 self c = C_Some'0 other))
+  
+  function le'0 [#"../../creusot-contracts/src/ra.rs" 212 4 212 36] (self : t_Option'0) (other : t_Option'0) : bool =
+    [%#sra3] match (self, other) with
+      | (C_None'0, _) -> true
+      | (_, C_None'0) -> false
+      | (C_Some'0 x, C_Some'0 y) -> le'1 x y
+      end
+  
+  axiom le'0_spec : forall self : t_Option'0, other : t_Option'0 . [%#sra2] le'0 self other
+  = (self = other \/ (exists c : t_Option'0 . op'0 self c = C_Some'1 other))
+  
+  function idemp'1 [#"../../creusot-contracts/src/ra.rs" 40 4 40 27] (self : t_T'0) : bool
+  
+  axiom idemp'1_spec : forall self : t_T'0 . [%#sra9] idemp'1 self = (op'1 self self = C_Some'0 self)
+  
+  function idemp'0 [#"../../creusot-contracts/src/ra.rs" 225 4 225 26] (self : t_Option'0) : bool =
+    [%#sra5] match self with
+      | C_None'0 -> true
+      | C_Some'0 x -> idemp'1 x
+      end
+  
+  axiom idemp'0_spec : forall self : t_Option'0 . [%#sra4] idemp'0 self = (op'0 self self = C_Some'1 self)
+  
+  function maximal_idemp'1 [#"../../creusot-contracts/src/ra.rs" 27 4 27 30] (a : t_T'0) : ()
+  
+  axiom maximal_idemp'1_spec : forall a : t_T'0 . [%#sra6] (forall b : t_T'0 . not (le'1 b a /\ idemp'1 b))
+  \/ (exists b : t_T'0 . le'1 b a /\ idemp'1 b /\ (forall c : t_T'0 . le'1 c a /\ idemp'1 c  -> le'1 c b))
+  
+  constant a  : t_Option'0
+  
+  function maximal_idemp'0 [#"../../creusot-contracts/src/ra.rs" 264 4 264 29] (a : t_Option'0) : ()
+  
+  goal vc_maximal_idemp'0 : let _ = maximal_idemp'1 in [%#sra0] (forall b : t_Option'0 . not (le'0 b a /\ idemp'0 b))
+  \/ (exists b : t_Option'0 . le'0 b a /\ idemp'0 b /\ (forall c : t_Option'0 . le'0 c a /\ idemp'0 c  -> le'0 c b))
+end
+module M_creusot_contracts__ra__qyi8695619954646013653__le [#"../../creusot-contracts/src/ra.rs" 285 4 285 36] (* <logic::fmap::FMap<K, V> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 284 14 284 84
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 35 14 35 84
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 286 8 291 11
+  let%span sra3 = "../../creusot-contracts/src/ra.rs" 279 8 279 58
+  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
+  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 86 8 102 9
+  let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
+  let%span sfmap7 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
+  
+  use map.Map
+  
+  type t_FMap'0
+  
+  type t_Option'1  =
+    | C_None'2
+    | C_Some'0 t_FMap'0
+  
+  type t_V'0
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'1 t_V'0
+  
+  type t_K'0
+  
+  type t_Option'2  =
+    | C_None'1
+    | C_Some'2 t_V'0
+  
+  function view'0 [#"../../creusot-contracts/src/logic/fmap.rs" 60 4 60 35] (self : t_FMap'0) : Map.map t_K'0 t_Option'2
+  
+  axiom view'0_spec : forall self : t_FMap'0 . [%#sfmap7] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
+   -> view'0 m1 <> view'0 m2
+  
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_K'0) : t_Option'2
+  
+   =
+    [%#sfmap6] Map.get (view'0 self) k
+  
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_K'0) : t_Option'0
+  
+   =
+    [%#sfmap4] match get_unsized'0 self k with
+      | C_None'1 -> C_None'0
+      | C_Some'2 x -> C_Some'1 x
+      end
+  
+  function merge_common'0 [#"../../creusot-contracts/src/logic/fmap.rs" 104 4 111 16] (self : t_FMap'0) (m : t_FMap'0) (f : Map.map (t_V'0, t_V'0) t_Option'0) : t_Option'1
+  
+  
+  axiom merge_common'0_spec : forall self : t_FMap'0, m : t_FMap'0, f : Map.map (t_V'0, t_V'0) t_Option'0 . [%#sfmap5] match merge_common'0 self m f with
+    | C_None'2 -> exists k : t_K'0, x : t_V'0, y : t_V'0 . get'0 self k = C_Some'1 x
+    /\ get'0 m k = C_Some'1 y /\ Map.get f (x, y) = C_None'0
+    | C_Some'0 res -> forall k : t_K'0 . match (get'0 self k, get'0 m k) with
+      | (C_None'0, y) -> get'0 res k = y
+      | (x, C_None'0) -> get'0 res k = x
+      | (C_Some'1 x, C_Some'1 y) -> exists z : t_V'0 . Map.get f (x, y) = C_Some'1 z /\ get'0 res k = C_Some'1 z
+      end
+    end
+  
+  function op'1 [#"../../creusot-contracts/src/ra.rs" 8 4 8 45] (self : t_V'0) (other : t_V'0) : t_Option'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 278 4 278 44] (self : t_FMap'0) (other : t_FMap'0) : t_Option'1 =
+    [%#sra3] merge_common'0 self other (fun (_2 : (t_V'0, t_V'0)) -> let (x, y) = _2 in op'1 x y)
+  
+  function le'1 [#"../../creusot-contracts/src/ra.rs" 36 4 36 37] (self : t_V'0) (other : t_V'0) : bool
+  
+  axiom le'1_spec : forall self : t_V'0, other : t_V'0 . [%#sra1] le'1 self other
+  = (self = other \/ (exists c : t_V'0 . op'1 self c = C_Some'1 other))
+  
+  constant self  : t_FMap'0
+  
+  constant other  : t_FMap'0
+  
+  function le'0 [#"../../creusot-contracts/src/ra.rs" 285 4 285 36] (self : t_FMap'0) (other : t_FMap'0) : bool
+  
+  goal vc_le'0 : (forall k : t_K'0 . match (get'0 self k, get'0 other k) with
+    | (C_None'0, _) -> true
+    | (C_Some'1 _, C_None'0) -> true
+    | (C_Some'1 x, C_Some'1 y) -> true
+    end)
+  /\ ([%#sra0] ([%#sra2] forall k : t_K'0 . match (get'0 self k, get'0 other k) with
+    | (C_None'0, _) -> true
+    | (C_Some'1 _, C_None'0) -> false
+    | (C_Some'1 x, C_Some'1 y) -> le'1 x y
+    end)
+  = (self = other \/ (exists c : t_FMap'0 . op'0 self c = C_Some'0 other)))
+end
+module M_creusot_contracts__ra__qyi8695619954646013653__idemp [#"../../creusot-contracts/src/ra.rs" 297 4 297 26] (* <logic::fmap::FMap<K, V> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 296 14 296 53
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 298 8 298 12
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 279 8 279 58
+  let%span sfmap3 = "../../creusot-contracts/src/logic/fmap.rs" 86 8 102 9
+  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
+  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
+  let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
+  
+  use map.Map
+  
+  type t_FMap'0
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_FMap'0
+  
+  type t_V'0
+  
+  type t_Option'1  =
+    | C_None'1
+    | C_Some'1 t_V'0
+  
+  type t_K'0
+  
+  type t_Option'2  =
+    | C_None'2
+    | C_Some'2 t_V'0
+  
+  function view'0 [#"../../creusot-contracts/src/logic/fmap.rs" 60 4 60 35] (self : t_FMap'0) : Map.map t_K'0 t_Option'2
+  
+  axiom view'0_spec : forall self : t_FMap'0 . [%#sfmap6] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
+   -> view'0 m1 <> view'0 m2
+  
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_K'0) : t_Option'2
+  
+   =
+    [%#sfmap5] Map.get (view'0 self) k
+  
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_K'0) : t_Option'1
+  
+   =
+    [%#sfmap4] match get_unsized'0 self k with
+      | C_None'2 -> C_None'1
+      | C_Some'2 x -> C_Some'1 x
+      end
+  
+  function merge_common'0 [#"../../creusot-contracts/src/logic/fmap.rs" 104 4 111 16] (self : t_FMap'0) (m : t_FMap'0) (f : Map.map (t_V'0, t_V'0) t_Option'1) : t_Option'0
+  
+  
+  axiom merge_common'0_spec : forall self : t_FMap'0, m : t_FMap'0, f : Map.map (t_V'0, t_V'0) t_Option'1 . [%#sfmap3] match merge_common'0 self m f with
+    | C_None'0 -> exists k : t_K'0, x : t_V'0, y : t_V'0 . get'0 self k = C_Some'1 x
+    /\ get'0 m k = C_Some'1 y /\ Map.get f (x, y) = C_None'1
+    | C_Some'0 res -> forall k : t_K'0 . match (get'0 self k, get'0 m k) with
+      | (C_None'1, y) -> get'0 res k = y
+      | (x, C_None'1) -> get'0 res k = x
+      | (C_Some'1 x, C_Some'1 y) -> exists z : t_V'0 . Map.get f (x, y) = C_Some'1 z /\ get'0 res k = C_Some'1 z
+      end
+    end
+  
+  function op'1 [#"../../creusot-contracts/src/ra.rs" 8 4 8 45] (self : t_V'0) (other : t_V'0) : t_Option'1
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 278 4 278 44] (self : t_FMap'0) (other : t_FMap'0) : t_Option'0 =
+    [%#sra2] merge_common'0 self other (fun (_2 : (t_V'0, t_V'0)) -> let (x, y) = _2 in op'1 x y)
+  
+  constant self  : t_FMap'0
+  
+  function idemp'0 [#"../../creusot-contracts/src/ra.rs" 297 4 297 26] (self : t_FMap'0) : bool
+  
+  goal vc_idemp'0 : [%#sra0] true = (op'0 self self = C_Some'0 self)
+end
+module M_creusot_contracts__ra__qyi8695619954646013653__commutative [#"../../creusot-contracts/src/ra.rs" 304 4 304 36] (* <logic::fmap::FMap<K, V> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 303 14 303 32
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 304 37 306 5
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 279 8 279 58
+  let%span sfmap3 = "../../creusot-contracts/src/logic/fmap.rs" 86 8 102 9
+  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
+  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
+  let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
+  
+  use map.Map
+  
+  type t_FMap'0
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_FMap'0
+  
+  type t_V'0
+  
+  type t_Option'1  =
+    | C_None'1
+    | C_Some'1 t_V'0
+  
+  type t_K'0
+  
+  type t_Option'2  =
+    | C_None'2
+    | C_Some'2 t_V'0
+  
+  function view'0 [#"../../creusot-contracts/src/logic/fmap.rs" 60 4 60 35] (self : t_FMap'0) : Map.map t_K'0 t_Option'2
+  
+  axiom view'0_spec : forall self : t_FMap'0 . [%#sfmap6] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
+   -> view'0 m1 <> view'0 m2
+  
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_K'0) : t_Option'2
+  
+   =
+    [%#sfmap5] Map.get (view'0 self) k
+  
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_K'0) : t_Option'1
+  
+   =
+    [%#sfmap4] match get_unsized'0 self k with
+      | C_None'2 -> C_None'1
+      | C_Some'2 x -> C_Some'1 x
+      end
+  
+  function merge_common'0 [#"../../creusot-contracts/src/logic/fmap.rs" 104 4 111 16] (self : t_FMap'0) (m : t_FMap'0) (f : Map.map (t_V'0, t_V'0) t_Option'1) : t_Option'0
+  
+  
+  axiom merge_common'0_spec : forall self : t_FMap'0, m : t_FMap'0, f : Map.map (t_V'0, t_V'0) t_Option'1 . [%#sfmap3] match merge_common'0 self m f with
+    | C_None'0 -> exists k : t_K'0, x : t_V'0, y : t_V'0 . get'0 self k = C_Some'1 x
+    /\ get'0 m k = C_Some'1 y /\ Map.get f (x, y) = C_None'1
+    | C_Some'0 res -> forall k : t_K'0 . match (get'0 self k, get'0 m k) with
+      | (C_None'1, y) -> get'0 res k = y
+      | (x, C_None'1) -> get'0 res k = x
+      | (C_Some'1 x, C_Some'1 y) -> exists z : t_V'0 . Map.get f (x, y) = C_Some'1 z /\ get'0 res k = C_Some'1 z
+      end
+    end
+  
+  function op'1 [#"../../creusot-contracts/src/ra.rs" 8 4 8 45] (self : t_V'0) (other : t_V'0) : t_Option'1
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 278 4 278 44] (self : t_FMap'0) (other : t_FMap'0) : t_Option'0 =
+    [%#sra2] merge_common'0 self other (fun (_2 : (t_V'0, t_V'0)) -> let (x, y) = _2 in op'1 x y)
+  
+  constant a  : t_FMap'0
+  
+  constant b  : t_FMap'0
+  
+  function commutative'0 [#"../../creusot-contracts/src/ra.rs" 304 4 304 36] (a : t_FMap'0) (b : t_FMap'0) : ()
+  
+  goal vc_commutative'0 : [%#sra0] op'0 a b = op'0 b a
+end
+module M_creusot_contracts__ra__qyi8695619954646013653__associative [#"../../creusot-contracts/src/ra.rs" 314 4 314 45] (* <logic::fmap::FMap<K, V> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 311 8 312 48
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 314 46 316 6
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 623 8 626 9
+  let%span sra3 = "../../creusot-contracts/src/ra.rs" 279 8 279 58
+  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 86 8 102 9
+  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
+  let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
+  let%span sfmap7 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
+  
+  use map.Map
+  
+  type t_FMap'0
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_FMap'0
+  
+  function and_then_logic'0 [#"../../creusot-contracts/src/std/option.rs" 622 4 622 69] (self : t_Option'0) (f : Map.map t_FMap'0 t_Option'0) : t_Option'0
+  
+   =
+    [%#soption2] match self with
+      | C_None'0 -> C_None'0
+      | C_Some'0 x -> Map.get f x
+      end
+  
+  type t_V'0
+  
+  type t_Option'1  =
+    | C_None'1
+    | C_Some'1 t_V'0
+  
+  type t_K'0
+  
+  type t_Option'2  =
+    | C_None'2
+    | C_Some'2 t_V'0
+  
+  function view'0 [#"../../creusot-contracts/src/logic/fmap.rs" 60 4 60 35] (self : t_FMap'0) : Map.map t_K'0 t_Option'2
+  
+  axiom view'0_spec : forall self : t_FMap'0 . [%#sfmap7] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
+   -> view'0 m1 <> view'0 m2
+  
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_K'0) : t_Option'2
+  
+   =
+    [%#sfmap6] Map.get (view'0 self) k
+  
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_K'0) : t_Option'1
+  
+   =
+    [%#sfmap5] match get_unsized'0 self k with
+      | C_None'2 -> C_None'1
+      | C_Some'2 x -> C_Some'1 x
+      end
+  
+  function merge_common'0 [#"../../creusot-contracts/src/logic/fmap.rs" 104 4 111 16] (self : t_FMap'0) (m : t_FMap'0) (f : Map.map (t_V'0, t_V'0) t_Option'1) : t_Option'0
+  
+  
+  axiom merge_common'0_spec : forall self : t_FMap'0, m : t_FMap'0, f : Map.map (t_V'0, t_V'0) t_Option'1 . [%#sfmap4] match merge_common'0 self m f with
+    | C_None'0 -> exists k : t_K'0, x : t_V'0, y : t_V'0 . get'0 self k = C_Some'1 x
+    /\ get'0 m k = C_Some'1 y /\ Map.get f (x, y) = C_None'1
+    | C_Some'0 res -> forall k : t_K'0 . match (get'0 self k, get'0 m k) with
+      | (C_None'1, y) -> get'0 res k = y
+      | (x, C_None'1) -> get'0 res k = x
+      | (C_Some'1 x, C_Some'1 y) -> exists z : t_V'0 . Map.get f (x, y) = C_Some'1 z /\ get'0 res k = C_Some'1 z
+      end
+    end
+  
+  function op'1 [#"../../creusot-contracts/src/ra.rs" 8 4 8 45] (self : t_V'0) (other : t_V'0) : t_Option'1
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 278 4 278 44] (self : t_FMap'0) (other : t_FMap'0) : t_Option'0 =
+    [%#sra3] merge_common'0 self other (fun (_2 : (t_V'0, t_V'0)) -> let (x, y) = _2 in op'1 x y)
+  
+  constant a  : t_FMap'0
+  
+  constant b  : t_FMap'0
+  
+  constant c  : t_FMap'0
+  
+  function associative'0 [#"../../creusot-contracts/src/ra.rs" 314 4 314 45] (a : t_FMap'0) (b : t_FMap'0) (c : t_FMap'0) : ()
+  
+  
+  goal vc_associative'0 : [%#sra0] and_then_logic'0 (op'0 a b) (fun (x : t_FMap'0) -> op'0 x c)
+  = and_then_logic'0 (op'0 b c) (fun (x : t_FMap'0) -> op'0 a x)
+end
+module M_creusot_contracts__ra__qyi8695619954646013653__maximal_idemp [#"../../creusot-contracts/src/ra.rs" 325 4 325 29] (* <logic::fmap::FMap<K, V> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 321 8 323 60
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 325 30 327 5
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 284 14 284 84
+  let%span sra3 = "../../creusot-contracts/src/ra.rs" 286 8 291 11
+  let%span sra4 = "../../creusot-contracts/src/ra.rs" 296 14 296 53
+  let%span sra5 = "../../creusot-contracts/src/ra.rs" 298 8 298 12
+  let%span sra6 = "../../creusot-contracts/src/ra.rs" 279 8 279 58
+  let%span sra7 = "../../creusot-contracts/src/ra.rs" 35 14 35 84
+  let%span sfmap8 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
+  let%span sfmap9 = "../../creusot-contracts/src/logic/fmap.rs" 86 8 102 9
+  let%span sfmap10 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
+  let%span sfmap11 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
+  
+  use map.Map
+  
+  type t_FMap'0
+  
+  type t_Option'1  =
+    | C_None'2
+    | C_Some'0 t_FMap'0
+  
+  type t_V'0
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'1 t_V'0
+  
+  type t_K'0
+  
+  type t_Option'2  =
+    | C_None'1
+    | C_Some'2 t_V'0
+  
+  function view'0 [#"../../creusot-contracts/src/logic/fmap.rs" 60 4 60 35] (self : t_FMap'0) : Map.map t_K'0 t_Option'2
+  
+  axiom view'0_spec : forall self : t_FMap'0 . [%#sfmap11] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
+   -> view'0 m1 <> view'0 m2
+  
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_K'0) : t_Option'2
+  
+   =
+    [%#sfmap10] Map.get (view'0 self) k
+  
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_K'0) : t_Option'0
+  
+   =
+    [%#sfmap8] match get_unsized'0 self k with
+      | C_None'1 -> C_None'0
+      | C_Some'2 x -> C_Some'1 x
+      end
+  
+  function merge_common'0 [#"../../creusot-contracts/src/logic/fmap.rs" 104 4 111 16] (self : t_FMap'0) (m : t_FMap'0) (f : Map.map (t_V'0, t_V'0) t_Option'0) : t_Option'1
+  
+  
+  axiom merge_common'0_spec : forall self : t_FMap'0, m : t_FMap'0, f : Map.map (t_V'0, t_V'0) t_Option'0 . [%#sfmap9] match merge_common'0 self m f with
+    | C_None'2 -> exists k : t_K'0, x : t_V'0, y : t_V'0 . get'0 self k = C_Some'1 x
+    /\ get'0 m k = C_Some'1 y /\ Map.get f (x, y) = C_None'0
+    | C_Some'0 res -> forall k : t_K'0 . match (get'0 self k, get'0 m k) with
+      | (C_None'0, y) -> get'0 res k = y
+      | (x, C_None'0) -> get'0 res k = x
+      | (C_Some'1 x, C_Some'1 y) -> exists z : t_V'0 . Map.get f (x, y) = C_Some'1 z /\ get'0 res k = C_Some'1 z
+      end
+    end
+  
+  function op'1 [#"../../creusot-contracts/src/ra.rs" 8 4 8 45] (self : t_V'0) (other : t_V'0) : t_Option'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 278 4 278 44] (self : t_FMap'0) (other : t_FMap'0) : t_Option'1 =
+    [%#sra6] merge_common'0 self other (fun (_2 : (t_V'0, t_V'0)) -> let (x, y) = _2 in op'1 x y)
+  
+  function le'1 [#"../../creusot-contracts/src/ra.rs" 36 4 36 37] (self : t_V'0) (other : t_V'0) : bool
+  
+  axiom le'1_spec : forall self : t_V'0, other : t_V'0 . [%#sra7] le'1 self other
+  = (self = other \/ (exists c : t_V'0 . op'1 self c = C_Some'1 other))
+  
+  function le'0 [#"../../creusot-contracts/src/ra.rs" 285 4 285 36] (self : t_FMap'0) (other : t_FMap'0) : bool =
+    [%#sra3] forall k : t_K'0 . match (get'0 self k, get'0 other k) with
+      | (C_None'0, _) -> true
+      | (C_Some'1 _, C_None'0) -> false
+      | (C_Some'1 x, C_Some'1 y) -> le'1 x y
+      end
+  
+  axiom le'0_spec : forall self : t_FMap'0, other : t_FMap'0 . [%#sra2] le'0 self other
+  = (self = other \/ (exists c : t_FMap'0 . op'0 self c = C_Some'0 other))
+  
+  function idemp'0 [#"../../creusot-contracts/src/ra.rs" 297 4 297 26] (self : t_FMap'0) : bool =
+    [%#sra5] true
+  
+  axiom idemp'0_spec : forall self : t_FMap'0 . [%#sra4] idemp'0 self = (op'0 self self = C_Some'0 self)
+  
+  constant a  : t_FMap'0
+  
+  function maximal_idemp'0 [#"../../creusot-contracts/src/ra.rs" 325 4 325 29] (a : t_FMap'0) : ()
+  
+  goal vc_maximal_idemp'0 : [%#sra0] (forall b : t_FMap'0 . not (le'0 b a /\ idemp'0 b))
+  \/ (exists b : t_FMap'0 . le'0 b a /\ idemp'0 b /\ (forall c : t_FMap'0 . le'0 c a /\ idemp'0 c  -> le'0 c b))
+end
 module M_creusot_contracts__resolve__qyi14648068534830670712__resolve_coherence [#"../../creusot-contracts/src/resolve.rs" 47 4 47 31] (* <(T1, T2) as resolve::Resolve> *)
   let%span sresolve0 = "../../creusot-contracts/src/resolve.rs" 45 15 45 39
   let%span sresolve1 = "../../creusot-contracts/src/resolve.rs" 46 14 46 31
@@ -19316,8 +20357,8 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi275122163379056
   let%span shash_map1 = "../../creusot-contracts/src/std/collections/hash_map.rs" 56 12 66 29
   let%span sfmap2 = "../../creusot-contracts/src/logic/fmap.rs" 49 14 49 25
   let%span sseq3 = "../../creusot-contracts/src/logic/seq.rs" 351 20 351 77
-  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 93 8 96 9
-  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 104 8 104 26
+  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
+  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
   let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
   
   use creusot.int.UInt16
@@ -19470,12 +20511,12 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi275122163379056
   axiom view'1_spec : forall self : t_FMap'0 . [%#sfmap6] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
    -> view'1 m1 <> view'1 m2
   
-  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 103 4 103 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
   
    =
     [%#sfmap5] Map.get (view'1 self) k
   
-  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 89 4 91 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
   
    =
     [%#sfmap4] match get_unsized'0 self k with
@@ -19511,8 +20552,8 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi275122163379056
   let%span shash_map1 = "../../creusot-contracts/src/std/collections/hash_map.rs" 56 12 66 29
   let%span sfmap2 = "../../creusot-contracts/src/logic/fmap.rs" 49 14 49 25
   let%span sseq3 = "../../creusot-contracts/src/logic/seq.rs" 351 20 351 77
-  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 93 8 96 9
-  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 104 8 104 26
+  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
+  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
   let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
   
   use creusot.int.UInt16
@@ -19665,12 +20706,12 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi275122163379056
   axiom view'1_spec : forall self : t_FMap'0 . [%#sfmap6] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
    -> view'1 m1 <> view'1 m2
   
-  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 103 4 103 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
   
    =
     [%#sfmap5] Map.get (view'1 self) k
   
-  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 89 4 91 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
   
    =
     [%#sfmap4] match get_unsized'0 self k with
@@ -19708,9 +20749,9 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi172295150354336
   let%span shash_map1 = "../../creusot-contracts/src/std/collections/hash_map.rs" 108 12 118 29
   let%span sfmap2 = "../../creusot-contracts/src/logic/fmap.rs" 49 14 49 25
   let%span sseq3 = "../../creusot-contracts/src/logic/seq.rs" 351 20 351 77
-  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 93 8 96 9
+  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
   let%span smodel5 = "../../creusot-contracts/src/model.rs" 45 8 45 28
-  let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 104 8 104 26
+  let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
   let%span sfmap7 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
   
   use creusot.int.UInt16
@@ -19780,12 +20821,12 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi172295150354336
   axiom view'1_spec : forall self : t_FMap'0 . [%#sfmap7] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
    -> view'1 m1 <> view'1 m2
   
-  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 103 4 103 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
   
    =
     [%#sfmap6] Map.get (view'1 self) k
   
-  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 89 4 91 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
   
    =
     [%#sfmap4] match get_unsized'0 self k with
@@ -19826,9 +20867,9 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi172295150354336
   let%span shash_map1 = "../../creusot-contracts/src/std/collections/hash_map.rs" 108 12 118 29
   let%span sfmap2 = "../../creusot-contracts/src/logic/fmap.rs" 49 14 49 25
   let%span sseq3 = "../../creusot-contracts/src/logic/seq.rs" 351 20 351 77
-  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 93 8 96 9
+  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
   let%span smodel5 = "../../creusot-contracts/src/model.rs" 45 8 45 28
-  let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 104 8 104 26
+  let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
   let%span sfmap7 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
   
   use creusot.int.UInt16
@@ -19898,12 +20939,12 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi172295150354336
   axiom view'1_spec : forall self : t_FMap'0 . [%#sfmap7] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
    -> view'1 m1 <> view'1 m2
   
-  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 103 4 103 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
   
    =
     [%#sfmap6] Map.get (view'1 self) k
   
-  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 89 4 91 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
   
    =
     [%#sfmap4] match get_unsized'0 self k with
@@ -19942,9 +20983,9 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi720014830389118
   let%span shash_map1 = "../../creusot-contracts/src/std/collections/hash_map.rs" 160 12 170 29
   let%span sfmap2 = "../../creusot-contracts/src/logic/fmap.rs" 49 14 49 25
   let%span sseq3 = "../../creusot-contracts/src/logic/seq.rs" 351 20 351 77
-  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 93 8 96 9
+  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
   let%span smodel5 = "../../creusot-contracts/src/model.rs" 45 8 45 28
-  let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 104 8 104 26
+  let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
   let%span sfmap7 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
   
   use creusot.int.UInt16
@@ -20016,12 +21057,12 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi720014830389118
   axiom view'1_spec : forall self : t_FMap'0 . [%#sfmap7] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
    -> view'1 m1 <> view'1 m2
   
-  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 103 4 103 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
   
    =
     [%#sfmap6] Map.get (view'1 self) k
   
-  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 89 4 91 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
   
    =
     [%#sfmap4] match get_unsized'0 self k with
@@ -20062,9 +21103,9 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi720014830389118
   let%span shash_map1 = "../../creusot-contracts/src/std/collections/hash_map.rs" 160 12 170 29
   let%span sfmap2 = "../../creusot-contracts/src/logic/fmap.rs" 49 14 49 25
   let%span sseq3 = "../../creusot-contracts/src/logic/seq.rs" 351 20 351 77
-  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 93 8 96 9
+  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
   let%span smodel5 = "../../creusot-contracts/src/model.rs" 45 8 45 28
-  let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 104 8 104 26
+  let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
   let%span sfmap7 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
   
   use creusot.int.UInt16
@@ -20136,12 +21177,12 @@ module M_creusot_contracts__stdqy35z1__collections__hash_map__qyi720014830389118
   axiom view'1_spec : forall self : t_FMap'0 . [%#sfmap7] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
    -> view'1 m1 <> view'1 m2
   
-  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 103 4 103 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'1
   
    =
     [%#sfmap6] Map.get (view'1 self) k
   
-  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 89 4 91 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_DeepModelTy'0) : t_Option'0
   
    =
     [%#sfmap4] match get_unsized'0 self k with
@@ -23679,9 +24720,9 @@ module M_creusot_contracts__stdqy35z1__iter__qyi15776886527438550973__produces_t
    -> produces'0 b bc c
   /\ produces'0 a ab b /\ (forall result : () . produces'0 a (Seq.(++) ab bc) c  -> produces'0 a (Seq.(++) ab bc) c)
 end
-module M_creusot_contracts__stdqy35z1__option__qyi16875853811649438191__produces_refl__refines [#"../../creusot-contracts/src/std/option.rs" 477 4 477 26] (* <std::option::IntoIter<T> as std::iter::Iterator> *)
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 477 4 477 26
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 469 12 470 96
+module M_creusot_contracts__stdqy35z1__option__qyi16875853811649438191__produces_refl__refines [#"../../creusot-contracts/src/std/option.rs" 478 4 478 26] (* <std::option::IntoIter<T> as std::iter::Iterator> *)
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 478 4 478 26
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 470 12 471 96
   
   use seq.Seq
   
@@ -23697,9 +24738,9 @@ module M_creusot_contracts__stdqy35z1__option__qyi16875853811649438191__produces
   type t_IntoIter'0  =
     { t_IntoIter__inner'0: t_Item'0 }
   
-  function view'0 [#"../../creusot-contracts/src/std/option.rs" 453 4 453 30] (self : t_IntoIter'0) : t_Option'0
+  function view'0 [#"../../creusot-contracts/src/std/option.rs" 454 4 454 30] (self : t_IntoIter'0) : t_Option'0
   
-  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 467 4 467 64] (self : t_IntoIter'0) (visited : Seq.seq t_T'0) (o : t_IntoIter'0)
+  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 468 4 468 64] (self : t_IntoIter'0) (visited : Seq.seq t_T'0) (o : t_IntoIter'0)
   
    =
     [%#soption1] visited = (Seq.empty : Seq.seq t_T'0) /\ self = o
@@ -23708,9 +24749,9 @@ module M_creusot_contracts__stdqy35z1__option__qyi16875853811649438191__produces
   goal refines : [%#soption0] forall self : t_IntoIter'0 . forall result : () . produces'0 self (Seq.empty : Seq.seq t_T'0) self
    -> produces'0 self (Seq.empty : Seq.seq t_T'0) self
 end
-module M_creusot_contracts__stdqy35z1__option__qyi16875853811649438191__produces_trans__refines [#"../../creusot-contracts/src/std/option.rs" 484 4 484 90] (* <std::option::IntoIter<T> as std::iter::Iterator> *)
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 484 4 484 90
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 469 12 470 96
+module M_creusot_contracts__stdqy35z1__option__qyi16875853811649438191__produces_trans__refines [#"../../creusot-contracts/src/std/option.rs" 485 4 485 90] (* <std::option::IntoIter<T> as std::iter::Iterator> *)
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 485 4 485 90
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 470 12 471 96
   
   use seq.Seq
   
@@ -23726,9 +24767,9 @@ module M_creusot_contracts__stdqy35z1__option__qyi16875853811649438191__produces
   type t_IntoIter'0  =
     { t_IntoIter__inner'0: t_Item'0 }
   
-  function view'0 [#"../../creusot-contracts/src/std/option.rs" 453 4 453 30] (self : t_IntoIter'0) : t_Option'0
+  function view'0 [#"../../creusot-contracts/src/std/option.rs" 454 4 454 30] (self : t_IntoIter'0) : t_Option'0
   
-  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 467 4 467 64] (self : t_IntoIter'0) (visited : Seq.seq t_T'0) (o : t_IntoIter'0)
+  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 468 4 468 64] (self : t_IntoIter'0) (visited : Seq.seq t_T'0) (o : t_IntoIter'0)
   
    =
     [%#soption1] visited = (Seq.empty : Seq.seq t_T'0) /\ self = o
@@ -23739,9 +24780,9 @@ module M_creusot_contracts__stdqy35z1__option__qyi16875853811649438191__produces
    -> produces'0 b bc c
   /\ produces'0 a ab b /\ (forall result : () . produces'0 a (Seq.(++) ab bc) c  -> produces'0 a (Seq.(++) ab bc) c)
 end
-module M_creusot_contracts__stdqy35z1__option__qyi11122593048316696412__produces_refl__refines [#"../../creusot-contracts/src/std/option.rs" 530 4 530 26] (* <std::option::Iter<'a, T> as std::iter::Iterator> *)
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 530 4 530 26
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 522 12 523 96
+module M_creusot_contracts__stdqy35z1__option__qyi11122593048316696412__produces_refl__refines [#"../../creusot-contracts/src/std/option.rs" 531 4 531 26] (* <std::option::Iter<'a, T> as std::iter::Iterator> *)
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 531 4 531 26
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 523 12 524 96
   
   use seq.Seq
   
@@ -23757,9 +24798,9 @@ module M_creusot_contracts__stdqy35z1__option__qyi11122593048316696412__produces
   type t_Iter'0  =
     { t_Iter__inner'0: t_Item'0 }
   
-  function view'0 [#"../../creusot-contracts/src/std/option.rs" 506 4 506 34] (self : t_Iter'0) : t_Option'0
+  function view'0 [#"../../creusot-contracts/src/std/option.rs" 507 4 507 34] (self : t_Iter'0) : t_Option'0
   
-  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 520 4 520 64] (self : t_Iter'0) (visited : Seq.seq t_T'0) (o : t_Iter'0)
+  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 521 4 521 64] (self : t_Iter'0) (visited : Seq.seq t_T'0) (o : t_Iter'0)
   
    =
     [%#soption1] visited = (Seq.empty : Seq.seq t_T'0) /\ self = o
@@ -23768,9 +24809,9 @@ module M_creusot_contracts__stdqy35z1__option__qyi11122593048316696412__produces
   goal refines : [%#soption0] forall self : t_Iter'0 . forall result : () . produces'0 self (Seq.empty : Seq.seq t_T'0) self
    -> produces'0 self (Seq.empty : Seq.seq t_T'0) self
 end
-module M_creusot_contracts__stdqy35z1__option__qyi11122593048316696412__produces_trans__refines [#"../../creusot-contracts/src/std/option.rs" 537 4 537 90] (* <std::option::Iter<'a, T> as std::iter::Iterator> *)
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 537 4 537 90
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 522 12 523 96
+module M_creusot_contracts__stdqy35z1__option__qyi11122593048316696412__produces_trans__refines [#"../../creusot-contracts/src/std/option.rs" 538 4 538 90] (* <std::option::Iter<'a, T> as std::iter::Iterator> *)
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 538 4 538 90
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 523 12 524 96
   
   use seq.Seq
   
@@ -23786,9 +24827,9 @@ module M_creusot_contracts__stdqy35z1__option__qyi11122593048316696412__produces
   type t_Iter'0  =
     { t_Iter__inner'0: t_Item'0 }
   
-  function view'0 [#"../../creusot-contracts/src/std/option.rs" 506 4 506 34] (self : t_Iter'0) : t_Option'0
+  function view'0 [#"../../creusot-contracts/src/std/option.rs" 507 4 507 34] (self : t_Iter'0) : t_Option'0
   
-  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 520 4 520 64] (self : t_Iter'0) (visited : Seq.seq t_T'0) (o : t_Iter'0)
+  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 521 4 521 64] (self : t_Iter'0) (visited : Seq.seq t_T'0) (o : t_Iter'0)
   
    =
     [%#soption1] visited = (Seq.empty : Seq.seq t_T'0) /\ self = o
@@ -23799,9 +24840,9 @@ module M_creusot_contracts__stdqy35z1__option__qyi11122593048316696412__produces
    -> produces'0 b bc c
   /\ produces'0 a ab b /\ (forall result : () . produces'0 a (Seq.(++) ab bc) c  -> produces'0 a (Seq.(++) ab bc) c)
 end
-module M_creusot_contracts__stdqy35z1__option__qyi13775167061943888590__produces_trans__refines [#"../../creusot-contracts/src/std/option.rs" 593 4 593 90] (* <std::option::IterMut<'a, T> as std::iter::Iterator> *)
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 593 4 593 90
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 578 12 579 96
+module M_creusot_contracts__stdqy35z1__option__qyi13775167061943888590__produces_trans__refines [#"../../creusot-contracts/src/std/option.rs" 594 4 594 90] (* <std::option::IterMut<'a, T> as std::iter::Iterator> *)
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 594 4 594 90
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 579 12 580 96
   
   use creusot.prelude.MutBorrow
   use seq.Seq
@@ -23818,9 +24859,9 @@ module M_creusot_contracts__stdqy35z1__option__qyi13775167061943888590__produces
   type t_IterMut'0  =
     { t_IterMut__inner'0: t_Item'0 }
   
-  function view'0 [#"../../creusot-contracts/src/std/option.rs" 562 4 562 38] (self : t_IterMut'0) : t_Option'0
+  function view'0 [#"../../creusot-contracts/src/std/option.rs" 563 4 563 38] (self : t_IterMut'0) : t_Option'0
   
-  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 576 4 576 64] (self : t_IterMut'0) (visited : Seq.seq (MutBorrow.t t_T'0)) (o : t_IterMut'0)
+  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 577 4 577 64] (self : t_IterMut'0) (visited : Seq.seq (MutBorrow.t t_T'0)) (o : t_IterMut'0)
   
    =
     [%#soption1] visited = (Seq.empty : Seq.seq (MutBorrow.t t_T'0)) /\ self = o
@@ -23831,9 +24872,9 @@ module M_creusot_contracts__stdqy35z1__option__qyi13775167061943888590__produces
    -> produces'0 b bc c
   /\ produces'0 a ab b /\ (forall result : () . produces'0 a (Seq.(++) ab bc) c  -> produces'0 a (Seq.(++) ab bc) c)
 end
-module M_creusot_contracts__stdqy35z1__option__qyi13775167061943888590__produces_refl__refines [#"../../creusot-contracts/src/std/option.rs" 586 4 586 26] (* <std::option::IterMut<'a, T> as std::iter::Iterator> *)
-  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 586 4 586 26
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 578 12 579 96
+module M_creusot_contracts__stdqy35z1__option__qyi13775167061943888590__produces_refl__refines [#"../../creusot-contracts/src/std/option.rs" 587 4 587 26] (* <std::option::IterMut<'a, T> as std::iter::Iterator> *)
+  let%span soption0 = "../../creusot-contracts/src/std/option.rs" 587 4 587 26
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 579 12 580 96
   
   use creusot.prelude.MutBorrow
   use seq.Seq
@@ -23850,9 +24891,9 @@ module M_creusot_contracts__stdqy35z1__option__qyi13775167061943888590__produces
   type t_IterMut'0  =
     { t_IterMut__inner'0: t_Item'0 }
   
-  function view'0 [#"../../creusot-contracts/src/std/option.rs" 562 4 562 38] (self : t_IterMut'0) : t_Option'0
+  function view'0 [#"../../creusot-contracts/src/std/option.rs" 563 4 563 38] (self : t_IterMut'0) : t_Option'0
   
-  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 576 4 576 64] (self : t_IterMut'0) (visited : Seq.seq (MutBorrow.t t_T'0)) (o : t_IterMut'0)
+  predicate produces'0 [#"../../creusot-contracts/src/std/option.rs" 577 4 577 64] (self : t_IterMut'0) (visited : Seq.seq (MutBorrow.t t_T'0)) (o : t_IterMut'0)
   
    =
     [%#soption1] visited = (Seq.empty : Seq.seq (MutBorrow.t t_T'0)) /\ self = o
@@ -25020,7 +26061,7 @@ end
 module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__cmp_ge_log__refines [#"../../creusot-contracts/src/logic/ord.rs" 140 8 140 39] (* <std::option::Option<T> as logic::ord::OrdLogic> *)
   let%span sord0 = "../../creusot-contracts/src/logic/ord.rs" 140 8 140 39
   let%span sord1 = "../../creusot-contracts/src/logic/ord.rs" 47 20 47 53
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 437 8 442 9
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 438 8 443 9
   let%span sord3 = "../../creusot-contracts/src/logic/ord.rs" 29 14 29 64
   let%span sord4 = "../../creusot-contracts/src/logic/ord.rs" 40 14 40 61
   let%span sord5 = "../../creusot-contracts/src/logic/ord.rs" 51 14 51 61
@@ -25097,7 +26138,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__cmp_ge_l
   
   axiom cmp_le_log'0_spec : forall x : t_T'0, y : t_T'0 . [%#sord3] le_log'0 x y = (cmp_log'1 x y <> C_Greater'0)
   
-  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 436 4 436 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
+  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 437 4 437 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
   
    =
     [%#soption2] match (self, o) with
@@ -25116,7 +26157,7 @@ end
 module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__cmp_le_log__refines [#"../../creusot-contracts/src/logic/ord.rs" 130 8 130 39] (* <std::option::Option<T> as logic::ord::OrdLogic> *)
   let%span sord0 = "../../creusot-contracts/src/logic/ord.rs" 130 8 130 39
   let%span sord1 = "../../creusot-contracts/src/logic/ord.rs" 25 20 25 56
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 437 8 442 9
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 438 8 443 9
   let%span sord3 = "../../creusot-contracts/src/logic/ord.rs" 29 14 29 64
   let%span sord4 = "../../creusot-contracts/src/logic/ord.rs" 40 14 40 61
   let%span sord5 = "../../creusot-contracts/src/logic/ord.rs" 51 14 51 61
@@ -25193,7 +26234,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__cmp_le_l
   
   axiom cmp_le_log'1_spec : forall x : t_T'0, y : t_T'0 . [%#sord3] le_log'1 x y = (cmp_log'1 x y <> C_Greater'0)
   
-  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 436 4 436 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
+  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 437 4 437 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
   
    =
     [%#soption2] match (self, o) with
@@ -25212,7 +26253,7 @@ end
 module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__cmp_gt_log__refines [#"../../creusot-contracts/src/logic/ord.rs" 145 8 145 39] (* <std::option::Option<T> as logic::ord::OrdLogic> *)
   let%span sord0 = "../../creusot-contracts/src/logic/ord.rs" 145 8 145 39
   let%span sord1 = "../../creusot-contracts/src/logic/ord.rs" 58 20 58 56
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 437 8 442 9
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 438 8 443 9
   let%span sord3 = "../../creusot-contracts/src/logic/ord.rs" 29 14 29 64
   let%span sord4 = "../../creusot-contracts/src/logic/ord.rs" 40 14 40 61
   let%span sord5 = "../../creusot-contracts/src/logic/ord.rs" 51 14 51 61
@@ -25289,7 +26330,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__cmp_gt_l
   
   axiom cmp_le_log'0_spec : forall x : t_T'0, y : t_T'0 . [%#sord3] le_log'0 x y = (cmp_log'1 x y <> C_Greater'0)
   
-  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 436 4 436 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
+  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 437 4 437 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
   
    =
     [%#soption2] match (self, o) with
@@ -25307,7 +26348,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__cmp_gt_l
 end
 module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__eq_cmp__refines [#"../../creusot-contracts/src/logic/ord.rs" 174 8 174 35] (* <std::option::Option<T> as logic::ord::OrdLogic> *)
   let%span sord0 = "../../creusot-contracts/src/logic/ord.rs" 174 8 174 35
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 437 8 442 9
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 438 8 443 9
   let%span sord2 = "../../creusot-contracts/src/logic/ord.rs" 29 14 29 64
   let%span sord3 = "../../creusot-contracts/src/logic/ord.rs" 40 14 40 61
   let%span sord4 = "../../creusot-contracts/src/logic/ord.rs" 51 14 51 61
@@ -25384,7 +26425,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__eq_cmp__
   
   axiom cmp_le_log'0_spec : forall x : t_T'0, y : t_T'0 . [%#sord2] le_log'0 x y = (cmp_log'1 x y <> C_Greater'0)
   
-  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 436 4 436 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
+  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 437 4 437 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
   
    =
     [%#soption1] match (self, o) with
@@ -25400,7 +26441,7 @@ end
 module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__cmp_lt_log__refines [#"../../creusot-contracts/src/logic/ord.rs" 135 8 135 39] (* <std::option::Option<T> as logic::ord::OrdLogic> *)
   let%span sord0 = "../../creusot-contracts/src/logic/ord.rs" 135 8 135 39
   let%span sord1 = "../../creusot-contracts/src/logic/ord.rs" 36 20 36 53
-  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 437 8 442 9
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 438 8 443 9
   let%span sord3 = "../../creusot-contracts/src/logic/ord.rs" 29 14 29 64
   let%span sord4 = "../../creusot-contracts/src/logic/ord.rs" 40 14 40 61
   let%span sord5 = "../../creusot-contracts/src/logic/ord.rs" 51 14 51 61
@@ -25477,7 +26518,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__cmp_lt_l
   
   axiom cmp_le_log'0_spec : forall x : t_T'0, y : t_T'0 . [%#sord3] le_log'0 x y = (cmp_log'1 x y <> C_Greater'0)
   
-  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 436 4 436 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
+  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 437 4 437 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
   
    =
     [%#soption2] match (self, o) with
@@ -25495,7 +26536,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__cmp_lt_l
 end
 module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__antisym2__refines [#"../../creusot-contracts/src/logic/ord.rs" 169 8 169 37] (* <std::option::Option<T> as logic::ord::OrdLogic> *)
   let%span sord0 = "../../creusot-contracts/src/logic/ord.rs" 169 8 169 37
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 437 8 442 9
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 438 8 443 9
   let%span sord2 = "../../creusot-contracts/src/logic/ord.rs" 29 14 29 64
   let%span sord3 = "../../creusot-contracts/src/logic/ord.rs" 40 14 40 61
   let%span sord4 = "../../creusot-contracts/src/logic/ord.rs" 51 14 51 61
@@ -25572,7 +26613,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__antisym2
   
   axiom cmp_le_log'0_spec : forall x : t_T'0, y : t_T'0 . [%#sord2] le_log'0 x y = (cmp_log'1 x y <> C_Greater'0)
   
-  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 436 4 436 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
+  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 437 4 437 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
   
    =
     [%#soption1] match (self, o) with
@@ -25587,7 +26628,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__antisym2
 end
 module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__antisym1__refines [#"../../creusot-contracts/src/logic/ord.rs" 163 8 163 37] (* <std::option::Option<T> as logic::ord::OrdLogic> *)
   let%span sord0 = "../../creusot-contracts/src/logic/ord.rs" 163 8 163 37
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 437 8 442 9
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 438 8 443 9
   let%span sord2 = "../../creusot-contracts/src/logic/ord.rs" 29 14 29 64
   let%span sord3 = "../../creusot-contracts/src/logic/ord.rs" 40 14 40 61
   let%span sord4 = "../../creusot-contracts/src/logic/ord.rs" 51 14 51 61
@@ -25664,7 +26705,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__antisym1
   
   axiom cmp_le_log'0_spec : forall x : t_T'0, y : t_T'0 . [%#sord2] le_log'0 x y = (cmp_log'1 x y <> C_Greater'0)
   
-  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 436 4 436 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
+  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 437 4 437 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
   
    =
     [%#soption1] match (self, o) with
@@ -25679,7 +26720,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__antisym1
 end
 module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__refl__refines [#"../../creusot-contracts/src/logic/ord.rs" 150 8 150 24] (* <std::option::Option<T> as logic::ord::OrdLogic> *)
   let%span sord0 = "../../creusot-contracts/src/logic/ord.rs" 150 8 150 24
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 437 8 442 9
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 438 8 443 9
   let%span sord2 = "../../creusot-contracts/src/logic/ord.rs" 29 14 29 64
   let%span sord3 = "../../creusot-contracts/src/logic/ord.rs" 40 14 40 61
   let%span sord4 = "../../creusot-contracts/src/logic/ord.rs" 51 14 51 61
@@ -25756,7 +26797,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__refl__re
   
   axiom cmp_le_log'0_spec : forall x : t_T'0, y : t_T'0 . [%#sord2] le_log'0 x y = (cmp_log'1 x y <> C_Greater'0)
   
-  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 436 4 436 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
+  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 437 4 437 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
   
    =
     [%#soption1] match (self, o) with
@@ -25771,7 +26812,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__refl__re
 end
 module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__trans__refines [#"../../creusot-contracts/src/logic/ord.rs" 157 8 157 56] (* <std::option::Option<T> as logic::ord::OrdLogic> *)
   let%span sord0 = "../../creusot-contracts/src/logic/ord.rs" 157 8 157 56
-  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 437 8 442 9
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 438 8 443 9
   let%span sord2 = "../../creusot-contracts/src/logic/ord.rs" 29 14 29 64
   let%span sord3 = "../../creusot-contracts/src/logic/ord.rs" 40 14 40 61
   let%span sord4 = "../../creusot-contracts/src/logic/ord.rs" 51 14 51 61
@@ -25848,7 +26889,7 @@ module M_creusot_contracts__stdqy35z1__option__qyi15687504979643803552__trans__r
   
   axiom cmp_le_log'0_spec : forall x : t_T'0, y : t_T'0 . [%#sord2] le_log'0 x y = (cmp_log'1 x y <> C_Greater'0)
   
-  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 436 4 436 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
+  function cmp_log'0 [#"../../creusot-contracts/src/std/option.rs" 437 4 437 41] (self : t_Option'0) (o : t_Option'0) : t_Ordering'0
   
    =
     [%#soption1] match (self, o) with
@@ -31400,13 +32441,13 @@ module M_creusot_contracts__ghost__qyi4711228197303399097__clone__refines [#"../
   goal refines : [%#sghost0] forall self : t_GhostBox'0 . inv'0 self
    -> inv'0 self /\ (forall result : t_GhostBox'0 . result = self /\ inv'1 result  -> result = self /\ inv'1 result)
 end
-module M_creusot_contracts__logic__fmap__qyi1775402764303793352__clone__refines [#"../../creusot-contracts/src/logic/fmap.rs" 476 4 476 27] (* <logic::fmap::FMap<K, V> as std::clone::Clone> *)
-  let%span sfmap0 = "../../creusot-contracts/src/logic/fmap.rs" 476 4 476 27
+module M_creusot_contracts__logic__fmap__qyi1775402764303793352__clone__refines [#"../../creusot-contracts/src/logic/fmap.rs" 509 4 509 27] (* <logic::fmap::FMap<K, V> as std::clone::Clone> *)
+  let%span sfmap0 = "../../creusot-contracts/src/logic/fmap.rs" 509 4 509 27
   let%span sinvariant1 = "../../creusot-contracts/src/invariant.rs" 25 8 25 18
-  let%span sfmap2 = "../../creusot-contracts/src/logic/fmap.rs" 490 20 490 91
-  let%span sfmap3 = "../../creusot-contracts/src/logic/fmap.rs" 133 8 133 35
-  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 125 8 125 35
-  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 104 8 104 26
+  let%span sfmap2 = "../../creusot-contracts/src/logic/fmap.rs" 523 20 523 91
+  let%span sfmap3 = "../../creusot-contracts/src/logic/fmap.rs" 166 8 166 35
+  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 158 8 158 35
+  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
   let%span sutil6 = "../../creusot-contracts/src/util.rs" 55 11 55 21
   let%span sutil7 = "../../creusot-contracts/src/util.rs" 56 10 56 28
   let%span sfmap8 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
@@ -31429,12 +32470,12 @@ module M_creusot_contracts__logic__fmap__qyi1775402764303793352__clone__refines 
   axiom view'0_spec : forall self : t_FMap'0 . [%#sfmap8] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
    -> view'0 m1 <> view'0 m2
   
-  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 103 4 103 55] (self : t_FMap'0) (k : t_K'0) : t_Option'0
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_K'0) : t_Option'0
   
    =
     [%#sfmap5] Map.get (view'0 self) k
   
-  function contains'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 132 4 132 39] (self : t_FMap'0) (k : t_K'0) : bool
+  function contains'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 165 4 165 39] (self : t_FMap'0) (k : t_K'0) : bool
   
    =
     [%#sfmap3] get_unsized'0 self k <> C_None'0
@@ -31455,12 +32496,12 @@ module M_creusot_contracts__logic__fmap__qyi1775402764303793352__clone__refines 
   axiom unwrap'0_spec : forall op : t_Option'0 . ([%#sutil6] op <> C_None'0)
    -> ([%#sutil7] C_Some'0 (unwrap'0 op) = op)
   
-  function lookup_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 124 4 124 50] (self : t_FMap'0) (k : t_K'0) : t_V'0
+  function lookup_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 157 4 157 50] (self : t_FMap'0) (k : t_K'0) : t_V'0
   
    =
     [%#sfmap4] unwrap'0 (get_unsized'0 self k)
   
-  predicate invariant'1 [#"../../creusot-contracts/src/logic/fmap.rs" 489 4 489 30] (self : t_FMap'0) =
+  predicate invariant'1 [#"../../creusot-contracts/src/logic/fmap.rs" 522 4 522 30] (self : t_FMap'0) =
     [%#sfmap2] forall k : t_K'0 . contains'0 self k  -> inv'2 k /\ inv'3 (lookup_unsized'0 self k)
   
   predicate inv'1 [#"../../creusot-contracts/src/invariant.rs" 42 0 42 35] (_1 : t_FMap'0)
@@ -31773,4 +32814,872 @@ module M_creusot_contracts__logic__int__qyi6972377124305281595__neg__refines [#"
   axiom inv_axiom'0 [@rewrite] : forall x : int [inv'0 x] . inv'0 x = true
   
   goal refines : [%#sint0] forall self : int . inv'0 self  -> (forall result : int . result = - self  -> inv'0 result)
+end
+module M_creusot_contracts__ra__qyi6033307714425369397__idemp__refines [#"../../creusot-contracts/src/ra.rs" 79 4 79 26] (* <ra::Excl<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 79 4 79 26
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 66 8 66 12
+  
+  type t_T'0
+  
+  type t_Excl'0  =
+    { t_Excl__0'0: t_T'0 }
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_Excl'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 65 4 65 45] (self : t_Excl'0) (_other : t_Excl'0) : t_Option'0 =
+    [%#sra1] C_None'0
+  
+  goal refines : [%#sra0] forall self : t_Excl'0 . forall result : bool . result = (op'0 self self = C_Some'0 self)
+   -> result = (op'0 self self = C_Some'0 self)
+end
+module M_creusot_contracts__ra__qyi6033307714425369397__le__refines [#"../../creusot-contracts/src/ra.rs" 72 4 72 36] (* <ra::Excl<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 72 4 72 36
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 66 8 66 12
+  
+  type t_T'0
+  
+  type t_Excl'0  =
+    { t_Excl__0'0: t_T'0 }
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_Excl'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 65 4 65 45] (self : t_Excl'0) (_other : t_Excl'0) : t_Option'0 =
+    [%#sra1] C_None'0
+  
+  goal refines : [%#sra0] forall self : t_Excl'0 . forall other : t_Excl'0 . forall result : bool . result
+  = (self = other \/ (exists c : t_Excl'0 . op'0 self c = C_Some'0 other))
+   -> result = (self = other \/ (exists c : t_Excl'0 . op'0 self c = C_Some'0 other))
+end
+module M_creusot_contracts__ra__qyi6033307714425369397__associative__refines [#"../../creusot-contracts/src/ra.rs" 94 4 94 45] (* <ra::Excl<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 94 4 94 45
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 623 8 626 9
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 66 8 66 12
+  
+  use map.Map
+  
+  type t_T'0
+  
+  type t_Excl'0  =
+    { t_Excl__0'0: t_T'0 }
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_Excl'0
+  
+  function and_then_logic'0 [#"../../creusot-contracts/src/std/option.rs" 622 4 622 69] (self : t_Option'0) (f : Map.map t_Excl'0 t_Option'0) : t_Option'0
+  
+   =
+    [%#soption1] match self with
+      | C_None'0 -> C_None'0
+      | C_Some'0 x -> Map.get f x
+      end
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 65 4 65 45] (self : t_Excl'0) (_other : t_Excl'0) : t_Option'0 =
+    [%#sra2] C_None'0
+  
+  goal refines : [%#sra0] forall a : t_Excl'0 . forall b : t_Excl'0 . forall c : t_Excl'0 . forall result : () . and_then_logic'0 (op'0 a b) (fun (x : t_Excl'0) -> op'0 x c)
+  = and_then_logic'0 (op'0 b c) (fun (x : t_Excl'0) -> op'0 a x)
+   -> and_then_logic'0 (op'0 a b) (fun (x : t_Excl'0) -> op'0 x c)
+  = and_then_logic'0 (op'0 b c) (fun (x : t_Excl'0) -> op'0 a x)
+end
+module M_creusot_contracts__ra__qyi6033307714425369397__commutative__refines [#"../../creusot-contracts/src/ra.rs" 86 4 86 36] (* <ra::Excl<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 86 4 86 36
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 66 8 66 12
+  
+  type t_T'0
+  
+  type t_Excl'0  =
+    { t_Excl__0'0: t_T'0 }
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_Excl'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 65 4 65 45] (self : t_Excl'0) (_other : t_Excl'0) : t_Option'0 =
+    [%#sra1] C_None'0
+  
+  goal refines : [%#sra0] forall a : t_Excl'0 . forall b : t_Excl'0 . forall result : () . op'0 a b = op'0 b a
+   -> op'0 a b = op'0 b a
+end
+module M_creusot_contracts__ra__qyi6033307714425369397__maximal_idemp__refines [#"../../creusot-contracts/src/ra.rs" 103 4 103 29] (* <ra::Excl<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 103 4 103 29
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 71 14 71 84
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 73 8 73 21
+  let%span sra3 = "../../creusot-contracts/src/ra.rs" 78 14 78 53
+  let%span sra4 = "../../creusot-contracts/src/ra.rs" 80 8 80 13
+  let%span sra5 = "../../creusot-contracts/src/ra.rs" 66 8 66 12
+  
+  type t_T'0
+  
+  type t_Excl'0  =
+    { t_Excl__0'0: t_T'0 }
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_Excl'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 65 4 65 45] (self : t_Excl'0) (_other : t_Excl'0) : t_Option'0 =
+    [%#sra5] C_None'0
+  
+  function le'0 [#"../../creusot-contracts/src/ra.rs" 72 4 72 36] (self : t_Excl'0) (other : t_Excl'0) : bool =
+    [%#sra2] self = other
+  
+  axiom le'0_spec : forall self : t_Excl'0, other : t_Excl'0 . [%#sra1] le'0 self other
+  = (self = other \/ (exists c : t_Excl'0 . op'0 self c = C_Some'0 other))
+  
+  function idemp'0 [#"../../creusot-contracts/src/ra.rs" 79 4 79 26] (self : t_Excl'0) : bool =
+    [%#sra4] false
+  
+  axiom idemp'0_spec : forall self : t_Excl'0 . [%#sra3] idemp'0 self = (op'0 self self = C_Some'0 self)
+  
+  goal refines : [%#sra0] forall a : t_Excl'0 . forall result : () . (forall b : t_Excl'0 . not (le'0 b a /\ idemp'0 b))
+  \/ (exists b : t_Excl'0 . le'0 b a /\ idemp'0 b /\ (forall c : t_Excl'0 . le'0 c a /\ idemp'0 c  -> le'0 c b))
+   -> (forall b : t_Excl'0 . not (le'0 b a /\ idemp'0 b))
+  \/ (exists b : t_Excl'0 . le'0 b a /\ idemp'0 b /\ (forall c : t_Excl'0 . le'0 c a /\ idemp'0 c  -> le'0 c b))
+end
+module M_creusot_contracts__ra__qyi7163116006894473125__associative__refines [#"../../creusot-contracts/src/ra.rs" 146 4 146 45] (* <ra::Ag<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 146 4 146 45
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 623 8 626 9
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 114 8 118 9
+  
+  use map.Map
+  
+  type t_T'0
+  
+  type t_Ag'0  =
+    { t_Ag__0'0: t_T'0 }
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_Ag'0
+  
+  function and_then_logic'0 [#"../../creusot-contracts/src/std/option.rs" 622 4 622 69] (self : t_Option'0) (f : Map.map t_Ag'0 t_Option'0) : t_Option'0
+  
+   =
+    [%#soption1] match self with
+      | C_None'0 -> C_None'0
+      | C_Some'0 x -> Map.get f x
+      end
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 113 4 113 44] (self : t_Ag'0) (other : t_Ag'0) : t_Option'0 =
+    [%#sra2] if self = other then C_Some'0 self else C_None'0
+  
+  goal refines : [%#sra0] forall a : t_Ag'0 . forall b : t_Ag'0 . forall c : t_Ag'0 . forall result : () . and_then_logic'0 (op'0 a b) (fun (x : t_Ag'0) -> op'0 x c)
+  = and_then_logic'0 (op'0 b c) (fun (x : t_Ag'0) -> op'0 a x)
+   -> and_then_logic'0 (op'0 a b) (fun (x : t_Ag'0) -> op'0 x c)
+  = and_then_logic'0 (op'0 b c) (fun (x : t_Ag'0) -> op'0 a x)
+end
+module M_creusot_contracts__ra__qyi7163116006894473125__idemp__refines [#"../../creusot-contracts/src/ra.rs" 124 4 124 26] (* <ra::Ag<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 124 4 124 26
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 114 8 118 9
+  
+  type t_T'0
+  
+  type t_Ag'0  =
+    { t_Ag__0'0: t_T'0 }
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_Ag'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 113 4 113 44] (self : t_Ag'0) (other : t_Ag'0) : t_Option'0 =
+    [%#sra1] if self = other then C_Some'0 self else C_None'0
+  
+  goal refines : [%#sra0] forall self : t_Ag'0 . forall result : bool . result = (op'0 self self = C_Some'0 self)
+   -> result = (op'0 self self = C_Some'0 self)
+end
+module M_creusot_contracts__ra__qyi7163116006894473125__le__refines [#"../../creusot-contracts/src/ra.rs" 131 4 131 36] (* <ra::Ag<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 131 4 131 36
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 114 8 118 9
+  
+  type t_T'0
+  
+  type t_Ag'0  =
+    { t_Ag__0'0: t_T'0 }
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_Ag'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 113 4 113 44] (self : t_Ag'0) (other : t_Ag'0) : t_Option'0 =
+    [%#sra1] if self = other then C_Some'0 self else C_None'0
+  
+  goal refines : [%#sra0] forall self : t_Ag'0 . forall other : t_Ag'0 . forall result : bool . result
+  = (self = other \/ (exists c : t_Ag'0 . op'0 self c = C_Some'0 other))
+   -> result = (self = other \/ (exists c : t_Ag'0 . op'0 self c = C_Some'0 other))
+end
+module M_creusot_contracts__ra__qyi7163116006894473125__maximal_idemp__refines [#"../../creusot-contracts/src/ra.rs" 155 4 155 29] (* <ra::Ag<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 155 4 155 29
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 130 14 130 84
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 132 8 132 21
+  let%span sra3 = "../../creusot-contracts/src/ra.rs" 123 14 123 53
+  let%span sra4 = "../../creusot-contracts/src/ra.rs" 125 8 125 12
+  let%span sra5 = "../../creusot-contracts/src/ra.rs" 114 8 118 9
+  
+  type t_T'0
+  
+  type t_Ag'0  =
+    { t_Ag__0'0: t_T'0 }
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_Ag'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 113 4 113 44] (self : t_Ag'0) (other : t_Ag'0) : t_Option'0 =
+    [%#sra5] if self = other then C_Some'0 self else C_None'0
+  
+  function le'0 [#"../../creusot-contracts/src/ra.rs" 131 4 131 36] (self : t_Ag'0) (other : t_Ag'0) : bool =
+    [%#sra2] self = other
+  
+  axiom le'0_spec : forall self : t_Ag'0, other : t_Ag'0 . [%#sra1] le'0 self other
+  = (self = other \/ (exists c : t_Ag'0 . op'0 self c = C_Some'0 other))
+  
+  function idemp'0 [#"../../creusot-contracts/src/ra.rs" 124 4 124 26] (self : t_Ag'0) : bool =
+    [%#sra4] true
+  
+  axiom idemp'0_spec : forall self : t_Ag'0 . [%#sra3] idemp'0 self = (op'0 self self = C_Some'0 self)
+  
+  goal refines : [%#sra0] forall a : t_Ag'0 . forall result : () . (forall b : t_Ag'0 . not (le'0 b a /\ idemp'0 b))
+  \/ (exists b : t_Ag'0 . le'0 b a /\ idemp'0 b /\ (forall c : t_Ag'0 . le'0 c a /\ idemp'0 c  -> le'0 c b))
+   -> (forall b : t_Ag'0 . not (le'0 b a /\ idemp'0 b))
+  \/ (exists b : t_Ag'0 . le'0 b a /\ idemp'0 b /\ (forall c : t_Ag'0 . le'0 c a /\ idemp'0 c  -> le'0 c b))
+end
+module M_creusot_contracts__ra__qyi7163116006894473125__commutative__refines [#"../../creusot-contracts/src/ra.rs" 138 4 138 36] (* <ra::Ag<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 138 4 138 36
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 114 8 118 9
+  
+  type t_T'0
+  
+  type t_Ag'0  =
+    { t_Ag__0'0: t_T'0 }
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_Ag'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 113 4 113 44] (self : t_Ag'0) (other : t_Ag'0) : t_Option'0 =
+    [%#sra1] if self = other then C_Some'0 self else C_None'0
+  
+  goal refines : [%#sra0] forall a : t_Ag'0 . forall b : t_Ag'0 . forall result : () . op'0 a b = op'0 b a
+   -> op'0 a b = op'0 b a
+end
+module M_creusot_contracts__ra__qyi8501750256077767607__idemp__refines [#"../../creusot-contracts/src/ra.rs" 225 4 225 26] (* <std::option::Option<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 225 4 225 26
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 202 8 206 9
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 623 8 626 9
+  
+  use map.Map
+  
+  type t_T'0
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'1 t_T'0
+  
+  type t_Option'1  =
+    | C_None'1
+    | C_Some'0 t_Option'0
+  
+  function and_then_logic'0 [#"../../creusot-contracts/src/std/option.rs" 622 4 622 69] (self : t_Option'0) (f : Map.map t_T'0 t_Option'1) : t_Option'1
+  
+   =
+    [%#soption2] match self with
+      | C_None'0 -> C_None'1
+      | C_Some'1 x -> Map.get f x
+      end
+  
+  function op'1 [#"../../creusot-contracts/src/ra.rs" 8 4 8 45] (self : t_T'0) (other : t_T'0) : t_Option'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 201 4 201 44] (self : t_Option'0) (other : t_Option'0) : t_Option'1
+  
+   =
+    [%#sra1] match (self, other) with
+      | (C_None'0, _) -> C_Some'0 other
+      | (_, C_None'0) -> C_Some'0 self
+      | (C_Some'1 x, C_Some'1 y) -> and_then_logic'0 (op'1 x y) (fun (x : t_T'0) -> C_Some'0 (C_Some'1 x))
+      end
+  
+  goal refines : [%#sra0] forall self : t_Option'0 . forall result : bool . result = (op'0 self self = C_Some'0 self)
+   -> result = (op'0 self self = C_Some'0 self)
+end
+module M_creusot_contracts__ra__qyi8501750256077767607__maximal_idemp__refines [#"../../creusot-contracts/src/ra.rs" 264 4 264 29] (* <std::option::Option<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 264 4 264 29
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 211 14 211 84
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 213 8 219 9
+  let%span sra3 = "../../creusot-contracts/src/ra.rs" 224 14 224 53
+  let%span sra4 = "../../creusot-contracts/src/ra.rs" 226 8 229 9
+  let%span sra5 = "../../creusot-contracts/src/ra.rs" 202 8 206 9
+  let%span sra6 = "../../creusot-contracts/src/ra.rs" 35 14 35 84
+  let%span sra7 = "../../creusot-contracts/src/ra.rs" 39 14 39 53
+  let%span soption8 = "../../creusot-contracts/src/std/option.rs" 623 8 626 9
+  
+  use map.Map
+  
+  type t_T'0
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_T'0
+  
+  type t_Option'1  =
+    | C_None'1
+    | C_Some'1 t_Option'0
+  
+  function and_then_logic'0 [#"../../creusot-contracts/src/std/option.rs" 622 4 622 69] (self : t_Option'0) (f : Map.map t_T'0 t_Option'1) : t_Option'1
+  
+   =
+    [%#soption8] match self with
+      | C_None'0 -> C_None'1
+      | C_Some'0 x -> Map.get f x
+      end
+  
+  function op'1 [#"../../creusot-contracts/src/ra.rs" 8 4 8 45] (self : t_T'0) (other : t_T'0) : t_Option'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 201 4 201 44] (self : t_Option'0) (other : t_Option'0) : t_Option'1
+  
+   =
+    [%#sra5] match (self, other) with
+      | (C_None'0, _) -> C_Some'1 other
+      | (_, C_None'0) -> C_Some'1 self
+      | (C_Some'0 x, C_Some'0 y) -> and_then_logic'0 (op'1 x y) (fun (x : t_T'0) -> C_Some'1 (C_Some'0 x))
+      end
+  
+  function le'1 [#"../../creusot-contracts/src/ra.rs" 36 4 36 37] (self : t_T'0) (other : t_T'0) : bool
+  
+  axiom le'1_spec : forall self : t_T'0, other : t_T'0 . [%#sra6] le'1 self other
+  = (self = other \/ (exists c : t_T'0 . op'1 self c = C_Some'0 other))
+  
+  function le'0 [#"../../creusot-contracts/src/ra.rs" 212 4 212 36] (self : t_Option'0) (other : t_Option'0) : bool =
+    [%#sra2] match (self, other) with
+      | (C_None'0, _) -> true
+      | (_, C_None'0) -> false
+      | (C_Some'0 x, C_Some'0 y) -> le'1 x y
+      end
+  
+  axiom le'0_spec : forall self : t_Option'0, other : t_Option'0 . [%#sra1] le'0 self other
+  = (self = other \/ (exists c : t_Option'0 . op'0 self c = C_Some'1 other))
+  
+  function idemp'1 [#"../../creusot-contracts/src/ra.rs" 40 4 40 27] (self : t_T'0) : bool
+  
+  axiom idemp'1_spec : forall self : t_T'0 . [%#sra7] idemp'1 self = (op'1 self self = C_Some'0 self)
+  
+  function idemp'0 [#"../../creusot-contracts/src/ra.rs" 225 4 225 26] (self : t_Option'0) : bool =
+    [%#sra4] match self with
+      | C_None'0 -> true
+      | C_Some'0 x -> idemp'1 x
+      end
+  
+  axiom idemp'0_spec : forall self : t_Option'0 . [%#sra3] idemp'0 self = (op'0 self self = C_Some'1 self)
+  
+  goal refines : [%#sra0] forall a : t_Option'0 . forall result : () . (forall b : t_Option'0 . not (le'0 b a
+  /\ idemp'0 b))
+  \/ (exists b : t_Option'0 . le'0 b a /\ idemp'0 b /\ (forall c : t_Option'0 . le'0 c a /\ idemp'0 c  -> le'0 c b))
+   -> (forall b : t_Option'0 . not (le'0 b a /\ idemp'0 b))
+  \/ (exists b : t_Option'0 . le'0 b a /\ idemp'0 b /\ (forall c : t_Option'0 . le'0 c a /\ idemp'0 c  -> le'0 c b))
+end
+module M_creusot_contracts__ra__qyi8501750256077767607__associative__refines [#"../../creusot-contracts/src/ra.rs" 246 4 246 45] (* <std::option::Option<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 246 4 246 45
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 623 8 626 9
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 202 8 206 9
+  
+  use map.Map
+  
+  type t_T'0
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_T'0
+  
+  type t_Option'1  =
+    | C_None'1
+    | C_Some'1 t_Option'0
+  
+  function and_then_logic'0 [#"../../creusot-contracts/src/std/option.rs" 622 4 622 69] (self : t_Option'1) (f : Map.map t_Option'0 t_Option'1) : t_Option'1
+  
+   =
+    [%#soption1] match self with
+      | C_None'1 -> C_None'1
+      | C_Some'1 x -> Map.get f x
+      end
+  
+  function and_then_logic'1 [#"../../creusot-contracts/src/std/option.rs" 622 4 622 69] (self : t_Option'0) (f : Map.map t_T'0 t_Option'1) : t_Option'1
+  
+   =
+    [%#soption1] match self with
+      | C_None'0 -> C_None'1
+      | C_Some'0 x -> Map.get f x
+      end
+  
+  function op'1 [#"../../creusot-contracts/src/ra.rs" 8 4 8 45] (self : t_T'0) (other : t_T'0) : t_Option'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 201 4 201 44] (self : t_Option'0) (other : t_Option'0) : t_Option'1
+  
+   =
+    [%#sra2] match (self, other) with
+      | (C_None'0, _) -> C_Some'1 other
+      | (_, C_None'0) -> C_Some'1 self
+      | (C_Some'0 x, C_Some'0 y) -> and_then_logic'1 (op'1 x y) (fun (x : t_T'0) -> C_Some'1 (C_Some'0 x))
+      end
+  
+  goal refines : [%#sra0] forall a : t_Option'0 . forall b : t_Option'0 . forall c : t_Option'0 . forall result : () . and_then_logic'0 (op'0 a b) (fun (x : t_Option'0) -> op'0 x c)
+  = and_then_logic'0 (op'0 b c) (fun (x : t_Option'0) -> op'0 a x)
+   -> and_then_logic'0 (op'0 a b) (fun (x : t_Option'0) -> op'0 x c)
+  = and_then_logic'0 (op'0 b c) (fun (x : t_Option'0) -> op'0 a x)
+end
+module M_creusot_contracts__ra__qyi8501750256077767607__le__refines [#"../../creusot-contracts/src/ra.rs" 212 4 212 36] (* <std::option::Option<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 212 4 212 36
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 202 8 206 9
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 623 8 626 9
+  
+  use map.Map
+  
+  type t_T'0
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'1 t_T'0
+  
+  type t_Option'1  =
+    | C_None'1
+    | C_Some'0 t_Option'0
+  
+  function and_then_logic'0 [#"../../creusot-contracts/src/std/option.rs" 622 4 622 69] (self : t_Option'0) (f : Map.map t_T'0 t_Option'1) : t_Option'1
+  
+   =
+    [%#soption2] match self with
+      | C_None'0 -> C_None'1
+      | C_Some'1 x -> Map.get f x
+      end
+  
+  function op'1 [#"../../creusot-contracts/src/ra.rs" 8 4 8 45] (self : t_T'0) (other : t_T'0) : t_Option'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 201 4 201 44] (self : t_Option'0) (other : t_Option'0) : t_Option'1
+  
+   =
+    [%#sra1] match (self, other) with
+      | (C_None'0, _) -> C_Some'0 other
+      | (_, C_None'0) -> C_Some'0 self
+      | (C_Some'1 x, C_Some'1 y) -> and_then_logic'0 (op'1 x y) (fun (x : t_T'0) -> C_Some'0 (C_Some'1 x))
+      end
+  
+  goal refines : [%#sra0] forall self : t_Option'0 . forall other : t_Option'0 . forall result : bool . result
+  = (self = other \/ (exists c : t_Option'0 . op'0 self c = C_Some'0 other))
+   -> result = (self = other \/ (exists c : t_Option'0 . op'0 self c = C_Some'0 other))
+end
+module M_creusot_contracts__ra__qyi8501750256077767607__commutative__refines [#"../../creusot-contracts/src/ra.rs" 235 4 235 36] (* <std::option::Option<T> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 235 4 235 36
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 202 8 206 9
+  let%span soption2 = "../../creusot-contracts/src/std/option.rs" 623 8 626 9
+  
+  use map.Map
+  
+  type t_T'0
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_T'0
+  
+  type t_Option'1  =
+    | C_None'1
+    | C_Some'1 t_Option'0
+  
+  function and_then_logic'0 [#"../../creusot-contracts/src/std/option.rs" 622 4 622 69] (self : t_Option'0) (f : Map.map t_T'0 t_Option'1) : t_Option'1
+  
+   =
+    [%#soption2] match self with
+      | C_None'0 -> C_None'1
+      | C_Some'0 x -> Map.get f x
+      end
+  
+  function op'1 [#"../../creusot-contracts/src/ra.rs" 8 4 8 45] (self : t_T'0) (other : t_T'0) : t_Option'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 201 4 201 44] (self : t_Option'0) (other : t_Option'0) : t_Option'1
+  
+   =
+    [%#sra1] match (self, other) with
+      | (C_None'0, _) -> C_Some'1 other
+      | (_, C_None'0) -> C_Some'1 self
+      | (C_Some'0 x, C_Some'0 y) -> and_then_logic'0 (op'1 x y) (fun (x : t_T'0) -> C_Some'1 (C_Some'0 x))
+      end
+  
+  goal refines : [%#sra0] forall a : t_Option'0 . forall b : t_Option'0 . forall result : () . op'0 a b = op'0 b a
+   -> op'0 a b = op'0 b a
+end
+module M_creusot_contracts__ra__qyi8695619954646013653__le__refines [#"../../creusot-contracts/src/ra.rs" 285 4 285 36] (* <logic::fmap::FMap<K, V> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 285 4 285 36
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 279 8 279 58
+  let%span sfmap2 = "../../creusot-contracts/src/logic/fmap.rs" 86 8 102 9
+  let%span sfmap3 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
+  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
+  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
+  
+  use map.Map
+  
+  type t_FMap'0
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_FMap'0
+  
+  type t_V'0
+  
+  type t_Option'1  =
+    | C_None'1
+    | C_Some'1 t_V'0
+  
+  type t_K'0
+  
+  type t_Option'2  =
+    | C_None'2
+    | C_Some'2 t_V'0
+  
+  function view'0 [#"../../creusot-contracts/src/logic/fmap.rs" 60 4 60 35] (self : t_FMap'0) : Map.map t_K'0 t_Option'2
+  
+  axiom view'0_spec : forall self : t_FMap'0 . [%#sfmap5] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
+   -> view'0 m1 <> view'0 m2
+  
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_K'0) : t_Option'2
+  
+   =
+    [%#sfmap4] Map.get (view'0 self) k
+  
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_K'0) : t_Option'1
+  
+   =
+    [%#sfmap3] match get_unsized'0 self k with
+      | C_None'2 -> C_None'1
+      | C_Some'2 x -> C_Some'1 x
+      end
+  
+  function merge_common'0 [#"../../creusot-contracts/src/logic/fmap.rs" 104 4 111 16] (self : t_FMap'0) (m : t_FMap'0) (f : Map.map (t_V'0, t_V'0) t_Option'1) : t_Option'0
+  
+  
+  axiom merge_common'0_spec : forall self : t_FMap'0, m : t_FMap'0, f : Map.map (t_V'0, t_V'0) t_Option'1 . [%#sfmap2] match merge_common'0 self m f with
+    | C_None'0 -> exists k : t_K'0, x : t_V'0, y : t_V'0 . get'0 self k = C_Some'1 x
+    /\ get'0 m k = C_Some'1 y /\ Map.get f (x, y) = C_None'1
+    | C_Some'0 res -> forall k : t_K'0 . match (get'0 self k, get'0 m k) with
+      | (C_None'1, y) -> get'0 res k = y
+      | (x, C_None'1) -> get'0 res k = x
+      | (C_Some'1 x, C_Some'1 y) -> exists z : t_V'0 . Map.get f (x, y) = C_Some'1 z /\ get'0 res k = C_Some'1 z
+      end
+    end
+  
+  function op'1 [#"../../creusot-contracts/src/ra.rs" 8 4 8 45] (self : t_V'0) (other : t_V'0) : t_Option'1
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 278 4 278 44] (self : t_FMap'0) (other : t_FMap'0) : t_Option'0 =
+    [%#sra1] merge_common'0 self other (fun (_2 : (t_V'0, t_V'0)) -> let (x, y) = _2 in op'1 x y)
+  
+  goal refines : [%#sra0] forall self : t_FMap'0 . forall other : t_FMap'0 . forall result : bool . result
+  = (self = other \/ (exists c : t_FMap'0 . op'0 self c = C_Some'0 other))
+   -> result = (self = other \/ (exists c : t_FMap'0 . op'0 self c = C_Some'0 other))
+end
+module M_creusot_contracts__ra__qyi8695619954646013653__commutative__refines [#"../../creusot-contracts/src/ra.rs" 304 4 304 36] (* <logic::fmap::FMap<K, V> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 304 4 304 36
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 279 8 279 58
+  let%span sfmap2 = "../../creusot-contracts/src/logic/fmap.rs" 86 8 102 9
+  let%span sfmap3 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
+  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
+  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
+  
+  use map.Map
+  
+  type t_FMap'0
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_FMap'0
+  
+  type t_V'0
+  
+  type t_Option'1  =
+    | C_None'1
+    | C_Some'1 t_V'0
+  
+  type t_K'0
+  
+  type t_Option'2  =
+    | C_None'2
+    | C_Some'2 t_V'0
+  
+  function view'0 [#"../../creusot-contracts/src/logic/fmap.rs" 60 4 60 35] (self : t_FMap'0) : Map.map t_K'0 t_Option'2
+  
+  axiom view'0_spec : forall self : t_FMap'0 . [%#sfmap5] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
+   -> view'0 m1 <> view'0 m2
+  
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_K'0) : t_Option'2
+  
+   =
+    [%#sfmap4] Map.get (view'0 self) k
+  
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_K'0) : t_Option'1
+  
+   =
+    [%#sfmap3] match get_unsized'0 self k with
+      | C_None'2 -> C_None'1
+      | C_Some'2 x -> C_Some'1 x
+      end
+  
+  function merge_common'0 [#"../../creusot-contracts/src/logic/fmap.rs" 104 4 111 16] (self : t_FMap'0) (m : t_FMap'0) (f : Map.map (t_V'0, t_V'0) t_Option'1) : t_Option'0
+  
+  
+  axiom merge_common'0_spec : forall self : t_FMap'0, m : t_FMap'0, f : Map.map (t_V'0, t_V'0) t_Option'1 . [%#sfmap2] match merge_common'0 self m f with
+    | C_None'0 -> exists k : t_K'0, x : t_V'0, y : t_V'0 . get'0 self k = C_Some'1 x
+    /\ get'0 m k = C_Some'1 y /\ Map.get f (x, y) = C_None'1
+    | C_Some'0 res -> forall k : t_K'0 . match (get'0 self k, get'0 m k) with
+      | (C_None'1, y) -> get'0 res k = y
+      | (x, C_None'1) -> get'0 res k = x
+      | (C_Some'1 x, C_Some'1 y) -> exists z : t_V'0 . Map.get f (x, y) = C_Some'1 z /\ get'0 res k = C_Some'1 z
+      end
+    end
+  
+  function op'1 [#"../../creusot-contracts/src/ra.rs" 8 4 8 45] (self : t_V'0) (other : t_V'0) : t_Option'1
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 278 4 278 44] (self : t_FMap'0) (other : t_FMap'0) : t_Option'0 =
+    [%#sra1] merge_common'0 self other (fun (_2 : (t_V'0, t_V'0)) -> let (x, y) = _2 in op'1 x y)
+  
+  goal refines : [%#sra0] forall a : t_FMap'0 . forall b : t_FMap'0 . forall result : () . op'0 a b = op'0 b a
+   -> op'0 a b = op'0 b a
+end
+module M_creusot_contracts__ra__qyi8695619954646013653__idemp__refines [#"../../creusot-contracts/src/ra.rs" 297 4 297 26] (* <logic::fmap::FMap<K, V> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 297 4 297 26
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 279 8 279 58
+  let%span sfmap2 = "../../creusot-contracts/src/logic/fmap.rs" 86 8 102 9
+  let%span sfmap3 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
+  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
+  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
+  
+  use map.Map
+  
+  type t_FMap'0
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_FMap'0
+  
+  type t_V'0
+  
+  type t_Option'1  =
+    | C_None'1
+    | C_Some'1 t_V'0
+  
+  type t_K'0
+  
+  type t_Option'2  =
+    | C_None'2
+    | C_Some'2 t_V'0
+  
+  function view'0 [#"../../creusot-contracts/src/logic/fmap.rs" 60 4 60 35] (self : t_FMap'0) : Map.map t_K'0 t_Option'2
+  
+  axiom view'0_spec : forall self : t_FMap'0 . [%#sfmap5] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
+   -> view'0 m1 <> view'0 m2
+  
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_K'0) : t_Option'2
+  
+   =
+    [%#sfmap4] Map.get (view'0 self) k
+  
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_K'0) : t_Option'1
+  
+   =
+    [%#sfmap3] match get_unsized'0 self k with
+      | C_None'2 -> C_None'1
+      | C_Some'2 x -> C_Some'1 x
+      end
+  
+  function merge_common'0 [#"../../creusot-contracts/src/logic/fmap.rs" 104 4 111 16] (self : t_FMap'0) (m : t_FMap'0) (f : Map.map (t_V'0, t_V'0) t_Option'1) : t_Option'0
+  
+  
+  axiom merge_common'0_spec : forall self : t_FMap'0, m : t_FMap'0, f : Map.map (t_V'0, t_V'0) t_Option'1 . [%#sfmap2] match merge_common'0 self m f with
+    | C_None'0 -> exists k : t_K'0, x : t_V'0, y : t_V'0 . get'0 self k = C_Some'1 x
+    /\ get'0 m k = C_Some'1 y /\ Map.get f (x, y) = C_None'1
+    | C_Some'0 res -> forall k : t_K'0 . match (get'0 self k, get'0 m k) with
+      | (C_None'1, y) -> get'0 res k = y
+      | (x, C_None'1) -> get'0 res k = x
+      | (C_Some'1 x, C_Some'1 y) -> exists z : t_V'0 . Map.get f (x, y) = C_Some'1 z /\ get'0 res k = C_Some'1 z
+      end
+    end
+  
+  function op'1 [#"../../creusot-contracts/src/ra.rs" 8 4 8 45] (self : t_V'0) (other : t_V'0) : t_Option'1
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 278 4 278 44] (self : t_FMap'0) (other : t_FMap'0) : t_Option'0 =
+    [%#sra1] merge_common'0 self other (fun (_2 : (t_V'0, t_V'0)) -> let (x, y) = _2 in op'1 x y)
+  
+  goal refines : [%#sra0] forall self : t_FMap'0 . forall result : bool . result = (op'0 self self = C_Some'0 self)
+   -> result = (op'0 self self = C_Some'0 self)
+end
+module M_creusot_contracts__ra__qyi8695619954646013653__maximal_idemp__refines [#"../../creusot-contracts/src/ra.rs" 325 4 325 29] (* <logic::fmap::FMap<K, V> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 325 4 325 29
+  let%span sra1 = "../../creusot-contracts/src/ra.rs" 284 14 284 84
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 286 8 291 11
+  let%span sra3 = "../../creusot-contracts/src/ra.rs" 296 14 296 53
+  let%span sra4 = "../../creusot-contracts/src/ra.rs" 298 8 298 12
+  let%span sra5 = "../../creusot-contracts/src/ra.rs" 279 8 279 58
+  let%span sra6 = "../../creusot-contracts/src/ra.rs" 35 14 35 84
+  let%span sfmap7 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
+  let%span sfmap8 = "../../creusot-contracts/src/logic/fmap.rs" 86 8 102 9
+  let%span sfmap9 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
+  let%span sfmap10 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
+  
+  use map.Map
+  
+  type t_FMap'0
+  
+  type t_Option'1  =
+    | C_None'2
+    | C_Some'0 t_FMap'0
+  
+  type t_V'0
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'1 t_V'0
+  
+  type t_K'0
+  
+  type t_Option'2  =
+    | C_None'1
+    | C_Some'2 t_V'0
+  
+  function view'0 [#"../../creusot-contracts/src/logic/fmap.rs" 60 4 60 35] (self : t_FMap'0) : Map.map t_K'0 t_Option'2
+  
+  axiom view'0_spec : forall self : t_FMap'0 . [%#sfmap10] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
+   -> view'0 m1 <> view'0 m2
+  
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_K'0) : t_Option'2
+  
+   =
+    [%#sfmap9] Map.get (view'0 self) k
+  
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_K'0) : t_Option'0
+  
+   =
+    [%#sfmap7] match get_unsized'0 self k with
+      | C_None'1 -> C_None'0
+      | C_Some'2 x -> C_Some'1 x
+      end
+  
+  function merge_common'0 [#"../../creusot-contracts/src/logic/fmap.rs" 104 4 111 16] (self : t_FMap'0) (m : t_FMap'0) (f : Map.map (t_V'0, t_V'0) t_Option'0) : t_Option'1
+  
+  
+  axiom merge_common'0_spec : forall self : t_FMap'0, m : t_FMap'0, f : Map.map (t_V'0, t_V'0) t_Option'0 . [%#sfmap8] match merge_common'0 self m f with
+    | C_None'2 -> exists k : t_K'0, x : t_V'0, y : t_V'0 . get'0 self k = C_Some'1 x
+    /\ get'0 m k = C_Some'1 y /\ Map.get f (x, y) = C_None'0
+    | C_Some'0 res -> forall k : t_K'0 . match (get'0 self k, get'0 m k) with
+      | (C_None'0, y) -> get'0 res k = y
+      | (x, C_None'0) -> get'0 res k = x
+      | (C_Some'1 x, C_Some'1 y) -> exists z : t_V'0 . Map.get f (x, y) = C_Some'1 z /\ get'0 res k = C_Some'1 z
+      end
+    end
+  
+  function op'1 [#"../../creusot-contracts/src/ra.rs" 8 4 8 45] (self : t_V'0) (other : t_V'0) : t_Option'0
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 278 4 278 44] (self : t_FMap'0) (other : t_FMap'0) : t_Option'1 =
+    [%#sra5] merge_common'0 self other (fun (_2 : (t_V'0, t_V'0)) -> let (x, y) = _2 in op'1 x y)
+  
+  function le'1 [#"../../creusot-contracts/src/ra.rs" 36 4 36 37] (self : t_V'0) (other : t_V'0) : bool
+  
+  axiom le'1_spec : forall self : t_V'0, other : t_V'0 . [%#sra6] le'1 self other
+  = (self = other \/ (exists c : t_V'0 . op'1 self c = C_Some'1 other))
+  
+  function le'0 [#"../../creusot-contracts/src/ra.rs" 285 4 285 36] (self : t_FMap'0) (other : t_FMap'0) : bool =
+    [%#sra2] forall k : t_K'0 . match (get'0 self k, get'0 other k) with
+      | (C_None'0, _) -> true
+      | (C_Some'1 _, C_None'0) -> false
+      | (C_Some'1 x, C_Some'1 y) -> le'1 x y
+      end
+  
+  axiom le'0_spec : forall self : t_FMap'0, other : t_FMap'0 . [%#sra1] le'0 self other
+  = (self = other \/ (exists c : t_FMap'0 . op'0 self c = C_Some'0 other))
+  
+  function idemp'0 [#"../../creusot-contracts/src/ra.rs" 297 4 297 26] (self : t_FMap'0) : bool =
+    [%#sra4] true
+  
+  axiom idemp'0_spec : forall self : t_FMap'0 . [%#sra3] idemp'0 self = (op'0 self self = C_Some'0 self)
+  
+  goal refines : [%#sra0] forall a : t_FMap'0 . forall result : () . (forall b : t_FMap'0 . not (le'0 b a /\ idemp'0 b))
+  \/ (exists b : t_FMap'0 . le'0 b a /\ idemp'0 b /\ (forall c : t_FMap'0 . le'0 c a /\ idemp'0 c  -> le'0 c b))
+   -> (forall b : t_FMap'0 . not (le'0 b a /\ idemp'0 b))
+  \/ (exists b : t_FMap'0 . le'0 b a /\ idemp'0 b /\ (forall c : t_FMap'0 . le'0 c a /\ idemp'0 c  -> le'0 c b))
+end
+module M_creusot_contracts__ra__qyi8695619954646013653__associative__refines [#"../../creusot-contracts/src/ra.rs" 314 4 314 45] (* <logic::fmap::FMap<K, V> as ra::RA> *)
+  let%span sra0 = "../../creusot-contracts/src/ra.rs" 314 4 314 45
+  let%span soption1 = "../../creusot-contracts/src/std/option.rs" 623 8 626 9
+  let%span sra2 = "../../creusot-contracts/src/ra.rs" 279 8 279 58
+  let%span sfmap3 = "../../creusot-contracts/src/logic/fmap.rs" 86 8 102 9
+  let%span sfmap4 = "../../creusot-contracts/src/logic/fmap.rs" 126 8 129 9
+  let%span sfmap5 = "../../creusot-contracts/src/logic/fmap.rs" 137 8 137 26
+  let%span sfmap6 = "../../creusot-contracts/src/logic/fmap.rs" 59 14 59 86
+  
+  use map.Map
+  
+  type t_FMap'0
+  
+  type t_Option'0  =
+    | C_None'0
+    | C_Some'0 t_FMap'0
+  
+  function and_then_logic'0 [#"../../creusot-contracts/src/std/option.rs" 622 4 622 69] (self : t_Option'0) (f : Map.map t_FMap'0 t_Option'0) : t_Option'0
+  
+   =
+    [%#soption1] match self with
+      | C_None'0 -> C_None'0
+      | C_Some'0 x -> Map.get f x
+      end
+  
+  type t_V'0
+  
+  type t_Option'1  =
+    | C_None'1
+    | C_Some'1 t_V'0
+  
+  type t_K'0
+  
+  type t_Option'2  =
+    | C_None'2
+    | C_Some'2 t_V'0
+  
+  function view'0 [#"../../creusot-contracts/src/logic/fmap.rs" 60 4 60 35] (self : t_FMap'0) : Map.map t_K'0 t_Option'2
+  
+  axiom view'0_spec : forall self : t_FMap'0 . [%#sfmap6] forall m1 : t_FMap'0, m2 : t_FMap'0 . m1 <> m2
+   -> view'0 m1 <> view'0 m2
+  
+  function get_unsized'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 136 4 136 55] (self : t_FMap'0) (k : t_K'0) : t_Option'2
+  
+   =
+    [%#sfmap5] Map.get (view'0 self) k
+  
+  function get'0 [@inline:trivial] [#"../../creusot-contracts/src/logic/fmap.rs" 122 4 124 17] (self : t_FMap'0) (k : t_K'0) : t_Option'1
+  
+   =
+    [%#sfmap4] match get_unsized'0 self k with
+      | C_None'2 -> C_None'1
+      | C_Some'2 x -> C_Some'1 x
+      end
+  
+  function merge_common'0 [#"../../creusot-contracts/src/logic/fmap.rs" 104 4 111 16] (self : t_FMap'0) (m : t_FMap'0) (f : Map.map (t_V'0, t_V'0) t_Option'1) : t_Option'0
+  
+  
+  axiom merge_common'0_spec : forall self : t_FMap'0, m : t_FMap'0, f : Map.map (t_V'0, t_V'0) t_Option'1 . [%#sfmap3] match merge_common'0 self m f with
+    | C_None'0 -> exists k : t_K'0, x : t_V'0, y : t_V'0 . get'0 self k = C_Some'1 x
+    /\ get'0 m k = C_Some'1 y /\ Map.get f (x, y) = C_None'1
+    | C_Some'0 res -> forall k : t_K'0 . match (get'0 self k, get'0 m k) with
+      | (C_None'1, y) -> get'0 res k = y
+      | (x, C_None'1) -> get'0 res k = x
+      | (C_Some'1 x, C_Some'1 y) -> exists z : t_V'0 . Map.get f (x, y) = C_Some'1 z /\ get'0 res k = C_Some'1 z
+      end
+    end
+  
+  function op'1 [#"../../creusot-contracts/src/ra.rs" 8 4 8 45] (self : t_V'0) (other : t_V'0) : t_Option'1
+  
+  function op'0 [#"../../creusot-contracts/src/ra.rs" 278 4 278 44] (self : t_FMap'0) (other : t_FMap'0) : t_Option'0 =
+    [%#sra2] merge_common'0 self other (fun (_2 : (t_V'0, t_V'0)) -> let (x, y) = _2 in op'1 x y)
+  
+  goal refines : [%#sra0] forall a : t_FMap'0 . forall b : t_FMap'0 . forall c : t_FMap'0 . forall result : () . and_then_logic'0 (op'0 a b) (fun (x : t_FMap'0) -> op'0 x c)
+  = and_then_logic'0 (op'0 b c) (fun (x : t_FMap'0) -> op'0 a x)
+   -> and_then_logic'0 (op'0 a b) (fun (x : t_FMap'0) -> op'0 x c)
+  = and_then_logic'0 (op'0 b c) (fun (x : t_FMap'0) -> op'0 a x)
 end

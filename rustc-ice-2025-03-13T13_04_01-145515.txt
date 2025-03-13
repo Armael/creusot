@@ -1,0 +1,65 @@
+thread 'rustc' panicked at /rustc/a730edcd67c7cb29d4458e170d4eb290387c27c3/compiler/rustc_type_ir/src/binder.rs:734:9:
+type parameter `U/#1` (U/#1/1) out of range when instantiating, args=[(T/#0, U/#1)]
+stack backtrace:
+   0:     0x7fec92862ee5 - std::backtrace::Backtrace::create::h2d4276ea66f8d84d
+   1:     0x7fec90c15c45 - std::backtrace::Backtrace::force_capture::hb91139e770f18342
+   2:     0x7fec8fd87644 - std[41a6e8152209c0a6]::panicking::update_hook::<alloc[9f80a3905cc8b55b]::boxed::Box<rustc_driver_impl[3ce1408bca960349]::install_ice_hook::{closure#1}>>::{closure#0}
+   3:     0x7fec90c2e583 - std::panicking::rust_panic_with_hook::hdb647d40fc260137
+   4:     0x7fec90c2e27a - std::panicking::begin_panic_handler::{{closure}}::h7323aa792739fc4e
+   5:     0x7fec90c2bc49 - std::sys::backtrace::__rust_end_short_backtrace::h304d83d1d823b3b1
+   6:     0x7fec90c2df3d - rust_begin_unwind
+   7:     0x7fec8d852a00 - core::panicking::panic_fmt::h9a9c479b3cce79d6
+   8:     0x7fec9033f949 - <rustc_type_ir[8679f74aa0b6c863]::binder::ArgFolder<rustc_middle[80127f98e0fedb5b]::ty::context::TyCtxt>>::type_param_out_of_range
+   9:     0x61dc00023c0c - rustc_type_ir::binder::ArgFolder<I>::ty_for_param::h15b9fa535f6066a5
+                               at /home/armael/.rustup/toolchains/nightly-2025-01-31-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/compiler/rustc_type_ir/src/binder.rs:712:21
+  10:     0x61dc00022169 - <rustc_type_ir::binder::ArgFolder<I> as rustc_type_ir::fold::TypeFolder<I>>::fold_ty::h2fbb6b3231172864
+                               at /home/armael/.rustup/toolchains/nightly-2025-01-31-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/compiler/rustc_type_ir/src/binder.rs:691:29
+  11:     0x61dc0002b654 - <F as rustc_type_ir::fold::FallibleTypeFolder<I>>::try_fold_ty::hc212d0955501037b
+                               at /home/armael/.rustup/toolchains/nightly-2025-01-31-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/compiler/rustc_type_ir/src/fold.rs:218:12
+  12:     0x61dc002b3029 - rustc_middle::ty::structural_impls::<impl rustc_type_ir::fold::TypeFoldable<rustc_middle::ty::context::TyCtxt> for rustc_middle::ty::Ty>::try_fold_with::h1a4cc6c064170236
+                               at /home/armael/.rustup/toolchains/nightly-2025-01-31-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/compiler/rustc_middle/src/ty/structural_impls.rs:368:9
+  13:     0x61dc002b3029 - rustc_middle::ty::generic_args::<impl rustc_type_ir::fold::TypeFoldable<rustc_middle::ty::context::TyCtxt> for &rustc_middle::ty::list::RawList<(),rustc_middle::ty::Ty>>::try_fold_with::h62dcdb3b6015bba1
+                               at /home/armael/.rustup/toolchains/nightly-2025-01-31-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/compiler/rustc_middle/src/ty/generic_args.rs:627:38
+  14:     0x61dc0033238f - rustc_middle::ty::structural_impls::<impl rustc_type_ir::fold::TypeSuperFoldable<rustc_middle::ty::context::TyCtxt> for rustc_middle::ty::Ty>::try_super_fold_with::h71d61753b6710c67
+                               at /home/armael/.rustup/toolchains/nightly-2025-01-31-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/compiler/rustc_middle/src/ty/structural_impls.rs:393:40
+  15:     0x61dc00338024 - rustc_type_ir::fold::TypeSuperFoldable::super_fold_with::h1f1b77d80de8689d
+                               at /home/armael/.rustup/toolchains/nightly-2025-01-31-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/compiler/rustc_type_ir/src/fold.rs:116:15
+  16:     0x61dc00022180 - <rustc_type_ir::binder::ArgFolder<I> as rustc_type_ir::fold::TypeFolder<I>>::fold_ty::h2fbb6b3231172864
+                               at /home/armael/.rustup/toolchains/nightly-2025-01-31-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/compiler/rustc_type_ir/src/binder.rs:692:18
+  17:     0x61dc0002b654 - <F as rustc_type_ir::fold::FallibleTypeFolder<I>>::try_fold_ty::hc212d0955501037b
+                               at /home/armael/.rustup/toolchains/nightly-2025-01-31-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/compiler/rustc_type_ir/src/fold.rs:218:12
+  18:     0x61dbffe1c162 - rustc_middle::ty::structural_impls::<impl rustc_type_ir::fold::TypeFoldable<rustc_middle::ty::context::TyCtxt> for rustc_middle::ty::Ty>::try_fold_with::h1a4cc6c064170236
+                               at /home/armael/.rustup/toolchains/nightly-2025-01-31-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/compiler/rustc_middle/src/ty/structural_impls.rs:368:9
+  19:     0x61dbffe1c162 - <rustc_middle::ty::generic_args::GenericArg as rustc_type_ir::fold::TypeFoldable<rustc_middle::ty::context::TyCtxt>>::try_fold_with::h4732c935dae50bf8
+                               at /home/armael/.rustup/toolchains/nightly-2025-01-31-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/compiler/rustc_middle/src/ty/generic_args.rs:324:44
+  20:     0x61dc002b5dcd - rustc_middle::ty::generic_args::<impl rustc_type_ir::fold::TypeFoldable<rustc_middle::ty::context::TyCtxt> for &rustc_middle::ty::list::RawList<(),rustc_middle::ty::generic_args::GenericArg>>::try_fold_with::h7e41bf1e1e462d81
+                               at /home/armael/.rustup/toolchains/nightly-2025-01-31-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/compiler/rustc_middle/src/ty/generic_args.rs:586:30
+  21:     0x61dc002b8ad4 - rustc_type_ir::fold::TypeFoldable::fold_with::h3da64be71ea8a649
+                               at /home/armael/.rustup/toolchains/nightly-2025-01-31-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/compiler/rustc_type_ir/src/fold.rs:93:15
+  22:     0x61dc0002a04e - rustc_type_ir::binder::EarlyBinder<I,T>::instantiate::hb7da716efd1deea7
+                               at /home/armael/.rustup/toolchains/nightly-2025-01-31-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/compiler/rustc_type_ir/src/binder.rs:615:9
+  23:     0x61dbfffc58d0 - creusot::validate::terminates::BuildFunctionsGraph::function_call::h50bc0c91eee5f626
+                               at /home/armael/recherche/creusot/creusot/src/validate/terminates.rs:384:25
+  24:     0x61dbfffc7532 - creusot::validate::terminates::CallGraph::build::ha048513e6987803a
+                               at /home/armael/recherche/creusot/creusot/src/validate/terminates.rs:594:17
+  25:     0x61dbfffc2dce - creusot::validate::terminates::validate_terminates::hbebbbd10f2e6f8d8
+                               at /home/armael/recherche/creusot/creusot/src/validate/terminates.rs:69:9
+  26:     0x61dbffd7c7cb - creusot::translation::before_analysis::hb6dd8ed31dbf59fb
+                               at /home/armael/recherche/creusot/creusot/src/translation.rs:77:13
+  27:     0x61dc00254f09 - <creusot::callbacks::ToWhy as rustc_driver_impl::Callbacks>::after_expansion::hf3700cb725d9af69
+                               at /home/armael/recherche/creusot/creusot/src/callbacks.rs:122:17
+  28:     0x7fec9242e859 - rustc_interface[444c50c8c58a8997]::passes::create_and_enter_global_ctxt::<core[1b69f308fde5021f]::option::Option<rustc_interface[444c50c8c58a8997]::queries::Linker>, rustc_driver_impl[3ce1408bca960349]::run_compiler::{closure#0}::{closure#2}>::{closure#2}::{closure#0}
+  29:     0x7fec923245d8 - rustc_interface[444c50c8c58a8997]::interface::run_compiler::<(), rustc_driver_impl[3ce1408bca960349]::run_compiler::{closure#0}>::{closure#1}
+  30:     0x7fec9228c5f5 - std[41a6e8152209c0a6]::sys::backtrace::__rust_begin_short_backtrace::<rustc_interface[444c50c8c58a8997]::util::run_in_thread_with_globals<rustc_interface[444c50c8c58a8997]::util::run_in_thread_pool_with_globals<rustc_interface[444c50c8c58a8997]::interface::run_compiler<(), rustc_driver_impl[3ce1408bca960349]::run_compiler::{closure#0}>::{closure#1}, ()>::{closure#0}, ()>::{closure#0}::{closure#0}, ()>
+  31:     0x7fec9228c2d9 - <<std[41a6e8152209c0a6]::thread::Builder>::spawn_unchecked_<rustc_interface[444c50c8c58a8997]::util::run_in_thread_with_globals<rustc_interface[444c50c8c58a8997]::util::run_in_thread_pool_with_globals<rustc_interface[444c50c8c58a8997]::interface::run_compiler<(), rustc_driver_impl[3ce1408bca960349]::run_compiler::{closure#0}>::{closure#1}, ()>::{closure#0}, ()>::{closure#0}::{closure#0}, ()>::{closure#1} as core[1b69f308fde5021f]::ops::function::FnOnce<()>>::call_once::{shim:vtable#0}
+  32:     0x7fec9228ba6f - std::sys::pal::unix::thread::Thread::new::thread_start::h57c67f308f577aff
+  33:     0x7fec8c4a370a - <unknown>
+  34:     0x7fec8c527aac - <unknown>
+  35:                0x0 - <unknown>
+
+
+rustc version: 1.86.0-nightly (a730edcd6 2025-01-30)
+platform: x86_64-unknown-linux-gnu
+
+query stack during panic:
+end of query stack

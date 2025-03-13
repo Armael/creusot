@@ -392,6 +392,7 @@ pub mod logic;
 pub mod model;
 pub mod pcell;
 pub mod ptr_own;
+pub mod ra;
 pub mod resolve;
 pub mod snapshot;
 pub mod util;
@@ -425,6 +426,7 @@ mod base_prelude {
     pub use crate::std::{
         iter::{SkipExt as _, TakeExt as _},
         ops::{FnExt as _, FnMutExt as _, FnOnceExt as _, RangeInclusiveExt as _},
+        option::OptionExt as _,
         ptr::PointerExt as _,
         slice::SliceExt as _,
     };

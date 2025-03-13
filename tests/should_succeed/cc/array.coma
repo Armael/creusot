@@ -5,7 +5,7 @@ module M_array__test_array [#"array.rs" 3 0 3 19]
   let%span sslice3 = "../../../creusot-contracts/src/std/slice.rs" 303 18 303 33
   let%span siter4 = "../../../creusot-contracts/src/std/iter.rs" 122 26 125 17
   let%span sarray5 = "array.rs" 5 31 5 32
-  let%span soption6 = "../../../creusot-contracts/src/std/option.rs" 23 26 23 75
+  let%span soption6 = "../../../creusot-contracts/src/std/option.rs" 24 26 24 75
   let%span sarray7 = "array.rs" 6 31 6 32
   let%span siter8 = "../../../creusot-contracts/src/std/iter.rs" 206 27 206 47
   let%span siter9 = "../../../creusot-contracts/src/std/iter.rs" 207 26 207 53
@@ -29,7 +29,7 @@ module M_array__test_array [#"array.rs" 3 0 3 19]
   let%span smodel27 = "../../../creusot-contracts/src/model.rs" 72 8 72 22
   let%span sslice28 = "../../../creusot-contracts/src/std/slice.rs" 97 14 97 41
   let%span sslice29 = "../../../creusot-contracts/src/std/slice.rs" 98 14 98 80
-  let%span soption30 = "../../../creusot-contracts/src/std/option.rs" 11 8 14 9
+  let%span soption30 = "../../../creusot-contracts/src/std/option.rs" 12 8 15 9
   let%span sarray31 = "../../../creusot-contracts/src/std/array.rs" 74 14 74 45
   let%span sarray32 = "../../../creusot-contracts/src/std/array.rs" 75 27 75 29
   let%span sarray33 = "../../../creusot-contracts/src/std/array.rs" 79 15 79 32

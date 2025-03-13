@@ -6,7 +6,7 @@
 <prover id="1" name="CVC4" version="1.8" timelimit="5" steplimit="0" memlimit="1000"/>
 <prover id="2" name="CVC5" version="1.0.5" timelimit="5" steplimit="0" memlimit="1000"/>
 <prover id="3" name="Alt-Ergo" version="2.6.0" timelimit="5" steplimit="0" memlimit="1000"/>
-<file format="coma" proved="true">
+<file format="coma">
 <path name=".."/><path name="creusot-contracts.coma"/>
 <theory name="M_creusot_contracts__stdqy35z1__array__qyi15910554087305746489__produces_refl__refines" proved="true">
  <goal name="refines" proved="true">
@@ -3455,6 +3455,224 @@
 <theory name="M_creusot_contracts__ptr_own__qyi13445900742793785996__drop" proved="true">
  <goal name="vc_drop&#39;0" proved="true">
  <proof prover="3"><result status="valid" time="0.028115" steps="2"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi6033307714425369397__le__refines" proved="true">
+ <goal name="refines" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.005958" steps="6"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi6033307714425369397__le" proved="true">
+ <goal name="vc_le&#39;0" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.012119" steps="26"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi6033307714425369397__idemp__refines" proved="true">
+ <goal name="refines" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.010942" steps="6"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi6033307714425369397__idemp" proved="true">
+ <goal name="vc_idemp&#39;0" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.018189" steps="18"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi6033307714425369397__commutative__refines" proved="true">
+ <goal name="refines" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.019405" steps="6"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi6033307714425369397__commutative" proved="true">
+ <goal name="vc_commutative&#39;0" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.015416" steps="6"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi6033307714425369397__associative__refines" proved="true">
+ <goal name="refines" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.018004" steps="6"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi6033307714425369397__associative" proved="true">
+ <goal name="vc_associative&#39;0" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.016249" steps="82"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi6033307714425369397__maximal_idemp__refines" proved="true">
+ <goal name="refines" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.008023" steps="72"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi6033307714425369397__maximal_idemp" proved="true">
+ <goal name="vc_maximal_idemp&#39;0" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.009096" steps="152"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi7163116006894473125__idemp__refines" proved="true">
+ <goal name="refines" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.016095" steps="6"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi7163116006894473125__idemp" proved="true">
+ <goal name="vc_idemp&#39;0" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.007961" steps="46"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi7163116006894473125__le__refines" proved="true">
+ <goal name="refines" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.009905" steps="6"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi7163116006894473125__le" proved="true">
+ <goal name="vc_le&#39;0" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.008819" steps="542"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi7163116006894473125__commutative__refines" proved="true">
+ <goal name="refines" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.016957" steps="6"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi7163116006894473125__commutative" proved="true">
+ <goal name="vc_commutative&#39;0" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.014083" steps="320"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi7163116006894473125__associative__refines" proved="true">
+ <goal name="refines" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.014678" steps="6"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi7163116006894473125__associative" proved="true">
+ <goal name="vc_associative&#39;0" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.018862" steps="1789"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi7163116006894473125__maximal_idemp__refines" proved="true">
+ <goal name="refines" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.015583" steps="120"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi7163116006894473125__maximal_idemp" proved="true">
+ <goal name="vc_maximal_idemp&#39;0" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.008920" steps="234"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi8501750256077767607__le__refines" proved="true">
+ <goal name="refines" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.011456" steps="6"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi8501750256077767607__le" proved="true">
+ <goal name="vc_le&#39;0" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.481798" steps="1304930"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi8501750256077767607__idemp__refines" proved="true">
+ <goal name="refines" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.008317" steps="6"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi8501750256077767607__idemp" proved="true">
+ <goal name="vc_idemp&#39;0" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.006908" steps="4921"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi8501750256077767607__commutative__refines" proved="true">
+ <goal name="refines" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.008272" steps="6"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi8501750256077767607__commutative" proved="true">
+ <goal name="vc_commutative&#39;0" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.017464" steps="7465"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi8501750256077767607__associative__refines" proved="true">
+ <goal name="refines" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.009984" steps="6"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi8501750256077767607__associative" proved="true">
+ <goal name="vc_associative&#39;0" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.017017" steps="35038"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi8501750256077767607__maximal_idemp__refines" proved="true">
+ <goal name="refines" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.007905" steps="664"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi8501750256077767607__maximal_idemp" proved="true">
+ <goal name="vc_maximal_idemp&#39;0" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.027692" steps="87862"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi8695619954646013653__le__refines" proved="true">
+ <goal name="refines" proved="true">
+ <proof prover="0" timelimit="0.5"><result status="valid" time="0.016160" steps="1173"/></proof>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi8695619954646013653__le">
+ <goal name="vc_le&#39;0">
+ <proof prover="0" timelimit="0.5"><result status="timeout" time="0.500000" steps="8929444"/></proof>
+ <transf name="split_vc" >
+  <goal name="vc_le&#39;0.0">
+  <proof prover="0" timelimit="3" memlimit="2000"><result status="timeout" time="3.000000" steps="17891714"/></proof>
+  <proof prover="1" timelimit="3" memlimit="2000"><result status="unknown" time="0.018948" steps="5059"/></proof>
+  <proof prover="2" timelimit="3" memlimit="2000"><result status="unknown" time="0.005248" steps="2851"/></proof>
+  <proof prover="3" timelimit="3" memlimit="2000"><result status="timeout" time="3.000000" steps="37845"/></proof>
+  <transf name="inline_goal" >
+   <goal name="vc_le&#39;0.0.0">
+   <transf name="split_all_full" >
+    <goal name="vc_le&#39;0.0.0.0">
+    <proof prover="0" timelimit="6" memlimit="4000"><result status="timeout" time="6.000000" steps="45108817"/></proof>
+    <proof prover="1" timelimit="6" memlimit="4000"><result status="unknown" time="0.020124" steps="4751"/></proof>
+    <proof prover="2" timelimit="6" memlimit="4000"><result status="unknown" time="0.005909" steps="3126"/></proof>
+    <proof prover="3" timelimit="6" memlimit="4000"><result status="timeout" time="6.000000" steps="64748"/></proof>
+    </goal>
+   </transf>
+   </goal>
+  </transf>
+  </goal>
+  <goal name="vc_le&#39;0.1" proved="true">
+  <proof prover="0" timelimit="0.5"><result status="valid" time="0.011656" steps="12162"/></proof>
+  </goal>
+  <goal name="vc_le&#39;0.2" proved="true">
+  <proof prover="3" timelimit="3" memlimit="2000"><result status="valid" time="0.027438" steps="247"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi8695619954646013653__idemp__refines">
+ <goal name="refines">
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi8695619954646013653__idemp">
+ <goal name="vc_idemp&#39;0">
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi8695619954646013653__commutative__refines">
+ <goal name="refines">
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi8695619954646013653__commutative">
+ <goal name="vc_commutative&#39;0">
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi8695619954646013653__associative__refines">
+ <goal name="refines">
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi8695619954646013653__associative">
+ <goal name="vc_associative&#39;0">
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi8695619954646013653__maximal_idemp__refines">
+ <goal name="refines">
+ </goal>
+</theory>
+<theory name="M_creusot_contracts__ra__qyi8695619954646013653__maximal_idemp">
+ <goal name="vc_maximal_idemp&#39;0">
  </goal>
 </theory>
 <theory name="M_creusot_contracts__snapshot__qyi17576604998327728858__clone__refines" proved="true">
